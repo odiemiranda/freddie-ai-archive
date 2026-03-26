@@ -1,8 +1,19 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| MEDITATION MUSIC | 9 | meditation, music |
+| Mindfulness & Breathing | 11 | mindfulness, breathing, meditation, zen, yoga nidra, walking, chakra, loving kindness, vipassana |
+| RELAXING PIANO | 84 | relaxing, piano |
+| Solo Piano & Cinematic | 86 | solo piano, cinematic, rainy day, healing, memory, nostalgic, jazz, classical, morning |
+| SPA & WELLNESS MUSIC | 163 | spa, wellness, music |
+| Spa, Massage & Wellness | 165 | spa, massage, wellness, flute, aromatherapy, sauna, retreat, couples, candlelight |
+TOC -->
+
 # Relaxation Niche Prompts
 
 Battle-tested prompts for meditation, relaxing piano, and spa/wellness music.
 
-> **Two Prompt Styles:** Each section includes **tagged prompts** (with `[Instrumental]`, `[Intro]`, `[No Vocals]` etc.) for maximum Suno control, and **natural-language prompts** (simple comma-separated descriptions) for a quicker, more intuitive approach.
+> **Note:** Some example prompts below use an older format with `[Intro]`/`[Build]` tags inline. The current best practice is: **Style block = sonic palette only** (genre, instruments, mood, BPM, key, texture). Structure tags go in the **Lyrics block**. Adapt these examples accordingly.
 
 ---
 

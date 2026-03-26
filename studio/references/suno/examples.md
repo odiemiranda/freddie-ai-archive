@@ -1,20 +1,39 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Lo-Fi Study Beat | 5 | lo-fi, study, rhodes, vinyl crackle, boom-bap, hip-hop |
+| Deep Sleep Music | 10 | deep sleep, sub bass, drone, delta wave, ambient, ocean |
+| Dark Academia | 15 | dark academia, lo-fi, cello, piano, gothic, vintage |
+| City Pop | 20 | city pop, japanese, slap bass, dx7 synth, rhodes, jazz guitar, 80s |
+| Ghibli Piano | 25 | ghibli, piano, nostalgic, whimsical, innocent |
+| Genre Fusion Ideas | 32 | fusion, combinations, genre-blending |
+| Medieval + Trap | 52 | medieval, trap, lute, harpsichord, 808 |
+| Japanese + Lo-fi | 57 | japanese, lo-fi, koto, boom-bap, zen, sakura |
+| Cyberpunk + Jazz | 62 | cyberpunk, jazz, noir, saxophone, electronic, blade runner |
+| Celtic + Ambient | 67 | celtic, ambient, uilleann pipes, harp, mystical |
+| Brazilian + Electronic | 72 | brazilian, electronic, bossa nova, tropical synths |
+| Afrobeats + Synthwave | 77 | afrobeats, synthwave, polyrhythmic, retro, 80s |
+| Era-Specific Prompts | 109 | era, decade, 60s, 70s, 80s, 90s, 2000s |
+| Use-Case Templates | 140 | use-case, study, sleep, gaming, coffee shop, driving |
+TOC -->
+
 # Examples & Fusion Ideas
 
 ## Proven Prompt Templates
 
 ### Lo-Fi Study Beat
 ```
-[Intro] [Instrumental] Warm Rhodes electric piano, soft vinyl crackle, gentle rain ambience, C Minor, 82 BPM [Build] Add mellow boom-bap drums, warm upright bass [Hook] Classic lo-fi hip hop, dusty drums, melancholic piano chords, vinyl texture, nostalgic atmosphere [No Vocals]
+[Instrumental] Lo-fi hip hop, Rhodes electric piano, boom-bap drums, upright bass, vinyl crackle, rain ambience, C Minor, 82 BPM, dusty, nostalgic, clean mix, analog warmth [No Vocals]
 ```
 
 ### Deep Sleep Music
 ```
-[Intro] [Instrumental] Deep sub bass drone, 40 BPM, C Major, delta wave frequencies [Ambient] Soft synth pad layers, gentle ocean waves texture, extremely slow, peaceful [Sustained] Minimal variation, continuous soothing tones [Fade Out] [No Vocals]
+[Instrumental] Deep ambient sleep, sub bass drone, soft synth pads, ocean waves texture, C Major, 40 BPM, extremely slow, peaceful, continuous, minimal variation [No Vocals] [Fade Out]
 ```
 
 ### Dark Academia
 ```
-[Intro] Old library ambience, distant footsteps [Instrumental] Dark academia lo-fi, haunting cello melody, soft piano, vintage vinyl crackle, D Minor, 72 BPM, candlelit study atmosphere, gothic elegance [No Vocals]
+[Instrumental] Dark academia lo-fi, haunting cello, soft piano, vintage vinyl crackle, D Minor, 72 BPM, candlelit study atmosphere, gothic elegance [No Vocals]
 ```
 
 ### City Pop

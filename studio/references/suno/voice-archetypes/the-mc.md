@@ -1,3 +1,15 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Voice Profile | 21 | mc, mid-range, rhythmic, percussive, confident, sharp |
+| Style Tags | 31 | mc, spoken word, percussive cadence, words as drums, street-smart |
+| Exclude Style | 37 | mc, negative prompt, exclude |
+| Lyrics Technique | 43 | mc, internal rhyme, multi-syllable rhyme, gang vocals, syllable stacking |
+| Best Paired With | 81 | mc, boom bap, lo-fi hip-hop, jazz rap, spoken word |
+| Advanced Settings | 91 | mc, weirdness, style influence |
+| Tested | 97 | mc, tested, results |
+TOC -->
+
 # The MC
 
 > Rhythmic mid-range spoken word — words as drums, percussive cadence, bars over beats

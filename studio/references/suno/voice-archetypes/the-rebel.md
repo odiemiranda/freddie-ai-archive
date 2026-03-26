@@ -1,3 +1,15 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Voice Profile | 21 | rebel, mid-range, raspy, gritty, snarl, defiant |
+| Style Tags | 31 | rebel, raspy, raw, distorted, DIY energy, sweaty |
+| Exclude Style | 37 | rebel, negative prompt, exclude |
+| Lyrics Technique | 43 | rebel, ALL CAPS, punchy lines, concrete rebellion, taunt, cockiness |
+| Best Paired With | 77 | rebel, garage rock, punk, grunge, hardcore |
+| Advanced Settings | 87 | rebel, weirdness, style influence |
+| Tested | 94 | rebel, tested, results |
+TOC -->
+
 # The Rebel
 
 > Raspy mid-range snarl — garage rock defiance, raw punk energy, sweat and attitude

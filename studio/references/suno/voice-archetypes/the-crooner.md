@@ -1,3 +1,15 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Voice Profile | 21 | crooner, low-mid baritone, silky, velvet, smooth, romantic |
+| Style Tags | 31 | crooner, baritone, velvet, crooning, lounge, analog warmth |
+| Exclude Style | 37 | crooner, negative prompt, exclude |
+| Lyrics Technique | 43 | crooner, behind the beat, ellipses, slant rhyme, intimate, humming |
+| Best Paired With | 75 | crooner, smooth jazz, bossa nova, lo-fi jazz, R&B ballad |
+| Advanced Settings | 84 | crooner, weirdness, style influence |
+| Tested | 91 | crooner, tested, results |
+TOC -->
+
 # The Crooner
 
 > Silky low-mid baritone — late-night lounge, romantic velvet, effortless delivery

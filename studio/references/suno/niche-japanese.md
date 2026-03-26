@@ -1,8 +1,25 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| JAPANESE AESTHETIC ZONE | 9 | japanese, aesthetic |
+| Japanese City Pop (80s Tokyo) | 11 | city pop, 80s, tokyo, funky, bass, dx7, synth, rhodes, retro, neon |
+| Studio Ghibli Piano Style | 38 | ghibli, piano, whimsical, nostalgic, magical, innocent |
+| Japanese Lo-Fi & Zen | 65 | japanese lo-fi, zen, koto, shakuhachi, boom-bap, sakura, cherry blossom |
+| ANIME & GAME OST | 90 | anime, game, ost |
+| Anime Soundtrack (Non-Ghibli) | 92 | anime, soundtrack, orchestral, battle, emotional, j-rock, slice-of-life |
+| Video Game Ambient | 137 | video game, rpg, dungeon, chiptune, retro, 16-bit, exploration |
+| ENKA & KAYOKYOKU | 162 | enka, kayokyoku |
+| Enka (Modern Traditional Ballad) | 164 | enka, ballad, shamisen, koto, orchestral, dramatic, melancholic, traditional |
+| Kayokyoku (60s-70s Japanese Pop) | 197 | kayokyoku, showa, 60s, 70s, retro, guitar, organ, brass, vintage |
+| J-ROCK & VISUAL KEI | 232 | j-rock, visual kei |
+| J-Rock | 234 | j-rock, distorted guitar, driving drums, passionate, post-rock, ballad |
+TOC -->
+
 # Japanese Aesthetic Niche Prompts
 
 Battle-tested prompts for Japanese city pop, Studio Ghibli piano, anime OST, enka/kayokyoku, and Japanese lo-fi/zen.
 
-> **Two Prompt Styles:** Each section includes **tagged prompts** (with `[Instrumental]`, `[Intro]`, `[No Vocals]` etc.) for maximum Suno control, and **natural-language prompts** (simple comma-separated descriptions) for a quicker, more intuitive approach.
+> **Two Prompt Styles:** Each section includes **Style block prompts** (sonic palette with `[Instrumental]`/`[No Vocals]` bookends) and **natural-language prompts** (simple comma-separated descriptions). Structure tags (`[Intro]`, `[Build]`, `[Hook]`) go in the Lyrics block, not the Style block.
 
 ---
 
@@ -24,7 +41,7 @@ Battle-tested prompts for Japanese city pop, Studio Ghibli piano, anime OST, enk
 ```
 
 ```
-[Intro] Synth pad swell, retro warmth [Instrumental] 80s Tokyo groove, smooth bass line, vintage synth melody, electric piano chords, jazzy guitar licks, F Major, 108 BPM, city pop nostalgia [No Vocals]
+[Instrumental] 80s Tokyo city pop, smooth bass line, vintage synth, electric piano chords, jazzy guitar, F Major, 108 BPM, retro warmth, city pop nostalgia [No Vocals]
 ```
 
 ```
@@ -51,7 +68,7 @@ Battle-tested prompts for Japanese city pop, Studio Ghibli piano, anime OST, enk
 ```
 
 ```
-[Intro] Soft piano introduction [Instrumental] Studio Ghibli style, tender piano solo, flowing nostalgic melody, innocent harmonies, F Major, 75 BPM, magical realism, childhood wonder [No Vocals]
+[Instrumental] Studio Ghibli style, tender piano solo, flowing nostalgic melody, innocent harmonies, F Major, 75 BPM, magical realism, childhood wonder [No Vocals]
 ```
 
 ```
@@ -78,7 +95,7 @@ Battle-tested prompts for Japanese city pop, Studio Ghibli piano, anime OST, enk
 ```
 
 ```
-[Intro] Temple bell, soft wind [Instrumental] Zen lo-fi beats, shakuhachi flute samples, gentle drums, warm Rhodes, G Major, 72 BPM, meditation garden, Japanese serenity [No Vocals]
+[Instrumental] Zen lo-fi beats, shakuhachi flute, gentle drums, warm Rhodes, G Major, 72 BPM, meditation garden, Japanese serenity [No Vocals]
 ```
 
 ```
@@ -101,7 +118,7 @@ Battle-tested prompts for Japanese city pop, Studio Ghibli piano, anime OST, enk
 **Tagged Prompts:**
 
 ```
-[Intro] [Instrumental] Soft piano, emotional strings swell, anime emotional scene, A Minor, 85 BPM, bittersweet farewell atmosphere, cinematic orchestral [Build] Rising strings, drums enter [Hook] Full orchestra, powerful emotional climax [Fade Out] [No Vocals]
+[Instrumental] Anime emotional scene, soft piano, emotional strings, cinematic orchestral, A Minor, 85 BPM, bittersweet farewell atmosphere, powerful and sweeping [Fade Out] [No Vocals]
 ```
 
 ```
@@ -109,7 +126,7 @@ Battle-tested prompts for Japanese city pop, Studio Ghibli piano, anime OST, enk
 ```
 
 ```
-[Intro] Gentle acoustic guitar [Instrumental] Anime slice-of-life, warm acoustic melody, light piano, soft percussion, G Major, 105 BPM, school rooftop afternoon, nostalgic and carefree [No Vocals]
+[Instrumental] Anime slice-of-life, warm acoustic guitar, light piano, soft percussion, G Major, 105 BPM, school rooftop afternoon, nostalgic and carefree [No Vocals]
 ```
 
 ```
@@ -177,7 +194,7 @@ Anime ending theme, soft and reflective, piano melody, gentle strings, 80 BPM, A
 ```
 
 ```
-[Intro] Solo koto, slow and deliberate [Instrumental] Modern enka, lush string arrangement, shamisen accents, soft percussion, D Minor, 68 BPM, longing and heartbreak, rain-soaked evening [No Vocals]
+[Instrumental] Modern enka, solo koto, lush strings, shamisen accents, soft percussion, D Minor, 68 BPM, longing, heartbreak, rain-soaked evening [No Vocals]
 ```
 
 ```
@@ -247,7 +264,7 @@ Showa era pop instrumental, vintage production, 100 BPM, F Major, warm and nosta
 ```
 
 ```
-[Intro] Clean guitar arpeggio [Build] [Instrumental] J-rock ballad, emotional electric guitar, soft drums building to full band, A Minor, 125 BPM, rooftop sunset, bittersweet intensity [No Vocals]
+[Instrumental] J-rock ballad, emotional electric guitar, soft drums, full band, A Minor, 125 BPM, rooftop sunset, bittersweet intensity [No Vocals]
 ```
 
 ```

@@ -1,3 +1,15 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Voice Profile | 21 | commander, deep baritone, authoritative, gravelly, commanding, measured |
+| Style Tags | 31 | commander, baritone, resonant, authoritative, warm, powerful |
+| Exclude Style | 37 | commander, negative prompt, exclude |
+| Lyrics Technique | 43 | commander, spoken word, declarative, dramatic pauses, ALL CAPS |
+| Best Paired With | 75 | commander, cinematic orchestral, rock anthem, dark ambient, military march |
+| Advanced Settings | 84 | commander, weirdness, style influence |
+| Tested | 91 | commander, tested, results |
+TOC -->
+
 # The Commander
 
 > Deep authoritative baritone — epic leaders, war speeches, cinematic narration

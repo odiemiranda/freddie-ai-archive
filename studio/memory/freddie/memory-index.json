@@ -1,0 +1,58 @@
+[
+  {
+    "file": "knowledge/knowledge_discord_workflow.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "discord",
+      "communication",
+      "progress",
+      "configuration",
+      "path"
+    ],
+    "summary": "## Communication Style"
+  },
+  {
+    "file": "knowledge/knowledge_memory_lifecycle.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "memory",
+      "consolidation",
+      "inbox",
+      "knowledge",
+      "archive",
+      "claude-mem"
+    ],
+    "summary": "## Memory Hierarchy"
+  },
+  {
+    "file": "knowledge/knowledge_suno_precision.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "suno",
+      "style-block",
+      "lyrics",
+      "music-cards",
+      "production",
+      "audio-analysis"
+    ],
+    "summary": "## The Style vs. Lyrics Split (Critical)"
+  },
+  {
+    "file": "knowledge/knowledge_system_architecture.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "environment",
+      "windows",
+      "timezone",
+      "backup",
+      "sdk",
+      "gemini",
+      "minimax"
+    ],
+    "summary": "## Environment & Schedule"
+  }
+]

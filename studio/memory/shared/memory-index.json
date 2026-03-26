@@ -1,0 +1,54 @@
+[
+  {
+    "file": "knowledge/music-cards-reference.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "reference",
+      "music-cards",
+      "audio",
+      "youtube",
+      "suno",
+      "minimax"
+    ],
+    "summary": "# Music Cards: Audio Reference System"
+  },
+  {
+    "file": "knowledge/studio-infrastructure.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "infrastructure",
+      "migration",
+      "paths",
+      "indexing",
+      "studio-tool"
+    ],
+    "summary": "# Studio Infrastructure"
+  },
+  {
+    "file": "knowledge/task-management-architecture.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "tasks",
+      "obsidian",
+      "penny",
+      "architecture"
+    ],
+    "summary": "# Task Management Architecture"
+  },
+  {
+    "file": "knowledge/workflow-quality-gates.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "workflow",
+      "quality-gate",
+      "gemini",
+      "critique",
+      "jam-skill"
+    ],
+    "summary": "# Workflow Quality Gates"
+  }
+]

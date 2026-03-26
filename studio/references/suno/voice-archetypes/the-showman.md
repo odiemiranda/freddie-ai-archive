@@ -1,3 +1,15 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Voice Profile | 21 | showman, rock tenor, theatrical, explosive, dramatic |
+| Style Tags | 31 | showman, theatrical, half-singing half-shouting, over-the-top, stadium energy |
+| Exclude Style | 37 | showman, negative prompt, exclude |
+| Lyrics Technique | 43 | showman, exclamation pauses, theatrical whisper, guitar solo, ALL CAPS, breathless |
+| Best Paired With | 81 | showman, classic rock, pop rock anthem, comedy rock, punk rock |
+| Advanced Settings | 91 | showman, weirdness, style influence |
+| Tested | 97 | showman, tested, results |
+TOC -->
+
 # The Showman
 
 > Theatrical rock tenor — over-the-top delivery, half-singing half-shouting, stadium energy in a small room

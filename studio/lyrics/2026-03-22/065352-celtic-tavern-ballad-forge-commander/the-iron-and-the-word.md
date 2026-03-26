@@ -41,7 +41,7 @@ Hmm... hmm... hmm...
 We left before the frost...
 Forty men. Maybe less.
 The road was mud and stone.
-No one talked about the rest.
+No one spoke about the rest.
 
 [Pre-Chorus]
 [Building, Group chanting joins, Deeper]
@@ -51,8 +51,8 @@ Down... where the river bends
 [Chorus]
 [Powerful chanting, Full group vocals, War drums pounding]
 We forged the iron 'fore the sun
-We hammered till the dark was done
-The mountain heard us call her name
+We hammered till the dawn was won
+The mountain heard us speak her name
 And NO man left the way he came
 
 [Verse 2]
@@ -65,13 +65,13 @@ We didn't wake him. Felt right.
 [Pre-Chorus]
 [Building, Group chanting joins, Deeper]
 Down... down... the valley road
-Down... where the old stone stands
+Down... where the grey stone stands
 
 [Chorus]
 [Powerful chanting, Full group vocals, War drums pounding]
 We forged the iron 'fore the sun
-We hammered till the dark was done
-The mountain heard us call her name
+We hammered till the dawn was won
+The mountain heard us speak her name
 And NO man left the way he came
 SING! SING! SING!
 
@@ -79,7 +79,7 @@ SING! SING! SING!
 [Spoken word, Deep baritone, Stripped back, Intimate]
 I told them... stand.
 I told them... hold.
-But the truth is...
+But truth is...
 [Spoken word, Gravelly, Vulnerable]
 I was counting my own steps
 to make sure I didn't run.
@@ -87,8 +87,8 @@ to make sure I didn't run.
 [Final Chorus]
 [Full chanting, Maximum power, Stomping, Ancient]
 WE FORGED THE IRON 'FORE THE SUN
-WE HAMMERED TILL THE DARK WAS DONE
-THE MOUNTAIN HEARD US CALL HER NAME
+WE HAMMERED TILL THE DAWN WAS WON
+THE MOUNTAIN HEARD US SPEAK HER NAME
 AND NO MAN LEFT THE WAY HE CAME
 SING! SING! SING!
 
@@ -105,3 +105,4 @@ Hmm... hmm...
 - "Down... down..." pre-choruses use ellipses to create descent — Suno reads these as hesitation/breath, which builds tension before the chorus
 - Don't put "epic" or "heroic" in the Style — the ALL CAPS final chorus already signals that energy to Suno
 - Gemini Review: 1 pass. Changed: tightened verse 2 line 3 from 9 syl to 8 ("A boy was sleeping near the door"). Deferred: none.
+- Dual-Critic Review: Gemini 1 pass, MiniMax 1 pass. Reconciliation: 5/10 flags applied. Key changes: "dark was done" → "dawn was won" (rhyme tax fix), "call her name" → "speak her name" (dead image fix), "talked" → "spoke" (register fix), "old stone" → "grey stone" (sensory specificity), "But the truth is" → "But truth is" (tighter register).

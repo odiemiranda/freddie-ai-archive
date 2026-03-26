@@ -1,0 +1,31 @@
+[
+  {
+    "file": "knowledge/language-and-authenticity.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "lyrics",
+      "non-english",
+      "authenticity",
+      "brands",
+      "slang",
+      "tagalog"
+    ],
+    "summary": "## Overview"
+  },
+  {
+    "file": "knowledge/vocal-architecture-and-phrasing.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "lyrics",
+      "suno",
+      "vocal-range",
+      "phonetics",
+      "phrasing",
+      "register",
+      "accents"
+    ],
+    "summary": "## Overview"
+  }
+]

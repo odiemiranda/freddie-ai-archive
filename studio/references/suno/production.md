@@ -226,22 +226,54 @@ When generating 3+ variations, vary keys alongside BPM for maximum tonal contras
 
 ### Complete Lo-Fi Structure Example
 
+**Style block:**
 ```
-[Intro] [Instrumental] Soft vinyl crackle, gentle Rhodes piano, C Minor, 80 BPM, atmospheric
-[Build] Add soft boom-bap drums, warm sub bass enters gradually
-[Hook] [Instrumental] Full lo-fi arrangement, dusty drums, melancholic piano melody, vinyl texture, nostalgic atmosphere
-[Break] Drums drop out, just piano and gentle rain sounds
-[Hook] Return to full beat, reinforcing the main theme
-[Outro] [Fade Out] Piano fades gently, rain continues softly [No Vocals]
+[Instrumental] Lo-fi hip hop, Rhodes piano, boom-bap drums, sub bass, vinyl crackle, rain sounds, C Minor, 80 BPM, dusty, nostalgic, atmospheric, clean mix [No Vocals]
+```
+
+**Lyrics block:**
+```
+[Instrumental]
+
+[Intro]
+[Vinyl crackle, Rhodes alone]
+[Build]
+[Drums enter, bass joins]
+[Hook]
+[Full groove, dusty and warm]
+[Break]
+[Drums out, piano and rain]
+[Hook]
+[Full beat returns]
+[Outro]
+[Piano fades, rain continues]
+[Fade Out]
+
+[No Vocals]
 ```
 
 ### Complete Sleep Music Structure
 
+**Style block:**
 ```
-[Intro] [Instrumental] Deep sub bass drone, 40 BPM, C Major, delta wave frequencies
-[Ambient] Soft synth pad layers, gentle ocean waves texture, extremely slow, peaceful, dreamlike [No Vocals]
-[Sustained] Minimal variation, continuous soothing tones, therapeutic frequencies
-[Outro] [Fade Out] Gentle fade over 30 seconds [Background Music]
+[Instrumental] Deep ambient sleep, sub bass drone, soft synth pads, ocean waves, C Major, 40 BPM, delta wave frequencies, dreamlike, peaceful [No Vocals] [Background Music]
+```
+
+**Lyrics block:**
+```
+[Instrumental]
+
+[Intro]
+[Deep drone, slow fade in]
+[Ambient]
+[Pads and ocean texture]
+[Sustained]
+[Continuous, minimal variation]
+[Outro]
+[Gentle fade]
+[Fade Out]
+
+[No Vocals]
 ```
 
 ---

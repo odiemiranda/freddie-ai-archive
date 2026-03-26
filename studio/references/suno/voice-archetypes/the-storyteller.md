@@ -1,3 +1,15 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Voice Profile | 21 | storyteller, mid-baritone, warm, gentle, intimate, conversational |
+| Style Tags | 31 | storyteller, warm baritone, unhurried, close-mic, analog warmth |
+| Exclude Style | 37 | storyteller, negative prompt, exclude |
+| Lyrics Technique | 43 | storyteller, conversational, memory pauses, concrete details, humming, no rhyme |
+| Best Paired With | 73 | storyteller, folk, acoustic, americana, lo-fi, indie folk |
+| Advanced Settings | 84 | storyteller, weirdness, style influence |
+| Tested | 91 | storyteller, tested, results |
+TOC -->
+
 # The Storyteller
 
 > Warm mid-baritone narrator — campfire tales, folk intimacy, unhurried conversation

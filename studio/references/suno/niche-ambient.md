@@ -1,8 +1,21 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| ASMR & SOUNDSCAPES | 9 | asmr, soundscapes, sounds |
+| Rain & Thunder | 11 | rain, thunder, storm, rainfall, asmr, sleep, tent, camping |
+| Fireplace & Cozy | 58 | fireplace, cozy, fire, crackling, cabin, winter, warm |
+| Cafe & Urban | 76 | cafe, urban, coffee shop, library, chatter, typing, productive |
+| NATURE AMBIENT | 96 | nature, ambient, organic |
+| Forest & Woodland | 98 | forest, woodland, mountain, stream, birds, meadow, bamboo, desert, ocean, tundra, snowy |
+| RAIN & WEATHER AMBIENCE | 163 | rain, weather, ambience |
+| Rain Variations | 165 | rain, window, thunderstorm, rooftop, piano, cozy, melancholic, midnight, city, tropical |
+TOC -->
+
 # Ambient & Soundscape Niche Prompts
 
 Battle-tested prompts for ASMR, nature ambience, rain, and weather soundscapes.
 
-> **Two Prompt Styles:** Each section includes **tagged prompts** (with `[Instrumental]`, `[Intro]`, `[No Vocals]` etc.) for maximum Suno control, and **natural-language prompts** (simple comma-separated descriptions) for a quicker, more intuitive approach.
+> **Note:** Some example prompts below use an older format with `[Intro]`/`[Build]` tags inline. The current best practice is: **Style block = sonic palette only** (genre, instruments, mood, BPM, key, texture). Structure tags go in the **Lyrics block**. Adapt these examples accordingly.
 
 ---
 

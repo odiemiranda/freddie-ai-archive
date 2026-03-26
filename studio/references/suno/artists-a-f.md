@@ -1,3 +1,46 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| ABBA | 59 | abba, swedish pop, disco-pop, harmonies, 70s |
+| Adele | 60 | adele, soulful pop, powerhouse vocals, piano, ballads, cinematic |
+| A$AP Rocky | 61 | a$ap rocky, cloud rap, houston, experimental beats |
+| Alicia Keys | 62 | alicia keys, neo-soul, piano, r&b, gospel |
+| Amy Winehouse | 63 | amy winehouse, retro soul, jazz, raspy vocals, 60s |
+| Anderson .Paak | 64 | anderson paak, funk-soul, drums, groovy, west coast |
+| Arctic Monkeys | 66 | arctic monkeys, indie rock, guitar riff, british |
+| Ariana Grande | 67 | ariana grande, airy vocals, whistle tones, r&b-pop |
+| Avicii | 68 | avicii, edm, melodic house, uplifting, festival |
+| Bad Bunny | 74 | bad bunny, reggaeton, latin trap, 808, caribbean |
+| Beyoncé | 75 | beyoncé, powerful vocals, r&b, empowerment |
+| Billie Eilish | 76 | billie eilish, whispered vocals, dark pop, bass-heavy, eerie |
+| BLACKPINK | 77 | blackpink, k-pop, girl group, trap drums |
+| Black Sabbath | 78 | black sabbath, heavy metal, doom, ozzy, 70s rock |
+| Björk | 79 | björk, experimental pop, avant-garde, electronic |
+| Bon Iver | 81 | bon iver, indie folk, falsetto, atmospheric, cabin |
+| Bruno Mars | 83 | bruno mars, retro funk-pop, 70s soul, catchy hooks |
+| BTS | 84 | bts, k-pop, cinematic, edm, vocal layering, rap |
+| Burial | 85 | burial, uk dubstep, dark ambient, crackle, bass music |
+| Calvin Harris | 91 | calvin harris, edm pop, festival, dance |
+| Cardi B | 93 | cardi b, female rap, bronx, trap beats |
+| Childish Gambino | 96 | childish gambino, funk-soul, atlanta rap, genre-blending |
+| Coldplay | 97 | coldplay, stadium rock, atmospheric, piano-driven, anthemic |
+| Daft Punk | 104 | daft punk, french house, vocoder, disco-funk, electronic |
+| D'Angelo | 105 | d'angelo, neo-soul, rhodes, live drums, sensual |
+| Drake | 108 | drake, melodic rap, introspective, toronto, r&b, moody |
+| Dua Lipa | 110 | dua lipa, disco-pop, dance, retro synths |
+| Ed Sheeran | 118 | ed sheeran, acoustic pop, folk, heartfelt, loop-pedal |
+| Elton John | 119 | elton john, piano rock, theatrical, 70s, glam |
+| Eminem | 120 | eminem, rapid-fire rap, technical flow, aggressive, storytelling |
+| Enya | 121 | enya, ethereal, celtic, new age, layered vocals, meditative |
+| Erykah Badu | 122 | erykah badu, neo-soul, conscious, jazz, bohemian |
+| Fleetwood Mac | 130 | fleetwood mac, 70s rock, dual vocals, melodic guitar |
+| Florence + The Machine | 131 | florence, dramatic pop, powerful vocals, orchestral, anthemic |
+| Frank Ocean | 132 | frank ocean, alternative r&b, sparse, vulnerable, genre-bending |
+| Freddie Mercury / Queen | 133 | freddie mercury, queen, theatrical rock, operatic, stadium |
+| Future | 134 | future, dark trap, auto-tune, melancholic, 808, atlanta |
+| FKA twigs | 135 | fka twigs, alternative r&b, electronic, ethereal, avant-garde |
+TOC -->
+
 # Artists Reference: A-F
 
 700+ artist styles for Suno AI prompts. Find an artist, use their signature sound.

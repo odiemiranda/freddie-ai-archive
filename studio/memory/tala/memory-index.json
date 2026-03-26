@@ -1,0 +1,98 @@
+[
+  {
+    "file": "knowledge/bracket-syntax-metatags.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "suno",
+      "lyrics",
+      "brackets",
+      "metatags",
+      "pipe-stacking",
+      "colon-syntax",
+      "vocal",
+      "performance",
+      "adlib"
+    ],
+    "summary": "# Bracket Syntax & Meta-Tags"
+  },
+  {
+    "file": "knowledge/fusion-frequency-control.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "suno",
+      "fusion",
+      "frequency",
+      "lowpass",
+      "genre-mapping",
+      "bright-instruments",
+      "instrument-variants"
+    ],
+    "summary": "# Fusion & Frequency Control"
+  },
+  {
+    "file": "knowledge/instrumental-prompt-architecture.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "suno",
+      "prompt-design",
+      "instrumental",
+      "bgm",
+      "instrument-interaction",
+      "exclusion-style",
+      "syntax",
+      "style-block-formula"
+    ],
+    "summary": "# Instrumental Prompt Architecture"
+  },
+  {
+    "file": "knowledge/lyrics-section-architecture.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "suno",
+      "lyrics",
+      "structure",
+      "sections",
+      "hook",
+      "chorus",
+      "verse",
+      "bgm",
+      "vocal",
+      "genre-structure",
+      "syllable-density"
+    ],
+    "summary": "# Lyrics Section Architecture"
+  },
+  {
+    "file": "knowledge/prompt-engineering-fundamentals.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "suno",
+      "prompt-design",
+      "complexity",
+      "genre",
+      "quality",
+      "reroll"
+    ],
+    "summary": "# Prompt Engineering Fundamentals"
+  },
+  {
+    "file": "knowledge/style-block-validation.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "suno",
+      "style-block",
+      "validation",
+      "char-budget",
+      "production-keywords",
+      "anti-conflict",
+      "front-loading"
+    ],
+    "summary": "# Style Block Validation"
+  }
+]

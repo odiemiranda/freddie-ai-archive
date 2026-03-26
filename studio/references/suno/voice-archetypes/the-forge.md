@@ -1,3 +1,15 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Voice Profile | 21 | forge, deep baritone, chanting, ancient, earthy, primal |
+| Style Tags | 31 | forge, chanting, dwarven, Norse, group vocals, stomping |
+| Exclude Style | 37 | forge, negative prompt, exclude |
+| Lyrics Technique | 43 | forge, chanting, couplet rhyme, stomping rhythm, group humming, ALL CAPS |
+| Best Paired With | 81 | forge, epic folk, viking metal, celtic, cinematic fantasy |
+| Advanced Settings | 91 | forge, weirdness, style influence |
+| Tested | 97 | forge, tested, results |
+TOC -->
+
 # The Forge
 
 > Deep chanting baritone — dwarven hall resonance, Norse drinking song, ancient and earthy

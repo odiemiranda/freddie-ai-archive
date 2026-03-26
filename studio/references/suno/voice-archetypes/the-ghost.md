@@ -1,3 +1,15 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Voice Profile | 21 | ghost, high tenor, falsetto, ethereal, haunting, reverb |
+| Style Tags | 31 | ghost, ethereal, distant, reverb-drenched, falsetto, otherworldly |
+| Exclude Style | 37 | ghost, negative prompt, exclude |
+| Lyrics Technique | 43 | ghost, voice as texture, dissolution, mysterious, vocalizing, layered harmonies |
+| Best Paired With | 76 | ghost, dream pop, shoegaze, ambient, dark ambient, post-rock |
+| Advanced Settings | 86 | ghost, weirdness, style influence |
+| Tested | 93 | ghost, tested, results |
+TOC -->
+
 # The Ghost
 
 > Ethereal high tenor/falsetto — otherworldly, reverb-drenched, more texture than words

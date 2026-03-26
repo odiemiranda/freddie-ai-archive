@@ -1,3 +1,18 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Americana | 8 | americana, roots, roots rock, folk-country, heartland, fingerpicked guitar, dobro, pedal steel, fiddle |
+| Bluegrass | 25 | bluegrass, banjo, mandolin, fiddle, flatpicked guitar, upright bass, high lonesome, appalachian |
+| Classic Country | 41 | classic country, honky-tonk, nashville sound, bakersfield, telecaster, pedal steel, fiddle, shuffle, twang |
+| Country Folk | 57 | country folk, folk-country, acoustic, intimate, fingerpicked, mandolin, fiddle, pedal steel, pastoral |
+| Country Gospel | 73 | country gospel, christian country, hymn, piano, hammond organ, choir, prayerful, devotional |
+| Country Rock | 89 | country rock, roots rock, heartland rock, jangly guitar, pedal steel, slide guitar, telecaster, anthemic |
+| Honky-tonk | 105 | honky-tonk, dancehall, barroom, telecaster, pedal steel, fiddle, shuffle, two-step, rowdy, twang |
+| Outlaw Country | 121 | outlaw country, rebel, gritty, raw, rock backbeat, honky-tonk piano, defiant, whiskey |
+| Pop Country | 138 | pop country, country pop, mainstream, crossover, radio, polished, bright, upbeat, anthemic, modern |
+| Singer-songwriter | 154 | singer-songwriter, acoustic pop, folk-pop, piano ballad, intimate, confessional, emotional, fingerpicking |
+TOC -->
+
 # Country, Folk & Acoustic Genre Recipes
 
 > Country, folk, and acoustic genres - classic country, outlaw, bluegrass, Americana, honky tonk, folk, acoustic, and crossovers.

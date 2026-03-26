@@ -1,8 +1,15 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| FOCUS & STUDY MUSIC | 9 | focus, study, music, concentration |
+| Deep Focus & Concentration | 11 | deep focus, concentration, study, piano, ambient, programming, writing, pomodoro, flow state, alpha wave |
+TOC -->
+
 # Focus & Study Niche Prompts
 
 Battle-tested prompts for deep focus, concentration, and study music.
 
-> **Two Prompt Styles:** Each section includes **tagged prompts** (with `[Instrumental]`, `[Intro]`, `[No Vocals]` etc.) for maximum Suno control, and **natural-language prompts** (simple comma-separated descriptions) for a quicker, more intuitive approach.
+> **Note:** Some example prompts below use an older format with `[Intro]`/`[Build]` tags inline. The current best practice is: **Style block = sonic palette only** (genre, instruments, mood, BPM, key, texture). Structure tags go in the **Lyrics block**. Adapt these examples accordingly.
 
 ---
 

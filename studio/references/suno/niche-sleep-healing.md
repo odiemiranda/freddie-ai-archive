@@ -1,8 +1,21 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| DEEP SLEEP LAB | 9 | deep sleep, lab |
+| Delta Wave Sleep Music | 11 | delta wave, sleep, drone, binaural, lullaby, piano, ambient, night |
+| Womb Sounds & Baby Sleep | 82 | womb, baby, infant, heartbeat, white noise, pink noise, maternal |
+| Brown Noise & Pink Noise | 104 | brown noise, pink noise, tinnitus, masking, therapy, continuous |
+| SPIRITUAL & HEALING CENTER | 128 | spiritual, healing, center |
+| Healing Frequencies (432Hz, 528Hz) | 130 | healing frequencies, 432hz, 528hz, solfeggio, reiki, sound bath, chakra, trauma, grief |
+| Tibetan Singing Bowls & Gongs | 197 | tibetan, singing bowls, gongs, overtones, reverb, chakra, harmonic |
+| Nature Meditation | 226 | nature, meditation, forest, ocean, birds, waterfall, grounding |
+TOC -->
+
 # Sleep & Healing Niche Prompts
 
 Battle-tested prompts for deep sleep, healing frequencies, and spiritual music.
 
-> **Two Prompt Styles:** Each section includes **tagged prompts** (with `[Instrumental]`, `[Intro]`, `[No Vocals]` etc.) for maximum Suno control, and **natural-language prompts** (simple comma-separated descriptions) for a quicker, more intuitive approach.
+> **Note:** Some example prompts below use an older format with `[Intro]`/`[Build]` tags inline. The current best practice is: **Style block = sonic palette only** (genre, instruments, mood, BPM, key, texture). Structure tags go in the **Lyrics block**. Adapt these examples accordingly.
 
 ---
 

@@ -1,3 +1,19 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Deathcore | 8 | deathcore, extreme metal, blast beats, breakdowns, guttural, brutal, pig squeals |
+| Doom Metal | 24 | doom metal, slow, heavy, fuzz, drone, sustained riffs, crushing, bleak, funeral doom, stoner doom |
+| Groove Metal | 40 | groove metal, post-thrash, syncopated, mid-tempo, pantera, palm-muted, pinch harmonics |
+| Hair Metal | 56 | hair metal, glam metal, pop metal, 80s, arena, power ballad, shred solo, twin-lead guitars |
+| Industrial Rock | 72 | industrial rock, electronic rock, mechanical, drum machine, distorted, synth bass |
+| Metal | 89 | metal, heavy metal, thrash, death metal, black metal, power metal, distorted guitars, double-kick, blast beats |
+| Metalcore | 105 | metalcore, hardcore, breakdowns, palm-muted chugs, double-kick, screamed vocals, clean chorus |
+| Nu Metal | 121 | nu metal, alternative metal, rap metal, turntables, dj scratches, down-tuned, 7-string |
+| Progressive Metal | 137 | progressive metal, prog metal, odd time signatures, polyrhythms, virtuoso, dream theater |
+| Symphonic Metal | 154 | symphonic metal, orchestral, choir, opera, cinematic, epic, operatic soprano, neoclassical |
+| Thrash Metal | 171 | thrash metal, fast, palm-muted, double-kick, shredding, aggressive, crossover, speed |
+TOC -->
+
 # Metal Genre Recipes
 
 > Metal genres - metalcore, nu metal, thrash, doom, groove, symphonic, progressive, deathcore, industrial, and crossovers.

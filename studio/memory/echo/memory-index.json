@@ -1,0 +1,26 @@
+[
+  {
+    "file": "knowledge/gemini-suggestion-filter-rules.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "gemini",
+      "critique",
+      "filtering",
+      "trust"
+    ],
+    "summary": "## Overview"
+  },
+  {
+    "file": "knowledge/suno-generation-critique-checklist.md",
+    "created": "",
+    "type": "knowledge",
+    "tags": [
+      "suno",
+      "critique",
+      "checklist",
+      "generation-quality"
+    ],
+    "summary": "## Overview"
+  }
+]

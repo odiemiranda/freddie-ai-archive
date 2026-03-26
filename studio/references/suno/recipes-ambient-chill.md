@@ -1,3 +1,19 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Celtic New Age | 8 | celtic new age, celtic harp, tin whistle, uilleann pipes, fiddle, bodhran, serene, mystical |
+| Chillout Electronic | 24 | chillout, downtempo, ambient lounge, breakbeats, rhodes, vinyl crackle, relaxed, dreamy, trip-hop |
+| Dark Ambient | 41 | dark ambient, industrial ambient, drones, ominous, eerie, noise, granular synthesis, ritual |
+| Downtempo | 57 | downtempo, downbeat, chill-out, slow breakbeats, rhodes, tape saturation, nocturnal, introspective |
+| Drone Ambient | 73 | drone ambient, drone, sustained tones, meditative, minimal, modular synth, ebow guitar, pipe organ |
+| Lounge | 89 | lounge, cocktail, easy listening, vibraphone, muted trumpet, crooner, bossa, exotica, space-age pop |
+| Meditation Music | 105 | meditation, singing bowls, crystal bowls, gongs, binaural beats, calm, mindful, drones, healing |
+| New Age | 122 | new age, healing, ambient, synth pads, pan flute, harp, tibetan bowls, serene, spiritual |
+| Spa Music | 138 | spa music, massage, relaxation, wellness, handpan, kalimba, singing bowls, nature sounds, soothing |
+| Space Ambient | 154 | space ambient, cosmic, deep space, sequencer, modular synth, vast, weightless, berlin school |
+| Yoga Music | 170 | yoga, vinyasa, yin, savasana, handpan, harmonium, tanpura, singing bowls, mantra, kirtan |
+TOC -->
+
 # Ambient & Chill Genre Recipes
 
 > Ambient and chill genres - ambient, dark ambient, drone, chillout, downtempo, new age, meditation, space ambient, and crossovers.

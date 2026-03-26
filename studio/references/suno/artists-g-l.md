@@ -1,3 +1,27 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Gorillaz | 9 | gorillaz, virtual band, genre-blending, electronic, hip-hop |
+| Green Day | 10 | green day, pop-punk, power chords, rebellious, 90s |
+| Grimes | 11 | grimes, art pop, futuristic, ethereal vocals, electronic |
+| Halsey | 18 | halsey, alternative pop, raw vocals, electronic, confessional |
+| Harry Styles | 19 | harry styles, 70s rock, pop, british, retro, glam |
+| Hozier | 20 | hozier, folk-rock, soulful vocals, gospel, atmospheric |
+| Imagine Dragons | 28 | imagine dragons, arena rock, anthemic, electronic, drums |
+| Iron Maiden | 29 | iron maiden, heavy metal, galloping drums, twin guitars, epic |
+| IU | 30 | iu, k-pop, airy vocals, melodic, emotional |
+| J. Cole | 37 | j cole, soulful hip-hop, introspective, storytelling, boom-bap |
+| James Brown | 38 | james brown, funk, tight rhythm, horn stabs, energetic, soul |
+| Jimi Hendrix | 40 | jimi hendrix, psychedelic blues, guitar virtuoso, wah-wah, 60s |
+| Juice WRLD | 41 | juice wrld, emo rap, melodic, heartbreak, guitar samples |
+| Kanye West | 48 | kanye west, innovative hip-hop, soulful samples, gospel |
+| Kendrick Lamar | 50 | kendrick lamar, conscious hip-hop, complex flow, jazz, west coast |
+| Lady Gaga | 59 | lady gaga, theatrical pop, powerful vocals, dance, avant-garde |
+| Lana Del Rey | 60 | lana del rey, dream pop, melancholic, cinematic, vintage |
+| Led Zeppelin | 63 | led zeppelin, classic rock, heavy blues, guitar riffs |
+| Lizzo | 68 | lizzo, funk-pop, powerful vocals, empowerment, flute |
+TOC -->
+
 # Artists Reference: G-L
 
 > For usage guide and example prompts showing how to turn entries into Suno prompts, see `artists-a-f.md`.

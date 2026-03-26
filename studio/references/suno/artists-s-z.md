@@ -1,3 +1,20 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Sigur Rós | 13 | sigur rós, post-rock, bowed guitar, icelandic, ambient, crescendo |
+| SZA | 15 | sza, neo-soul r&b, vulnerable vocals, lo-fi warmth |
+| Stevie Wonder | 16 | stevie wonder, funk-soul, fender rhodes, harmonica, 70s motown |
+| Tame Impala | 22 | tame impala, psychedelic pop, swirling effects, dreamy, 70s analog |
+| Taylor Swift | 23 | taylor swift, confessional pop, catchy hooks, storytelling |
+| The Beatles | 25 | the beatles, 60s pop-rock, melodic songwriting, british invasion |
+| The Weeknd | 26 | the weeknd, dark r&b, falsetto, 80s synth-pop, atmospheric |
+| Travis Scott | 29 | travis scott, psychedelic trap, auto-tuned, ambient 808s, houston |
+| Tyler, the Creator | 31 | tyler the creator, creative hip-hop, jazz, soul samples, neo-soul |
+| Vampire Weekend | 45 | vampire weekend, indie pop, world music, preppy, afro-pop guitar |
+| X Japan | 58 | x japan, japanese metal, soaring vocals, virtuosic guitars, symphonic |
+| YOASOBI | 66 | yoasobi, anime pop, upbeat, bright melodies, j-pop |
+TOC -->
+
 # Artists Reference: S-Z
 
 > For usage guide and example prompts showing how to turn entries into Suno prompts, see `artists-a-f.md`.

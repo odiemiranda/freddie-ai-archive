@@ -1,3 +1,15 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Voice Profile | 21 | whisper, soft tenor, breathy, tender, vulnerable, ASMR |
+| Style Tags | 31 | whisper, breathy, intimate, ASMR-close, barely singing, analog warmth |
+| Exclude Style | 37 | whisper, negative prompt, exclude |
+| Lyrics Technique | 43 | whisper, breath hesitation, domestic details, no rhyme, humming, private |
+| Best Paired With | 75 | whisper, bedroom pop, lo-fi, ambient, acoustic ballad |
+| Advanced Settings | 84 | whisper, weirdness, style influence |
+| Tested | 91 | whisper, tested, results |
+TOC -->
+
 # The Whisper
 
 > Breathy soft tenor — ASMR intimacy, bedroom vulnerability, every word a secret

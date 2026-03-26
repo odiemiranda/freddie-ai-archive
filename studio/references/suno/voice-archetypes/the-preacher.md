@@ -1,3 +1,15 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Voice Profile | 21 | preacher, baritone, gospel, soulful, sermon, fervent |
+| Style Tags | 31 | preacher, baritone, passionate, sermon delivery, spiritual, conviction |
+| Exclude Style | 37 | preacher, negative prompt, exclude |
+| Lyrics Technique | 43 | preacher, building intensity, ALL CAPS, choir echo, sermon pauses, crescendo |
+| Best Paired With | 79 | preacher, gospel, soul, rock anthem, cinematic inspirational |
+| Advanced Settings | 89 | preacher, weirdness, style influence |
+| Tested | 96 | preacher, tested, results |
+TOC -->
+
 # The Preacher
 
 > Gospel-soul baritone — sermon energy, measured to fervent, raw conviction that lifts the room

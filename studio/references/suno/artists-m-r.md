@@ -1,3 +1,23 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Massive Attack | 12 | massive attack, trip-hop, dark atmospheric, bristol, cinematic bass |
+| Metallica | 14 | metallica, thrash metal, heavy riffs, aggressive |
+| Michael Jackson | 17 | michael jackson, pop, funk bass, iconic hooks, 80s |
+| Miles Davis | 18 | miles davis, jazz trumpet, cool jazz, modal |
+| Nirvana | 32 | nirvana, grunge, distorted guitars, kurt cobain, 90s seattle |
+| Norah Jones | 33 | norah jones, jazz-pop, smooth vocals, piano, intimate, late-night |
+| Nujabes | 34 | nujabes, lo-fi hip-hop, jazz samples, modal chords |
+| Olivia Rodrigo | 41 | olivia rodrigo, pop-rock, gen-z, confessional, 90s influence |
+| Pink Floyd | 50 | pink floyd, progressive rock, atmospheric, concept album |
+| Pop Smoke | 52 | pop smoke, brooklyn drill, deep voice, uk drill, 808s |
+| Portishead | 53 | portishead, trip-hop, dark atmospheric, bristol noir |
+| Prince | 55 | prince, funk-rock, falsetto, minneapolis sound, 80s |
+| Radiohead | 67 | radiohead, art rock, atmospheric, paranoid |
+| Red Hot Chili Peppers | 69 | red hot chili peppers, funk-rock, slap bass, california |
+| Rosalía | 72 | rosalía, flamenco-pop, spanish, modern production |
+TOC -->
+
 # Artists Reference: M-R
 
 > For usage guide and example prompts showing how to turn entries into Suno prompts, see `artists-a-f.md`.

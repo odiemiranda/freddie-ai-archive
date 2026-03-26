@@ -15,7 +15,7 @@ TOC -->
 
 Battle-tested prompts for lo-fi, chill, and vibe-driven niches.
 
-> **Two Prompt Styles:** Each section includes **tagged prompts** (with `[Instrumental]`, `[Intro]`, `[No Vocals]` etc.) for maximum Suno control, and **natural-language prompts** (simple comma-separated descriptions) for a quicker, more intuitive approach. Both styles work well in Suno — tagged prompts give more structural control, natural-language prompts are faster to iterate.
+> **Note:** Some example prompts below use an older format with `[Intro]`/`[Build]` tags inline. The current best practice is: **Style block = sonic palette only** (genre, instruments, mood, BPM, key, texture). Structure tags (`[Intro]`, `[Build]`, `[Hook]`) go in the **Lyrics block**. Adapt these examples accordingly.
 
 ---
 
@@ -33,7 +33,7 @@ Battle-tested prompts for lo-fi, chill, and vibe-driven niches.
 **Prompts:**
 
 ```
-[Intro] [Instrumental] Warm Rhodes electric piano, soft vinyl crackle, gentle rain ambience, C Minor, 82 BPM [Build] Add mellow boom-bap drums, warm upright bass [Hook] Classic lo-fi hip hop, dusty drums, melancholic piano chords, vinyl texture, nostalgic atmosphere [No Vocals]
+[Instrumental] Lo-fi hip hop, Rhodes electric piano, boom-bap drums, upright bass, vinyl crackle, rain ambience, C Minor, 82 BPM, dusty, nostalgic, clean mix, analog warmth [No Vocals]
 ```
 
 ```
@@ -41,7 +41,7 @@ Battle-tested prompts for lo-fi, chill, and vibe-driven niches.
 ```
 
 ```
-[Intro] Dusty vinyl crackle intro [Instrumental] Lo-fi hip hop, muted trumpet samples, soft brush drums, warm Wurlitzer keys, A Minor, 85 BPM, golden hour atmosphere, analog warmth [Fade Out] [No Vocals]
+[Instrumental] Lo-fi hip hop, muted trumpet samples, soft brush drums, Wurlitzer keys, vinyl crackle, A Minor, 85 BPM, golden hour atmosphere, analog warmth [Fade Out] [No Vocals]
 ```
 
 ```
@@ -49,7 +49,7 @@ Battle-tested prompts for lo-fi, chill, and vibe-driven niches.
 ```
 
 ```
-[Intro] Rain sounds and vinyl noise [Build] [Instrumental] Lo-fi groove, melancholic piano melody, soft snare hits, deep bass line, C Minor, 84 BPM, rainy window atmosphere, dreamy reverb [Hook] [No Vocals]
+[Instrumental] Lo-fi groove, melancholic piano, soft snare hits, deep bass line, vinyl crackle, rain sounds, C Minor, 84 BPM, rainy window atmosphere, dreamy reverb [No Vocals]
 ```
 
 ```

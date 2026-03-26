@@ -1,3 +1,18 @@
+<!-- TOC
+| Section | Line | Keywords |
+|---------|------|----------|
+| Bebop | 8 | bebop, bop, modern jazz, alto sax, trumpet, piano, walking bass, ride cymbal, fast tempo, virtuosic, improvisation |
+| Big Band | 24 | big band, swing, dance band, sax section, trumpet section, trombone, crooner, brass, walking bass, elegant |
+| Bossa Nova | 40 | bossa nova, brazilian, samba-jazz, nylon-string guitar, cool, laid-back, intimate, fingerstyle, flute |
+| Disco | 56 | disco, four-on-the-floor, dance, club, funk, strings, brass stabs, diva vocals, euphoric |
+| Funk | 72 | funk, slap bass, clavinet, groove, syncopated, chicken-scratch guitar, horn section, wah guitar |
+| Gospel | 88 | gospel, church, choir, hammond organ, piano, tambourine, handclaps, soulful, uplifting, call-and-response |
+| Jazz Fusion | 104 | jazz fusion, fusion, jazz-rock, electric guitar, rhodes, synth bass, odd-meter, polyrhythmic, virtuosic |
+| Nu Jazz | 120 | nu jazz, jazztronica, future jazz, electronic jazz, breakbeats, rhodes, vinyl crackle, turntable |
+| Smooth Jazz | 136 | smooth jazz, contemporary jazz, soprano sax, flugelhorn, rhodes, synth pads, mellow, polished |
+| Soul | 152 | soul, classic soul, memphis, stax, motown, horn section, hammond organ, rhodes, passionate |
+TOC -->
+
 # Jazz, Soul & Funk Genre Recipes
 
 > Jazz, soul, funk, and related groove genres - bebop, big band, bossa nova, disco, funk, gospel, jazz fusion, smooth jazz, and more.
