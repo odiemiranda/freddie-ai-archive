@@ -1,54 +1,74 @@
 [
   {
-    "file": "knowledge/music-cards-reference.md",
-    "created": "",
+    "file": "knowledge/suno-prompt-engineering-and-references.md",
+    "name": "Suno Prompt Engineering and References",
+    "description": "Unified syntax, best practices for Suno typed brackets, and comprehensive community-derived reference data for AI music generation.",
     "type": "knowledge",
     "tags": [
-      "reference",
-      "music-cards",
-      "audio",
-      "youtube",
       "suno",
-      "minimax"
+      "typed-brackets",
+      "instrument",
+      "energy",
+      "mood",
+      "texture",
+      "vocal-style",
+      "unified",
+      "prompt-design",
+      "clarity",
+      "performance-notation",
+      "ad-libs",
+      "genre-recipes",
+      "tempo",
+      "key",
+      "music-theory",
+      "special-techniques"
     ],
-    "summary": "# Music Cards: Audio Reference System"
+    "consolidated": "2026-03-27"
   },
   {
-    "file": "knowledge/studio-infrastructure.md",
-    "created": "",
+    "file": "knowledge/studio-architecture-and-tools.md",
+    "name": "Studio Architecture and Tools",
+    "description": "Core infrastructure, file organization, indexing, and tool execution constraints for the music studio.",
     "type": "knowledge",
     "tags": [
+      "architecture",
       "infrastructure",
-      "migration",
-      "paths",
+      "file-paths",
       "indexing",
-      "studio-tool"
-    ],
-    "summary": "# Studio Infrastructure"
-  },
-  {
-    "file": "knowledge/task-management-architecture.md",
-    "created": "",
-    "type": "knowledge",
-    "tags": [
-      "tasks",
+      "tools",
       "obsidian",
+      "mcp",
+      "claude-code",
       "penny",
-      "architecture"
+      "music-cards",
+      "tasks"
     ],
-    "summary": "# Task Management Architecture"
+    "consolidated": "2026-03-27"
   },
   {
-    "file": "knowledge/workflow-quality-gates.md",
-    "created": "",
+    "file": "knowledge/workflow-quality-and-knowledge-management.md",
+    "name": "Workflow, Quality Control, and Knowledge Management",
+    "description": "Guidelines for agent critique loops, metatag management, strategic generation approaches, and best practices for managing knowledge, especially concerning LLM token limits.",
     "type": "knowledge",
     "tags": [
       "workflow",
       "quality-gate",
-      "gemini",
       "critique",
-      "jam-skill"
+      "metatags",
+      "production",
+      "gemini",
+      "minimax",
+      "parallel-processing",
+      "jam-skill",
+      "tala",
+      "rune",
+      "knowledge-management",
+      "consolidation",
+      "llm",
+      "token-limits",
+      "data-integrity",
+      "best-practices"
     ],
-    "summary": "# Workflow Quality Gates"
+    "consolidated": "2026-03-27"
   }
 ]

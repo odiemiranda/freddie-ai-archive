@@ -13,11 +13,11 @@ When diagnosing muddled or low-quality Suno output, compare the failing Style bl
 
 1. **Style block completeness**: Style block needs sonic palette + instrument behavior + dynamic control. Bare instrument names without behavior hints ("shamisen" instead of "shamisen melodic phrases") cause Suno to guess — leading to chaos. But NO structure tags (`[Intro]`, `[Build]`) — those go in Lyrics.
 2. **Support instrument hierarchy**: Support instruments need subordination in BOTH Style ("harp low-register pad chords as background warmth") AND Lyrics brackets ("far behind", "no melody of its own"). Without hierarchy cues, Suno gives all instruments equal presence and they compete.
-3. **Exclude Breadth**: Clean tracks typically use 10-12 exclude items. Narrow lists (5-6) allow Suno to "bleed in" unwanted instruments or textures. Use neutral instrument labels (e.g., "harp" not "celtic harp") to avoid genre-association bleed.
+3. **Exclude Breadth**: With typed `[Instrument:]` brackets in Lyrics, Exclude Style can be minimal or empty — positive per-section instructions replace negative constraints. Only add dealbreakers. Without typed brackets, fall back to ~14 focused instrument excludes.
 4. **Mood Bucket Diversity**: Ensure mood descriptors aren't all from the same energy category (e.g., all low-energy terms like "foggy, intimate, muted"). Use contrast: Energy + Temperature + Time (e.g., "breezy, upbeat, warm").
 5. **Texture Budget**: Limit to a maximum of 2 non-overlapping texture/warmth terms. Redundant terms (e.g., "tape warmth" + "analog warmth") muddy the signal.
 6. **Verb Type**: Use directive verbs (e.g., "leads", "plucks", "drives") rather than passive or poetic ones (e.g., "floating", "weaving") to provide positional information.
-7. **Genre Clarity**: Use rhythm templates (e.g., "Reggae fusion") over ambiguous descriptors (e.g., "Lo-fi jazzhop").
+7. **Genre Clarity**: Use simple rhythm templates (e.g., "Jazz", "Reggae") over compound labels (e.g., "Jazz fusion", "Lo-fi jazzhop"). Simpler genre labels = cleaner output.
 
 **Why**: Analysis of "Morning Market" vs "Tavern" tracks confirmed that structural factors are the primary cause of muddled output. Applying these fixes improved generation quality from ~60% to consistent cleanliness.
 

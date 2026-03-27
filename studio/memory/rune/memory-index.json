@@ -1,21 +1,43 @@
 [
   {
-    "file": "knowledge/language-and-authenticity.md",
-    "created": "",
+    "file": "knowledge/lyrics-authenticity-and-quality.md",
+    "name": "Lyrics Authenticity and Quality",
+    "description": "Guidelines for ensuring authentic, original, and high-quality lyrical content, including non-English vocabulary, brand avoidance, and AI-slop detection.",
     "type": "knowledge",
     "tags": [
       "lyrics",
-      "non-english",
       "authenticity",
+      "non-english",
       "brands",
       "slang",
-      "tagalog"
+      "tagalog",
+      "ai-slop",
+      "clichés",
+      "imagery",
+      "quality-control"
     ],
-    "summary": "## Overview"
+    "consolidated": "2026-03-27"
   },
   {
-    "file": "knowledge/vocal-architecture-and-phrasing.md",
-    "created": "",
+    "file": "knowledge/suno-lyrics-technical-guidelines.md",
+    "name": "Suno Lyrics Technical Guidelines",
+    "description": "Guidelines for using structural and mood tags in Suno lyrics, including reliability and usage limits for predictable AI outputs.",
+    "type": "knowledge",
+    "tags": [
+      "lyrics",
+      "suno",
+      "structure-tags",
+      "mood-tags",
+      "reliability",
+      "constraints",
+      "emotion"
+    ],
+    "consolidated": "2026-03-27"
+  },
+  {
+    "file": "knowledge/vocal-performance-lyrics.md",
+    "name": "Vocal Performance Lyrics",
+    "description": "Rules for matching syllable density and word choice to vocal register and phonetic rendering to optimize vocal performance in generated music.",
     "type": "knowledge",
     "tags": [
       "lyrics",
@@ -26,6 +48,6 @@
       "register",
       "accents"
     ],
-    "summary": "## Overview"
+    "consolidated": "2026-03-27"
   }
 ]

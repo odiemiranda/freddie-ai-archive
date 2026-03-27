@@ -36,6 +36,7 @@ connected:
 | 1 | [The Iron and the Word](./the-iron-and-the-word.md) | Narrative (Commander-led verses, Forge-led choruses) | Wave — measured authority rises into hall-shaking chant, falls to spoken gravity, rises again | Moderate |
 | 2 | [Hammer Never Asks](./hammer-never-asks.md) | Repetition-heavy (Forge-dominant, Commander in the turn) | Wave — chanting mantra builds and releases, Commander breaks the rhythm at the bridge | Moderate-Low |
 | 3 | [Two Voices at the Gate](./two-voices-at-the-gate.md) | Conversational (Commander-dominant, Forge as texture) | Wave — spoken authority builds, Forge chanting swells underneath, both converge at the end | Low-Moderate |
+| 4 | [The Oak and the Flame](./the-oak-and-the-flame.md) | Narrative (Commander-led verses, winter march specificity) | Wave — tactical report builds into mythic chant, drops to vulnerable bridge confession, erupts for final chorus | Moderate |
 
 ---
 
@@ -46,6 +47,8 @@ connected:
 2. **Hammer Never Asks** — A forge-chant built on a single repeated anchor phrase. The Forge dominates with rhythmic couplets and group chanting that builds in layers. The Commander appears only at the bridge — a single spoken turn that reframes everything. Repetition is the engine; the Commander's silence makes his arrival hit harder.
 
 3. **Two Voices at the Gate** — The Commander tells a story in measured, almost-whispered lines. The Forge is texture — humming beneath verses, chanting single lines between stanzas. Their roles reverse only in the final chorus, where the Forge takes the lead and the Commander joins the chant. The wave peaks late.
+
+4. **The Oak and the Flame** — A winter march narrative. The Commander recounts a specific night — stolen oak, frozen hands, one rope bridge — with tactical precision that makes the scene feel remembered, not invented. The Forge transforms his field report into a mythic chorus about flame and snow. The bridge volta: the man who kept everyone moving almost let the fire die, but a boy was watching.
 
 ---
 

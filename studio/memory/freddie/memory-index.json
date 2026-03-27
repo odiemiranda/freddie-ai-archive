@@ -1,7 +1,8 @@
 [
   {
     "file": "knowledge/knowledge_discord_workflow.md",
-    "created": "",
+    "name": "Discord Interaction and Workflow",
+    "description": "Communication style, progress notifications, and state management for Discord integration",
     "type": "knowledge",
     "tags": [
       "discord",
@@ -10,49 +11,24 @@
       "configuration",
       "path"
     ],
-    "summary": "## Communication Style"
+    "consolidated": "2026-03-28"
   },
   {
-    "file": "knowledge/knowledge_memory_lifecycle.md",
-    "created": "",
+    "file": "knowledge/knowledge_orchestrator_pattern.md",
+    "name": "Orchestrator Pattern for Iterative Skills",
+    "description": "Best practices for implementing and documenting the orchestrator pattern to manage context in iterative or variation-loop skills.",
     "type": "knowledge",
     "tags": [
-      "memory",
-      "consolidation",
-      "inbox",
-      "knowledge",
-      "archive",
-      "claude-mem"
+      "architecture",
+      "context_management",
+      "orchestrator_pattern",
+      "subagents",
+      "skill_design",
+      "documentation",
+      "workflow_management",
+      "optimization",
+      "skill_categorization"
     ],
-    "summary": "## Memory Hierarchy"
-  },
-  {
-    "file": "knowledge/knowledge_suno_precision.md",
-    "created": "",
-    "type": "knowledge",
-    "tags": [
-      "suno",
-      "style-block",
-      "lyrics",
-      "music-cards",
-      "production",
-      "audio-analysis"
-    ],
-    "summary": "## The Style vs. Lyrics Split (Critical)"
-  },
-  {
-    "file": "knowledge/knowledge_system_architecture.md",
-    "created": "",
-    "type": "knowledge",
-    "tags": [
-      "environment",
-      "windows",
-      "timezone",
-      "backup",
-      "sdk",
-      "gemini",
-      "minimax"
-    ],
-    "summary": "## Environment & Schedule"
+    "consolidated": "2026-03-28"
   }
 ]
