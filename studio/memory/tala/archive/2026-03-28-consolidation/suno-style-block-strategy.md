@@ -24,7 +24,7 @@ Adhere to the character budget above. Prioritize essential global elements and r
 
 ### How to apply
 Ensure these essential elements are always present in your Style block:
--   Genre (single word preferred, see `suno-prompt-engineering-principles.md` for nuance)
+-   Genre (single word preferred, see `suno-prompt-principles.md` for nuance)
 -   Key, BPM
 -   "clean mix, separated instruments" (mandatory — helps audio clarity)
 -   `[Instrumental]` and `[No Vocals]` tags (if applicable)
@@ -52,4 +52,4 @@ When every section has `[Instrument:]` typed brackets in the Lyrics, Suno has po
 Only add dealbreakers (e.g., auto-tune for raw vocal, electronic for acoustic genres). Otherwise, leave the Exclude Style block empty. Do not add abstract terms like: `aggressive, uptempo, crescendo, dramatic build, drop, bright melody, distortion`.
 
 ---
-*Consolidated from: `suno-style-block-strategy.md`*
+*Consolidated from: `suno-style-block-guide.md`, `20260327-220429-when-comprehensive-per-section-control-i-2.md`*

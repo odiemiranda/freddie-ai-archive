@@ -1,9 +1,9 @@
 ---
 name: Suno Prompt Engineering and References
-description: Unified syntax, best practices for Suno typed brackets, and comprehensive community-derived reference data for AI music generation.
+description: Unified syntax, best practices, and advanced techniques for Suno AI music generation, including new insights on style block length, genre normalization, and variation control.
 type: knowledge
 agent: shared
-tags: [suno, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, prompt-design, clarity, performance-notation, ad-libs, genre-recipes, tempo, key, music-theory, special-techniques]
+tags: [suno, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, prompt-design, clarity, performance-notation, ad-libs, genre-recipes, tempo, key, music-theory, special-techniques, char-budget, prompt-optimization, variation, control, weight, suno-interpretation, gradient, fine-tuning, genre-normalization, lo-fi-jazz, nuance]
 ---
 
 # Suno Prompt Engineering and References
@@ -27,17 +27,24 @@ When describing instruments, especially support instruments, use specific instru
 **Why:** Improves clarity and generation quality, aligning with critic feedback for specificity.
 **How to apply:** Replace generic instrument descriptions with precise names in `[Instrument:]` tags.
 
+## Genre Specificity and Normalization
+While single-word genres are generally preferred for clarity, certain two-word, commonly understood sub-genres can be effectively used in Style Blocks.
+
+**Why:** Improves clarity and generation quality while acknowledging Suno's ability to interpret coherent stylistic entities beyond single-word tags.
+**How to apply:** Prioritize single-word genres. For specific, well-established sub-genres (e.g., 'lo-fi jazz'), use the two-word descriptor if it accurately conveys the desired style.
+
 ## Section Order
 Follow this structure for optimal results:
 Structure tag → Energy → Mood → Vocal Style (if vocal) → Instrument → Texture → Lyrics (if vocal)
 
 ## Style Block Strategy
-The Style Block should be ultra-lean, typically 75-120 characters. It should include genre, BPM, key, vocal character (if vocal), and overall mood. All specific detail for sections should be placed within typed brackets in the Lyrics section.
+The Style Block should be ultra-lean, typically targeting 75-120 characters. It should include genre, BPM, key, vocal character (if vocal), and overall mood. All specific detail for sections should be placed within typed brackets in the Lyrics section.
 
-**Why:** Focuses the initial generation on core characteristics while allowing granular control within the lyrics.
+**Why:** Focuses the initial generation on core characteristics while allowing granular control within the lyrics. Allows for a slightly expanded Style Block when per-section control is robust.
 **How to apply:**
+- **Character Range:** Target 75-120 characters. However, when comprehensive per-section control is achieved via typed brackets in Lyrics, the Style Block can effectively operate up to ~150 characters without degrading audio quality, provided it remains lean on global elements and avoids redundancy with Lyrics.
 - **Instrumental Tracks:** Lean Style Block + ensemble pipe `[Instrument:]` tags within Lyrics.
-- **Vocal Tracks:** Ultra-lean Style Block (~75-120 chars) + rich, typed bracket `[Energy:]`, `[Vocal Style:]`, `[Instrument:]`, `[Texture:]`, `[Mood:]` tags within Lyrics.
+- **Vocal Tracks:** Ultra-lean Style Block + rich, typed bracket `[Energy:]`, `[Vocal Style:]`, `[Instrument:]`, `[Texture:]`, `[Mood:]` tags within Lyrics.
 
 ## Exclude Style
 Keep the Exclude Style minimal or empty. Per-section `[Instrument:]` tags provide positive constraints that effectively replace the need for extensive excludes.
@@ -75,9 +82,18 @@ Defined formats for advanced vocal arrangements, including duet and call-and-res
 **Why:** Enables the creation of more complex vocal arrangements like duets and call-and-response patterns, expanding creative possibilities.
 **How to apply:** Follow the specified formats for duet and call-and-response structures in vocal prompts.
 
+## Variation Control: Weight (W) and Suno Interpretation (SI)
+The 'Weight' (W) and 'Suno Interpretation' (SI) parameters offer precise control over the output spectrum of musical variations.
+
+**Why:** Provides a powerful method for generating a spectrum of musical variations, effectively controlling the balance between adherence to the prompt (tightness) and creative interpretation (e.g., groove vs. BGM focus).
+**How to apply:** Adjust W and SI parameters in a deliberate gradient across multiple variations to explore a desired spectrum of tightness vs. creative interpretation. For example, use a gradient from looser (higher SI, lower W) to tighter (lower SI, higher W) to control the balance between groove and background music focus.
+
 **Consolidated from:**
 - `suno-prompt-engineering.md`
 - `community-reference-session.md`
 - `suno-ensemble-layer-syntax.md`
 - `typed-brackets-vocal-strategy.md`
 - `20260327-040817-when-describing-instruments-especially-s-2.md`
+- `20260327-220429-when-comprehensive-per-section-control-i-2.md`
+- `20260328-025517-adjusting-the-weight-w-and-suno-interpre-2.md`
+- `20260328-025517-while-single-word-genres-are-generally-p-3.md`

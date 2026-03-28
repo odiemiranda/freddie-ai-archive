@@ -20,9 +20,9 @@ When using Large Language Models (LLMs) for structured, multi-file output, it is
 **Lesson:** Always verify the output count matches the plan when using LLMs for structured multi-file output. Token limits cause silent truncation.
 
 ## Gemini Critique Loops
-Tri-critic loops are implemented for Tala (Step 8c: Gemini → MiniMax → Grok) and Rune (Step 8c: Gemini → MiniMax → Grok) to identify issues like instrument overloads, frequency clashes, narrative clichés, and subtle audio quality issues stemming from genre archetypes.
+Tri-critic loops are implemented for Tala (Step 8c: Gemini → MiniMax → Grok) and Rune (Step 8c: Gemini → MiniMax → Grok) to identify issues like instrument overloads, frequency clashes, and narrative clichés.
 
-**Why:** Ensures higher quality outputs and prevents common generation pitfalls, including those specific to genre interpretation.
+**Why:** Ensures higher quality outputs and prevents common generation pitfalls.
 **How to apply:** When spawning an agent, you MUST include an explicit instruction in the prompt: *"After building each Style block, run the Gemini critique loop (step 8b)"* or *"Execute the Gemini critique loop for each variation."*
 - **Limits:** Up to 3 passes per variation.
 - **Exit Criteria:** Early exit if no high-confidence issues remain.
@@ -53,4 +53,3 @@ The creation of a `/jam` skill (automated chaining of Rune → Tala/Sol) is **in
 - `knowledge-management-best-practices.md`
 - `consolidation-token-limit-lesson.md`
 - `workflow-and-quality-control.md`
-- `20260329-002043-specific-genre-archetypes-can-introduce--1.md`

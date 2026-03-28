@@ -2,7 +2,7 @@
   {
     "file": "knowledge/studio-architecture-and-tools.md",
     "name": "Studio Architecture and Tools",
-    "description": "Core infrastructure, file organization, indexing, and tool execution constraints for the music studio.",
+    "description": "Core infrastructure, file organization, indexing, and tool execution constraints for the music studio, including practical insights for Music Cards.",
     "type": "knowledge",
     "tags": [
       "architecture",
@@ -15,14 +15,20 @@
       "claude-code",
       "penny",
       "music-cards",
-      "tasks"
+      "tasks",
+      "fusion",
+      "shamisen",
+      "celtic",
+      "harp",
+      "weirdness",
+      "style-influence"
     ],
-    "consolidated": "2026-03-28"
+    "consolidated": "2026-03-29"
   },
   {
     "file": "knowledge/suno-prompt-engineering-and-references.md",
     "name": "Suno Prompt Engineering and References",
-    "description": "Unified syntax, best practices, and advanced techniques for Suno AI music generation, including new insights on style block length, genre normalization, and variation control.",
+    "description": "Unified syntax, best practices, and advanced techniques for Suno AI music generation, including new insights on style block length, genre normalization, vocal style, arrangement, and common pitfalls.",
     "type": "knowledge",
     "tags": [
       "suno",
@@ -52,9 +58,16 @@
       "fine-tuning",
       "genre-normalization",
       "lo-fi-jazz",
-      "nuance"
+      "nuance",
+      "critic-feedback",
+      "prompt-refinement",
+      "instrumentation",
+      "arrangement",
+      "frequency-stacking",
+      "organ",
+      "audio-quality"
     ],
-    "consolidated": "2026-03-28"
+    "consolidated": "2026-03-29"
   },
   {
     "file": "knowledge/workflow-quality-and-knowledge-management.md",
@@ -80,6 +93,6 @@
       "data-integrity",
       "best-practices"
     ],
-    "consolidated": "2026-03-28"
+    "consolidated": "2026-03-29"
   }
 ]

@@ -1,9 +1,9 @@
 ---
 name: Suno Prompt Engineering and References
-description: Unified syntax, best practices, and advanced techniques for Suno AI music generation, including new insights on style block length, genre normalization, vocal style, arrangement, and common pitfalls.
+description: Unified syntax, best practices, and advanced techniques for Suno AI music generation, including new insights on style block length, genre normalization, vocal style, and arrangement.
 type: knowledge
 agent: shared
-tags: [suno, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, prompt-design, clarity, performance-notation, ad-libs, genre-recipes, tempo, key, music-theory, special-techniques, char-budget, prompt-optimization, variation, control, weight, suno-interpretation, gradient, fine-tuning, genre-normalization, lo-fi-jazz, nuance, critic-feedback, prompt-refinement, instrumentation, arrangement, frequency-stacking, organ, audio-quality]
+tags: [suno, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, prompt-design, clarity, performance-notation, ad-libs, genre-recipes, tempo, key, music-theory, special-techniques, char-budget, prompt-optimization, variation, control, weight, suno-interpretation, gradient, fine-tuning, genre-normalization, lo-fi-jazz, nuance, critic-feedback, prompt-refinement, instrumentation, arrangement, frequency-stacking, organ]
 ---
 
 # Suno Prompt Engineering and References
@@ -44,9 +44,6 @@ While single-word genres are generally preferred for clarity, certain two-word, 
 
 **Why:** Improves clarity and generation quality while acknowledging Suno's ability to interpret coherent stylistic entities beyond single-word tags and its "genre gravity."
 **How to apply:** Prioritize single-word genres. For specific, well-established sub-genres (e.g., 'lo-fi jazz'), use the two-word descriptor if it accurately conveys the desired style. Be aware that genre tags can subtly influence instrumentation.
-
-### Genre Archetype Pitfalls
-Specific genre archetypes can introduce subtle audio quality issues like 'instrument bleed' due to Suno's interpretation. Critics are effective at pinpointing these genre-specific pitfalls, necessitating prompt adjustments such as exclusion or more precise instrument control. For example, the 'Jazz Lounge' descriptor has been observed to lead to undesirable 'instrument bleed'.
 
 ## Section Order
 Follow this structure for optimal results:
@@ -115,4 +112,3 @@ The 'Weight' (W) and 'Suno Interpretation' (SI) parameters offer precise control
 - `20260328-110500-music-card-mixing-v1.md`
 - `20260328-221905-for-vocal-style-descriptors-in-suno-proj-2.md`
 - `20260328-221905-organs-can-cause-frequency-stacking-issu-3.md`
-- `20260329-002043-specific-genre-archetypes-can-introduce--1.md`
