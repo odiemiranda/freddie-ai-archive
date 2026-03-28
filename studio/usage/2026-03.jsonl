@@ -234,3 +234,16 @@
 {"ts":"2026-03-27T18:51:45.529Z","provider":"gemini","model":"gemini-2.5-flash","caller":"tala-gemini","inputTokens":260,"outputTokens":37,"costUsd":0}
 {"ts":"2026-03-27T18:52:07.466Z","provider":"minimax","model":"MiniMax-M2.7","caller":"tala-minimax","inputTokens":293,"outputTokens":1569,"costUsd":0.001971}
 {"ts":"2026-03-27T18:55:17.904Z","provider":"gemini","model":"gemini-2.5-flash","caller":"reflect-tala","inputTokens":4669,"outputTokens":633,"costUsd":0}
+{"ts":"2026-03-27T19:58:21.714Z","provider":"gemini","model":"gemini-2.5-flash","caller":"musiccard","inputTokens":910,"outputTokens":551,"costUsd":0}
+{"ts":"2026-03-27T20:01:33.275Z","provider":"gemini","model":"gemini-2.5-flash","caller":"musiccard","inputTokens":1007,"outputTokens":640,"costUsd":0}
+{"ts":"2026-03-27T20:05:21.340Z","provider":"gemini","model":"gemini-2.5-flash","caller":"musiccard","inputTokens":965,"outputTokens":635,"costUsd":0}
+{"ts":"2026-03-27T20:08:05.001Z","provider":"gemini","model":"gemini-2.5-flash","caller":"musiccard","inputTokens":983,"outputTokens":574,"costUsd":0}
+{"ts":"2026-03-27T20:41:04.387Z","provider":"gemini","model":"gemini-2.5-flash","caller":"musiccard","inputTokens":986,"outputTokens":559,"costUsd":0}
+{"ts":"2026-03-27T20:47:49.131Z","provider":"gemini","model":"gemini-2.5-flash","caller":"musiccard","inputTokens":986,"outputTokens":542,"costUsd":0}
+{"ts":"2026-03-27T21:09:27.111Z","provider":"gemini","model":"gemini-2.5-flash","caller":"musiccard","inputTokens":880,"outputTokens":490,"costUsd":0}
+{"ts":"2026-03-27T21:10:50.951Z","provider":"gemini","model":"gemini-2.5-flash","caller":"musiccard","inputTokens":880,"outputTokens":515,"costUsd":0}
+{"ts":"2026-03-27T21:13:34.074Z","provider":"gemini","model":"gemini-2.5-flash","caller":"musiccard","inputTokens":882,"outputTokens":536,"costUsd":0}
+{"ts":"2026-03-27T23:45:02.844Z","provider":"gemini","model":"gemini-2.5-flash","caller":"reflect-freddie","inputTokens":1609,"outputTokens":416,"costUsd":0}
+{"ts":"2026-03-27T23:45:53.875Z","provider":"gemini","model":"gemini-2.5-flash","caller":"consolidate-memory","inputTokens":5680,"outputTokens":5363,"costUsd":0}
+{"ts":"2026-03-27T23:46:27.986Z","provider":"gemini","model":"gemini-2.5-flash","caller":"consolidate-memory","inputTokens":4300,"outputTokens":4205,"costUsd":0}
+{"ts":"2026-03-28T03:26:35.449Z","provider":"gemini","model":"gemini-2.5-flash","caller":"consolidate-memory","inputTokens":1911,"outputTokens":2108,"costUsd":0}

@@ -30,5 +30,35 @@
       "skill_categorization"
     ],
     "consolidated": "2026-03-28"
+  },
+  {
+    "file": "knowledge/knowledge_tool_execution_strategy.md",
+    "name": "Tool Execution Strategy",
+    "description": "Guidelines for prioritizing CLI-first tool calls for enhanced visibility and debuggability.",
+    "type": "knowledge",
+    "tags": [
+      "tool_execution",
+      "user_preference",
+      "debuggability",
+      "architecture",
+      "workflow"
+    ],
+    "consolidated": "2026-03-28"
+  },
+  {
+    "file": "knowledge/knowledge_windows_tool_development_notes.md",
+    "name": "Windows Tool Development Notes",
+    "description": "Specific technical considerations and best practices for developing tools on Windows, particularly concerning process management and PowerShell integration.",
+    "type": "knowledge",
+    "tags": [
+      "windows",
+      "powershell",
+      "nodejs",
+      "tool-development",
+      "process-management",
+      "debugging",
+      "obsidian"
+    ],
+    "consolidated": "2026-03-28"
   }
 ]

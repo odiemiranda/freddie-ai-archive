@@ -1,8 +1,28 @@
 [
   {
+    "file": "knowledge/studio-architecture-and-tools.md",
+    "name": "Studio Architecture and Tools",
+    "description": "Core infrastructure, file organization, indexing, and tool execution constraints for the music studio.",
+    "type": "knowledge",
+    "tags": [
+      "architecture",
+      "infrastructure",
+      "file-paths",
+      "indexing",
+      "tools",
+      "obsidian",
+      "mcp",
+      "claude-code",
+      "penny",
+      "music-cards",
+      "tasks"
+    ],
+    "consolidated": "2026-03-28"
+  },
+  {
     "file": "knowledge/suno-prompt-engineering-and-references.md",
     "name": "Suno Prompt Engineering and References",
-    "description": "Unified syntax, best practices for Suno typed brackets, and comprehensive community-derived reference data for AI music generation.",
+    "description": "Unified syntax, best practices, and advanced techniques for Suno AI music generation, including new insights on style block length, genre normalization, and variation control.",
     "type": "knowledge",
     "tags": [
       "suno",
@@ -21,29 +41,20 @@
       "tempo",
       "key",
       "music-theory",
-      "special-techniques"
+      "special-techniques",
+      "char-budget",
+      "prompt-optimization",
+      "variation",
+      "control",
+      "weight",
+      "suno-interpretation",
+      "gradient",
+      "fine-tuning",
+      "genre-normalization",
+      "lo-fi-jazz",
+      "nuance"
     ],
-    "consolidated": "2026-03-27"
-  },
-  {
-    "file": "knowledge/studio-architecture-and-tools.md",
-    "name": "Studio Architecture and Tools",
-    "description": "Core infrastructure, file organization, indexing, and tool execution constraints for the music studio.",
-    "type": "knowledge",
-    "tags": [
-      "architecture",
-      "infrastructure",
-      "file-paths",
-      "indexing",
-      "tools",
-      "obsidian",
-      "mcp",
-      "claude-code",
-      "penny",
-      "music-cards",
-      "tasks"
-    ],
-    "consolidated": "2026-03-27"
+    "consolidated": "2026-03-28"
   },
   {
     "file": "knowledge/workflow-quality-and-knowledge-management.md",
@@ -69,6 +80,6 @@
       "data-integrity",
       "best-practices"
     ],
-    "consolidated": "2026-03-27"
+    "consolidated": "2026-03-28"
   }
 ]

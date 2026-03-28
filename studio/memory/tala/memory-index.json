@@ -1,44 +1,7 @@
 [
   {
-    "file": "knowledge/suno-prompt-fundamentals.md",
-    "name": "suno-prompt-fundamentals",
-    "description": "Core principles for clean, high-signal prompt design, complexity limits, genre precision, quality expectations, and workflow feedback for Suno.",
-    "type": "knowledge",
-    "tags": [
-      "suno",
-      "prompt-design",
-      "complexity",
-      "genre",
-      "quality",
-      "reroll",
-      "multi-critic",
-      "llm-feedback",
-      "iteration",
-      "signal-clarity"
-    ],
-    "consolidated": "2026-03-27"
-  },
-  {
-    "file": "knowledge/suno-style-block-guide.md",
-    "name": "suno-style-block-guide",
-    "description": "Tested Style block construction for ALL tracks — lean character targets, essential elements, what to avoid, and minimal exclude strategy.",
-    "type": "knowledge",
-    "tags": [
-      "suno",
-      "style-block",
-      "char-budget",
-      "production",
-      "lean",
-      "unified",
-      "exclude",
-      "instruments",
-      "hallucination"
-    ],
-    "consolidated": "2026-03-27"
-  },
-  {
-    "file": "knowledge/suno-lyrics-and-structure-framework.md",
-    "name": "suno-lyrics-and-structure-framework",
+    "file": "knowledge/suno-lyrics-and-structure.md",
+    "name": "suno-lyrics-and-structure",
     "description": "Unified typed bracket framework for ALL Suno Lyrics, providing section-level control over instrumentation, energy, mood, texture, vocal style, and advanced structural/performance tags.",
     "type": "knowledge",
     "tags": [
@@ -58,6 +21,62 @@
       "performance-notation",
       "ad-libs"
     ],
-    "consolidated": "2026-03-27"
+    "consolidated": "2026-03-28"
+  },
+  {
+    "file": "knowledge/suno-style-block-strategy.md",
+    "name": "suno-style-block-strategy",
+    "description": "Tested Style block construction for ALL tracks — lean character targets, essential elements, what to avoid, and minimal exclude strategy.",
+    "type": "knowledge",
+    "tags": [
+      "suno",
+      "style-block",
+      "char-budget",
+      "production",
+      "lean",
+      "unified",
+      "exclude",
+      "instruments",
+      "hallucination",
+      "prompt-optimization"
+    ],
+    "consolidated": "2026-03-28"
+  },
+  {
+    "file": "knowledge/suno-prompt-principles.md",
+    "name": "suno-prompt-principles",
+    "description": "Core principles for clean, high-signal prompt design, complexity limits, genre precision, and quality expectations for Suno.",
+    "type": "knowledge",
+    "tags": [
+      "suno",
+      "prompt-design",
+      "complexity",
+      "genre",
+      "quality",
+      "reroll",
+      "iteration",
+      "signal-clarity"
+    ],
+    "consolidated": "2026-03-28"
+  },
+  {
+    "file": "knowledge/suno-workflow-and-control.md",
+    "name": "suno-workflow-and-control",
+    "description": "Advanced workflow patterns, parameter tuning, agent autonomy, and multi-critic reconciliation for Suno prompt engineering.",
+    "type": "knowledge",
+    "tags": [
+      "suno",
+      "workflow",
+      "orchestrator-pattern",
+      "variation",
+      "control",
+      "weight",
+      "suno-interpretation",
+      "critic-reconciliation",
+      "llm-feedback",
+      "agent-autonomy",
+      "goal-priority"
+    ],
+    "consolidated": "2026-03-28"
   }
 ]
