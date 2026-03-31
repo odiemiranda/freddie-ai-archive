@@ -23,7 +23,7 @@
       "weirdness",
       "style-influence"
     ],
-    "consolidated": "2026-03-29"
+    "consolidated": "2026-03-30"
   },
   {
     "file": "knowledge/suno-prompt-engineering-and-references.md",
@@ -65,9 +65,14 @@
       "arrangement",
       "frequency-stacking",
       "organ",
-      "audio-quality"
+      "audio-quality",
+      "sfx",
+      "atmosphere",
+      "subordination",
+      "multi-layered-control",
+      "platform-behavior"
     ],
-    "consolidated": "2026-03-29"
+    "consolidated": "2026-03-30"
   },
   {
     "file": "knowledge/workflow-quality-and-knowledge-management.md",
@@ -93,6 +98,22 @@
       "data-integrity",
       "best-practices"
     ],
-    "consolidated": "2026-03-29"
+    "consolidated": "2026-03-30"
+  },
+  {
+    "file": "knowledge/agent-communication-and-identity.md",
+    "name": "Agent Communication and Identity",
+    "description": "Guidelines for naming internal agents and entities, and establishing consistent communication patterns for clear attribution.",
+    "type": "knowledge",
+    "tags": [
+      "user_preference",
+      "naming_convention",
+      "persona",
+      "communication",
+      "agent_voice",
+      "output_formatting",
+      "clarity"
+    ],
+    "consolidated": "2026-03-30"
   }
 ]

@@ -1,0 +1,49 @@
+[
+  {
+    "file": "knowledge/mccall-agent-capabilities.md",
+    "name": "mccall Agent Capabilities",
+    "description": "Details mccall's ability to develop and integrate new skills, including structured analysis and task management.",
+    "type": "knowledge",
+    "tags": [
+      "agent-capabilities",
+      "skill-development",
+      "workflow-management",
+      "structured-analysis",
+      "task-management",
+      "workflow-design",
+      "execution-planning",
+      "tech-review",
+      "data-extraction"
+    ],
+    "consolidated": "2026-03-31"
+  },
+  {
+    "file": "knowledge/mccall-knowledge-and-artifact-management.md",
+    "name": "mccall Knowledge and Artifact Management",
+    "description": "Describes the standardized system for managing project documentation, artifacts, and decisions.",
+    "type": "knowledge",
+    "tags": [
+      "knowledge-management",
+      "document-management",
+      "project-management",
+      "naming-conventions",
+      "version-control",
+      "decision-logging",
+      "brain.db",
+      "workflow-process"
+    ],
+    "consolidated": "2026-03-31"
+  },
+  {
+    "file": "knowledge/mccall-user-collaboration-preferences.md",
+    "name": "mccall User Collaboration Preferences",
+    "description": "Outlines the user's preference for active collaboration in workflow design.",
+    "type": "knowledge",
+    "tags": [
+      "user-preference",
+      "collaboration",
+      "dev-workflow"
+    ],
+    "consolidated": "2026-03-31"
+  }
+]

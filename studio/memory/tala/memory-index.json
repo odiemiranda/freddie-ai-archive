@@ -1,8 +1,35 @@
 [
   {
-    "file": "knowledge/suno-prompt-construction-guide.md",
-    "name": "suno-prompt-construction-guide",
-    "description": "Comprehensive guide for building Suno prompts, detailing the unified typed bracket framework for Lyrics, Style block construction, character budgets, performance notation, and advanced multi-layered control techniques for instrumentation and sonic characteristics.",
+    "file": "knowledge/suno-agent-workflow-and-control.md",
+    "name": "suno-agent-workflow-and-control",
+    "description": "Advanced workflow patterns, parameter tuning, validated agent autonomy in multi-critic reconciliation, phase-gated skill execution, and effective lyrics input for Suno prompt engineering.",
+    "type": "knowledge",
+    "tags": [
+      "suno",
+      "workflow",
+      "orchestrator-pattern",
+      "variation",
+      "control",
+      "weight",
+      "suno-interpretation",
+      "critic-reconciliation",
+      "llm-feedback",
+      "agent-autonomy",
+      "goal-priority",
+      "lyrics-input",
+      "user-intent",
+      "skill-design",
+      "llm-integration",
+      "gemini",
+      "context-flags",
+      "prompt-refinement"
+    ],
+    "consolidated": "2026-03-31"
+  },
+  {
+    "file": "knowledge/suno-prompt-design-guide.md",
+    "name": "suno-prompt-design-guide",
+    "description": "Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, and core prompt engineering principles for clarity and genre precision.",
     "type": "knowledge",
     "tags": [
       "suno",
@@ -31,66 +58,66 @@
       "instrumentation",
       "subordination",
       "brightness",
-      "layered-control"
-    ],
-    "consolidated": "2026-03-29"
-  },
-  {
-    "file": "knowledge/suno-prompt-engineering-principles.md",
-    "name": "suno-prompt-engineering-principles",
-    "description": "Core principles for clean, high-signal prompt design, complexity limits, genre precision, and quality expectations for Suno, including nuanced instrumentation and genre considerations.",
-    "type": "knowledge",
-    "tags": [
-      "suno",
+      "layered-control",
       "prompt-design",
       "complexity",
       "genre",
+      "signal-clarity",
+      "audio-quality",
+      "cultural-labels",
+      "sfx",
+      "platform-behavior"
+    ],
+    "consolidated": "2026-03-31"
+  },
+  {
+    "file": "knowledge/suno-quality-and-iteration.md",
+    "name": "suno-quality-and-iteration",
+    "description": "Guidelines for managing quality expectations, the iterative reroll process, and insights into internal tool performance for Suno prompt engineering.",
+    "type": "knowledge",
+    "tags": [
+      "suno",
       "quality",
       "reroll",
       "iteration",
-      "signal-clarity",
-      "instrumentation",
-      "arrangement",
-      "audio-quality",
       "critic",
       "prompt-refinement",
-      "cultural-labels"
-    ],
-    "consolidated": "2026-03-29"
-  },
-  {
-    "file": "knowledge/suno-workflow-and-agent-control.md",
-    "name": "suno-workflow-and-agent-control",
-    "description": "Advanced workflow patterns, parameter tuning, validated agent autonomy in multi-critic reconciliation, and effective lyrics input for Suno prompt engineering.",
-    "type": "knowledge",
-    "tags": [
-      "suno",
-      "workflow",
-      "orchestrator-pattern",
-      "variation",
-      "control",
-      "weight",
-      "suno-interpretation",
-      "critic-reconciliation",
-      "llm-feedback",
-      "agent-autonomy",
-      "goal-priority",
-      "lyrics-input",
-      "user-intent"
-    ],
-    "consolidated": "2026-03-29"
-  },
-  {
-    "file": "knowledge/suno-system-notes.md",
-    "name": "suno-system-notes",
-    "description": "Observations and feedback regarding internal Suno tools and system components.",
-    "type": "knowledge",
-    "tags": [
-      "suno",
       "internal-tool",
-      "quality",
       "tool-feedback"
     ],
-    "consolidated": "2026-03-29"
+    "consolidated": "2026-03-31"
+  },
+  {
+    "file": "knowledge/tala-system-updates.md",
+    "name": "tala-system-updates",
+    "description": "Consolidated updates on Tala's internal system, including enhanced knowledge management, operational standardization, internal tool reliability, development workflow improvements, architectural validations, and tool development milestones.",
+    "type": "knowledge",
+    "tags": [
+      "tala",
+      "internal-tool",
+      "bug-fix",
+      "workflow-reliability",
+      "context-loading",
+      "architecture",
+      "cli-control",
+      "agent-control",
+      "standardization",
+      "knowledge-management",
+      "documentation",
+      "feature",
+      "obsidian",
+      "task-context",
+      "dev-workflow",
+      "process",
+      "pipeline",
+      "brain.db",
+      "create-track",
+      "validation",
+      "prompt-builder",
+      "suno-strategy",
+      "tool-development",
+      "workflow-automation"
+    ],
+    "consolidated": "2026-03-31"
   }
 ]

@@ -1,22 +1,8 @@
 [
   {
-    "file": "knowledge/knowledge_discord_workflow.md",
-    "name": "Discord Interaction and Workflow",
-    "description": "Communication style, progress notifications, and state management for Discord integration",
-    "type": "knowledge",
-    "tags": [
-      "discord",
-      "communication",
-      "progress",
-      "configuration",
-      "path"
-    ],
-    "consolidated": "2026-03-28"
-  },
-  {
-    "file": "knowledge/knowledge_orchestrator_pattern.md",
-    "name": "Orchestrator Pattern for Iterative Skills",
-    "description": "Best practices for implementing and documenting the orchestrator pattern to manage context in iterative or variation-loop skills.",
+    "file": "knowledge/knowledge_agent_architecture_and_workflow.md",
+    "name": "Agent Architecture and Workflow",
+    "description": "Guidelines for designing agent workflows, managing context in iterative skills, establishing internal agent hierarchies, and standardizing agent initialization.",
     "type": "knowledge",
     "tags": [
       "architecture",
@@ -24,41 +10,103 @@
       "orchestrator_pattern",
       "subagents",
       "skill_design",
-      "documentation",
       "workflow_management",
-      "optimization",
-      "skill_categorization"
+      "delegation",
+      "infrastructure",
+      "initialization",
+      "boot_flow",
+      "agent_soul"
     ],
-    "consolidated": "2026-03-28"
+    "consolidated": "2026-03-30"
   },
   {
-    "file": "knowledge/knowledge_tool_execution_strategy.md",
-    "name": "Tool Execution Strategy",
-    "description": "Guidelines for prioritizing CLI-first tool calls for enhanced visibility and debuggability.",
+    "file": "knowledge/knowledge_communication_and_interaction_standards.md",
+    "name": "Communication and Interaction Standards",
+    "description": "Guidelines for agent communication style, progress updates, output formatting, and naming conventions to ensure clarity, natural conversation flow, and user preference alignment.",
+    "type": "knowledge",
+    "tags": [
+      "discord",
+      "communication",
+      "progress",
+      "configuration",
+      "user_preference",
+      "naming_convention",
+      "persona",
+      "output_formatting",
+      "agent_voice",
+      "clarity"
+    ],
+    "consolidated": "2026-03-30"
+  },
+  {
+    "file": "knowledge/knowledge_memory_system_architecture.md",
+    "name": "Memory System Architecture and Management",
+    "description": "Comprehensive guidelines and mechanisms for managing agent memory, ensuring knowledge integrity, optimizing context, and leveraging advanced retrieval and representation features.",
+    "type": "knowledge",
+    "tags": [
+      "memory",
+      "compaction",
+      "knowledge_integrity",
+      "confidence",
+      "state_management",
+      "debugging",
+      "infrastructure",
+      "workflow_management",
+      "optimization",
+      "reflection",
+      "entities",
+      "knowledge_graph",
+      "relationships",
+      "knowledge_representation",
+      "vector_search",
+      "embeddings",
+      "gemini",
+      "retrieval",
+      "FTS5",
+      "architecture",
+      "MCP",
+      "consolidation",
+      "project_management",
+      "context_management",
+      "brain.db",
+      "tool",
+      "checkpoints",
+      "HTTP"
+    ],
+    "consolidated": "2026-03-30"
+  },
+  {
+    "file": "knowledge/knowledge_tooling_and_platform_guidelines.md",
+    "name": "Tooling and Platform Guidelines",
+    "description": "Best practices for tool execution, prioritizing CLI-first calls, and specific technical considerations for developing and managing tools on Windows, including process management and PowerShell integration.",
     "type": "knowledge",
     "tags": [
       "tool_execution",
       "user_preference",
       "debuggability",
       "architecture",
-      "workflow"
-    ],
-    "consolidated": "2026-03-28"
-  },
-  {
-    "file": "knowledge/knowledge_windows_tool_development_notes.md",
-    "name": "Windows Tool Development Notes",
-    "description": "Specific technical considerations and best practices for developing tools on Windows, particularly concerning process management and PowerShell integration.",
-    "type": "knowledge",
-    "tags": [
+      "workflow",
       "windows",
       "powershell",
       "nodejs",
       "tool-development",
       "process-management",
-      "debugging",
       "obsidian"
     ],
-    "consolidated": "2026-03-28"
+    "consolidated": "2026-03-30"
+  },
+  {
+    "file": "knowledge/knowledge_linguistic_capabilities.md",
+    "name": "Linguistic Capabilities",
+    "description": "Details Freddie's advanced phonetic analysis system for deeper linguistic understanding in creative tasks.",
+    "type": "knowledge",
+    "tags": [
+      "phonetics",
+      "lyrics_analysis",
+      "infrastructure",
+      "capability",
+      "linguistics"
+    ],
+    "consolidated": "2026-03-30"
   }
 ]

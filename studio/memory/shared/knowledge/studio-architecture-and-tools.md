@@ -62,4 +62,4 @@ Tools are dual-mode: MCP (`mcp__freddie-tools__*`) in the main conversation, CLI
 **Consolidated from:**
 - `studio-architecture-and-tools.md`
 - `studio-architecture.md`
-- `20260328-110500-music-card-mixing-v1.md`
+- `20260328-110500-music-card-mixing-v1.md` (general Music Card insights)
