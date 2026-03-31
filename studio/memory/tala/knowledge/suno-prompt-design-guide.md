@@ -3,7 +3,7 @@ name: suno-prompt-design-guide
 description: Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, and core prompt engineering principles for clarity and genre precision.
 type: knowledge
 agent: tala
-tags: [suno, lyrics, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, structure, tags, callback, atmosphere, performance-notation, ad-libs, arrangement, frequency-stacking, style-block, char-budget, production, lean, exclude, prompt-optimization, instrumentation, subordination, brightness, layered-control, prompt-design, complexity, genre, signal-clarity, audio-quality, cultural-labels, sfx, platform-behavior]
+tags: [suno, lyrics, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, structure, tags, callback, atmosphere, performance-notation, ad-libs, arrangement, frequency-stacking, style-block, char-budget, production, lean, exclude, prompt-optimization, instrumentation, subordination, brightness, layered-control, prompt-design, complexity, genre, signal-clarity, audio-quality, cultural-labels, sfx, platform-behavior, validation]
 ---
 
 # Suno Prompt Design Guide
@@ -21,7 +21,7 @@ The Style block sets the global genre, BPM, and foundational mood. Detailed per-
 | All tracks (with typed brackets in Lyrics) | **~75-120 chars** | ~150 chars | 200 |
 
 #### Why
-Leaner prompts result in cleaner audio. Every element added can dilute the core signal. When comprehensive per-section control is achieved via typed brackets in Lyrics, the Style block can operate at the higher end of its recommended character range (up to ~150 chars) without degrading audio quality, provided it remains lean on global elements and avoids redundancy with Lyrics.
+Leaner prompts result in cleaner audio. Every element added can dilute the core signal. When comprehensive per-section control is achieved via typed brackets in Lyrics, the Style block can operate at the higher end of its recommended character range (up to ~150 chars) without degrading audio quality, provided it remains lean on global elements and avoids redundancy with Lyrics. The upper end of the flexible character budget (~150 chars) for the Style block is validated as effective when combined with detailed per-section control via typed brackets in the Lyrics, maintaining audio clarity and prompt adherence.
 
 #### How to apply
 Adhere to the character budget above. Prioritize essential global elements and remove anything that can be implied by genre or controlled more precisely in the Lyrics section.
@@ -203,4 +203,4 @@ Over-muffling or repetitive negative descriptors can lead to an instrument being
 -   **Support solo sections** — give support instruments their own section instead of fighting for shared space.
 
 ---
-Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`
+Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`, `20260331-193044-the-upper-end-of-the-flexible-character--3.md`

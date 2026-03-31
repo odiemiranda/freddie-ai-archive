@@ -22,7 +22,12 @@
       "llm-integration",
       "gemini",
       "context-flags",
-      "prompt-refinement"
+      "prompt-refinement",
+      "minimax",
+      "repetition",
+      "workflow-validation",
+      "quality",
+      "structure"
     ],
     "consolidated": "2026-03-31"
   },
@@ -66,7 +71,8 @@
       "audio-quality",
       "cultural-labels",
       "sfx",
-      "platform-behavior"
+      "platform-behavior",
+      "validation"
     ],
     "consolidated": "2026-03-31"
   },
@@ -83,7 +89,8 @@
       "critic",
       "prompt-refinement",
       "internal-tool",
-      "tool-feedback"
+      "tool-feedback",
+      "workflow-validation"
     ],
     "consolidated": "2026-03-31"
   },

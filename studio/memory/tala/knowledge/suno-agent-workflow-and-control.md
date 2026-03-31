@@ -3,7 +3,7 @@ name: suno-agent-workflow-and-control
 description: Advanced workflow patterns, parameter tuning, validated agent autonomy in multi-critic reconciliation, phase-gated skill execution, and effective lyrics input for Suno prompt engineering.
 type: knowledge
 agent: tala
-tags: [suno, workflow, orchestrator-pattern, variation, control, weight, suno-interpretation, critic-reconciliation, llm-feedback, agent-autonomy, goal-priority, lyrics-input, user-intent, skill-design, llm-integration, gemini, context-flags, prompt-refinement]
+tags: [suno, workflow, orchestrator-pattern, variation, control, weight, suno-interpretation, critic-reconciliation, llm-feedback, agent-autonomy, goal-priority, lyrics-input, user-intent, skill-design, llm-integration, gemini, context-flags, prompt-refinement, minimax, repetition, workflow-validation, quality, structure]
 ---
 
 # Suno Agent Workflow and Control
@@ -46,14 +46,19 @@ Critics may flag for 'missing' elements or suggest additions that, while technic
 
 ## 4. Multi-Critic Feedback & LLM Reconciliation
 
-Relying on a single critic for comprehensive feedback is insufficient, and LLMs can provide unreliable advice.
+Relying on a single critic for comprehensive feedback is insufficient, and LLMs require careful integration.
 
 ### Why
-Different critics identify distinct issues, and no single critic reliably catches every potential problem. LLMs (like Gemini) may over-simplify or contradict established agent rules.
+Different critics identify distinct issues, and no single critic reliably catches every potential problem. While LLMs (like Gemini) may over-simplify or contradict established agent rules for general advice, they can be reliable for specific structural issues.
 
 ### How to apply
 -   Implement a **multi-critic reconciliation process** to aggregate diverse insights and ensure all critical issues are identified and addressed.
--   When using LLMs for prompt refinement, be vigilant about their tendencies (e.g., stripping instrument direction from instrumental BGM lyrics, recommending unreliable structural tags). **Agent rules must override such suggestions.**
+-   When using LLMs for prompt refinement, be vigilant about their tendencies (e.g., stripping instrument direction from instrumental BGM lyrics, recommending unreliable structural tags). **Agent rules must override such general suggestions.**
+-   **Refinement:** LLM critics like Gemini can reliably address specific structural issues (e.g., Break/Outro reliability) when integrated into the multi-critic process, refining previous warnings about their general unreliability for structural tags.
+-   **MiniMax Utility:** The MiniMax critic is effective not only at identifying detrimental layering or over-muffling that would effectively erase an instrument from the mix but also at detecting sonic redundancy or lack of variation, ensuring dynamic range and interest in a track.
+
+### Workflow Validation
+The current prompt engineering and multi-critic reconciliation workflow (e.g., Prompt Builder + multi-critic review with Gemini for structural fixes, MiniMax for repetition, Grok for quality) is highly effective, consistently producing high-quality outputs that exceed typical reroll expectations.
 
 ## 5. Structured Phase-Gated Workflow
 
@@ -75,4 +80,4 @@ Confirming effective methods for lyric input streamlines the generation process 
 -   The 'Path A' workflow, where inline lyrics are provided directly and augmented by the agent, is a viable and effective method for lyric input.
 
 ---
-Consolidated from: `suno-workflow-and-agent-control.md`, `20260329-155500-a-structured-phase-gated-workflow-e-g-me-2.md`
+Consolidated from: `suno-workflow-and-agent-control.md`, `20260329-155500-a-structured-phase-gated-workflow-e-g-me-2.md`, `20260331-193044-minimax-is-effective-not-only-at-identif-2.md`, `20260331-193044-the-current-prompt-engineering-and-multi-1.md`

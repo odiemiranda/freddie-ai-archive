@@ -1,9 +1,9 @@
 ---
 name: Suno Prompt Engineering and References
-description: Unified syntax, best practices, and advanced techniques for Suno AI music generation, including new insights on style block length, genre normalization, vocal style, arrangement, and common pitfalls.
+description: Unified syntax, best practices, and advanced techniques for Suno AI music generation, including lyrical structure (energy arcs), style block length, genre normalization, vocal style, arrangement, common pitfalls, and observed undocumented behaviors.
 type: knowledge
 agent: shared
-tags: [suno, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, prompt-design, clarity, performance-notation, ad-libs, genre-recipes, tempo, key, music-theory, special-techniques, char-budget, prompt-optimization, variation, control, weight, suno-interpretation, gradient, fine-tuning, genre-normalization, lo-fi-jazz, nuance, critic-feedback, prompt-refinement, instrumentation, arrangement, frequency-stacking, organ, audio-quality, sfx, atmosphere, subordination, multi-layered-control, platform-behavior]
+tags: [suno, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, prompt-design, clarity, performance-notation, ad-libs, genre-recipes, tempo, key, music-theory, special-techniques, char-budget, prompt-optimization, variation, control, weight, suno-interpretation, gradient, fine-tuning, genre-normalization, lo-fi-jazz, nuance, critic-feedback, prompt-refinement, instrumentation, arrangement, frequency-stacking, organ, audio-quality, sfx, atmosphere, subordination, multi-layered-control, platform-behavior, fade-in, undocumented-feature, energy-arc, lyrical-structure, validation, repetition]
 ---
 
 # Suno Prompt Engineering and References
@@ -30,7 +30,7 @@ When describing vocal styles, prioritize precise descriptors. 'Projected vocals'
 ## Instrument Specificity and Subordination
 When describing instruments, especially support instruments, use specific instrument names (e.g., 'cello', 'bodhrán') instead of broader categories (e.g., 'low strings', 'percussion').
 
-For instrument subordination, descriptive language like 'distant/low drone' is more effective than repeated 'muffled' descriptors, which can lead to the instrument being entirely removed. The MiniMax critic is effective at identifying detrimental layering or over-muffling that would effectively erase an instrument from the mix.
+For instrument subordination, descriptive language like 'distant/low drone' is more effective than repeated 'muffled' descriptors, which can lead to the instrument being entirely removed. The MiniMax critic is effective not only at identifying detrimental layering or over-muffling but also at detecting sonic redundancy or lack of variation, indicating its utility for ensuring dynamic range and interest in a track.
 
 **Why:** Improves clarity and generation quality, aligning with critic feedback for specificity, and ensures instruments are present and balanced as intended.
 **How to apply:** Replace generic instrument descriptions with precise names in `[Instrument:]` tags. For subordination, use 'distant/low drone' language instead of 'muffled' to avoid accidental removal.
@@ -63,7 +63,7 @@ For ambient SFX and atmospheric elements to be effectively processed by Suno, th
 
 **Why:** Focuses the initial generation on core characteristics while allowing granular control within the lyrics. Allows for a slightly expanded Style Block when per-section control is robust. Ensures SFX are correctly interpreted.
 **How to apply:**
-- **Character Range:** Target 75-120 characters. However, when comprehensive per-section control is achieved via typed brackets in Lyrics, the Style Block can effectively operate up to ~150 characters without degrading audio quality, provided it remains lean on global elements and avoids redundancy with Lyrics.
+- **Character Range:** Target 75-120 characters. However, when comprehensive per-section control is achieved via typed brackets in Lyrics, the Style Block can effectively operate up to ~150 characters without degrading audio quality, provided it remains lean on global elements and avoids redundancy with Lyrics. This upper limit (~150 chars) has been validated as effective when combined with detailed per-section control via typed brackets in the Lyrics, maintaining audio clarity and prompt adherence.
 - **Instrumental Tracks:** Lean Style Block + ensemble pipe `[Instrument:]` tags within Lyrics.
 - **Vocal Tracks:** Ultra-lean Style Block + rich, typed bracket `[Energy:]`, `[Vocal Style:]`, `[Instrument:]`, `[Texture:]`, `[Mood:]` tags within Lyrics.
 - **SFX/Atmosphere:** Place in Lyrics section using typed brackets, not the Style Block.
@@ -93,6 +93,12 @@ Subtle global sonic characteristics, such as brightness or specific instrument p
 **Why:** Provides comprehensive and precise control over nuanced sonic characteristics that single-layer prompting might miss.
 **How to apply:** Implement a combination of these strategies, considering the interaction between Style Block, Lyrics, and Exclude sections, to achieve desired global sonic outcomes.
 
+## Lyrical Structure: Energy Arcs
+The concept of an 'energy arc' with predefined shapes is a valuable and effective structural element for generating BGM lyrics, providing a high-level control over the dynamic flow and intensity of the lyrical output.
+
+**Why:** Provides a structured method to control the dynamic flow and intensity of BGM lyrical output, enhancing creative control.
+**How to apply:** Integrate predefined energy arc shapes into the lyrics generation process to guide the dynamic progression of the lyrical content.
+
 ## Suno Performance Notation
 A set of 8 standardized symbols for conveying specific performance instructions.
 
@@ -117,6 +123,12 @@ Defined formats for advanced vocal arrangements, including duet and call-and-res
 **Why:** Enables the creation of more complex vocal arrangements like duets and call-and-response patterns, expanding creative possibilities.
 **How to apply:** Follow the specified formats for duet and call-and-response structures in vocal prompts.
 
+## Undocumented but Observed Suno Behaviors
+Suno appears to interpret `[Fade In]` (and potentially `[Short Fade In]`) as a valid structural/performance tag for controlling track intros, even though it is not explicitly documented in the unified typed bracket framework.
+
+**Why:** This suggests an undocumented capability for subtle intro control, allowing for more nuanced track beginnings.
+**How to apply:** Experiment with `[Fade In]` or `[Short Fade In]` in the prompt for intro buildup.
+
 ## Variation Control: Weight (W) and Suno Interpretation (SI)
 The 'Weight' (W) and 'Suno Interpretation' (SI) parameters offer precise control over the output spectrum of musical variations. For example, setting `W:30 / SI:70` has been shown to effectively anchor warmth, tempo, and texture from Music Cards while allowing typed brackets to handle fusion elements.
 
@@ -137,6 +149,10 @@ The 'Weight' (W) and 'Suno Interpretation' (SI) parameters offer precise control
 - `20260328-221905-organs-can-cause-frequency-stacking-issu-3.md`
 - `20260329-002043-specific-genre-archetypes-can-introduce--1.md` (detailed genre archetype pitfalls)
 - `20260329-072140-cultural-or-folk-genre-tags-in-the-style-1.md`
+- `20260331-193044-minimax-is-effective-not-only-at-identif-2.md`
 - `20260329-072140-for-instrument-subordination-descriptive-2.md`
 - `20260329-072140-subtle-global-sonic-characteristics-such-3.md`
 - `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`
+- `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`
+- `20260331-145249-the-concept-of-an-energy-arc-with-predef-1.md`
+- `20260331-193044-the-upper-end-of-the-flexible-character--3.md`

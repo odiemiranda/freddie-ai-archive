@@ -1,8 +1,64 @@
 [
   {
+    "file": "knowledge/freddie-ai-lyrics-builder-design.md",
+    "name": "Freddie AI Lyrics Builder Design Principles",
+    "description": "Consolidates design patterns and principles applied to the BGM and Vocal lyrics builders within the Freddie AI project.",
+    "type": "knowledge",
+    "tags": [
+      "freddie-ai",
+      "lyrics-generation",
+      "music-structure",
+      "design-pattern",
+      "system-design",
+      "modularity",
+      "data-normalization",
+      "vocal-lyrics",
+      "BGM-lyrics",
+      "configuration"
+    ],
+    "consolidated": "2026-03-31"
+  },
+  {
+    "file": "knowledge/freddie-ai-performance-notation-system.md",
+    "name": "Freddie AI Performance Notation System",
+    "description": "Details the design, decisions, and implementation aspects of the Freddie AI performance notation system, including its mechanical and creative components.",
+    "type": "knowledge",
+    "tags": [
+      "freddie-ai",
+      "performance-notation",
+      "music-notation",
+      "rules-engine",
+      "LLM-selection",
+      "Gemini-2.5-Flash",
+      "system-design",
+      "tool-development",
+      "design-decisions",
+      "creative-generation",
+      "mechanical-generation",
+      "Suno-notation"
+    ],
+    "consolidated": "2026-03-31"
+  },
+  {
+    "file": "knowledge/freddie-ai-platform-issues.md",
+    "name": "Freddie AI Platform-Specific Operational Issues",
+    "description": "Documents known platform-specific operational issues relevant to the Freddie AI project.",
+    "type": "knowledge",
+    "tags": [
+      "freddie-ai",
+      "platform-behavior",
+      "bun",
+      "windows",
+      "testing",
+      "bug",
+      "development-environment"
+    ],
+    "consolidated": "2026-03-31"
+  },
+  {
     "file": "knowledge/mccall-agent-capabilities.md",
     "name": "mccall Agent Capabilities",
-    "description": "Details mccall's ability to develop and integrate new skills, including structured analysis and task management.",
+    "description": "Details mccall's ability to develop and integrate new skills, perform structured analysis, manage tasks, self-optimize internal workflows, and develop/integrate tools for other agents.",
     "type": "knowledge",
     "tags": [
       "agent-capabilities",
@@ -13,14 +69,23 @@
       "workflow-design",
       "execution-planning",
       "tech-review",
-      "data-extraction"
+      "data-extraction",
+      "self-improvement",
+      "dev-workflow",
+      "process-optimization",
+      "efficiency",
+      "meta-learning",
+      "tool-development",
+      "integration",
+      "cross-agent",
+      "prompt-builder"
     ],
     "consolidated": "2026-03-31"
   },
   {
     "file": "knowledge/mccall-knowledge-and-artifact-management.md",
     "name": "mccall Knowledge and Artifact Management",
-    "description": "Describes the standardized system for managing project documentation, artifacts, and decisions.",
+    "description": "Describes the standardized system for managing project documentation, artifacts, and decisions, including dynamic document management.",
     "type": "knowledge",
     "tags": [
       "knowledge-management",
@@ -30,7 +95,8 @@
       "version-control",
       "decision-logging",
       "brain.db",
-      "workflow-process"
+      "workflow-process",
+      "artifact-supersession"
     ],
     "consolidated": "2026-03-31"
   },
@@ -43,6 +109,28 @@
       "user-preference",
       "collaboration",
       "dev-workflow"
+    ],
+    "consolidated": "2026-03-31"
+  },
+  {
+    "file": "knowledge/freddie-ai-prompt-builder-engine.md",
+    "name": "Freddie AI Prompt Builder Engine",
+    "description": "Details the design, key features, and development rigor of the Prompt Builder Engine for music-related prompt generation.",
+    "type": "knowledge",
+    "tags": [
+      "freddie-ai",
+      "prompt-engineering",
+      "music-lyrics",
+      "text-generation",
+      "linguistic-accuracy",
+      "phonetics",
+      "homograph-detection",
+      "MiniMax",
+      "system-design",
+      "tool-development",
+      "development-process",
+      "code-review",
+      "testing"
     ],
     "consolidated": "2026-03-31"
   }

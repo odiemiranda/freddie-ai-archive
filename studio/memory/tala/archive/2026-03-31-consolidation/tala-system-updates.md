@@ -1,14 +1,14 @@
 ---
 name: tala-system-updates
-description: Consolidated updates on Tala's internal system, including bug fixes, operational standardizations, and new knowledge management features.
+description: Consolidated updates on Tala's internal system, including enhanced knowledge management, operational standardization, internal tool reliability, development workflow improvements, architectural validations, and tool development milestones.
 type: knowledge
 agent: tala
-tags: [tala, internal-tool, bug-fix, workflow-reliability, context-loading, architecture, cli-control, agent-control, standardization, knowledge-management, documentation, feature, obsidian, task-context]
+tags: [tala, internal-tool, bug-fix, workflow-reliability, context-loading, architecture, cli-control, agent-control, standardization, knowledge-management, documentation, feature, obsidian, task-context, dev-workflow, process, pipeline, brain.db, create-track, validation, prompt-builder, suno-strategy, tool-development, workflow-automation]
 ---
 
 # Tala System Updates
 
-This document consolidates recent updates and improvements to Tala's internal system, covering enhanced knowledge management capabilities, operational standardization, and internal tool reliability fixes.
+This document consolidates recent updates and improvements to Tala's internal system, covering enhanced knowledge management capabilities, operational standardization, internal tool reliability fixes, development workflow improvements, architectural validations, and tool development milestones.
 
 ## 1. Enhanced Knowledge Management & Task Context
 
@@ -44,3 +44,36 @@ A robust and reliable `discover.ts` tool is crucial for accurate context pre-loa
 
 ---
 Consolidated from: `20260331-044531-tala-s-internal-discover-ts-tool-is-now--1.md`
+
+## 4. Development Workflow Improvements
+
+### Why
+Adopting a 'Worktree-first dev workflow' improves efficiency and organization for Tala's internal development processes.
+
+### How to apply
+-   Utilize the 'Worktree-first dev workflow' for internal development to enhance efficiency and organization.
+
+---
+Consolidated from: `20260331-080019-adopting-a-worktree-first-dev-workflow-i-1.md`
+
+## 5. Architectural Validations
+
+### Why
+Validating core architectural components like the `brain.db-first` pipeline ensures reliability and functionality for critical workflows.
+
+### How to apply
+-   The 'brain.db-first' architectural approach for the '/create-track' pipeline is validated as functional and successful, confirming its reliability for track creation workflows.
+
+---
+Consolidated from: `20260331-080019-the-brain-db-first-architectural-approac-3.md`
+
+## 6. Tool Development Milestones
+
+### Why
+Reaching significant development phases for internal tools like the Prompt Builder ensures systematic and structured capabilities for future workflows.
+
+### How to apply
+-   The Prompt Builder tool has reached a significant level of maturity, successfully integrating core Suno prompt engineering strategies, type definitions, and a CLI interface, enabling systematic and structured prompt construction for future workflows.
+
+---
+Consolidated from: `20260331-080019-the-prompt-builder-tool-has-reached-a-si-2.md`

@@ -1,9 +1,9 @@
 ---
 name: Workflow, Quality Control, and Knowledge Management
-description: Guidelines for agent critique loops, metatag management, strategic generation approaches, and best practices for managing knowledge, especially concerning LLM token limits.
+description: Guidelines for agent critique loops, metatag management, strategic generation approaches, including advanced prompt generation methodologies, LLM capabilities and selection (e.g., for creative notation), and best practices for managing knowledge, especially concerning LLM token limits.
 type: knowledge
 agent: shared
-tags: [workflow, quality-gate, critique, metatags, production, gemini, minimax, parallel-processing, jam-skill, tala, rune, knowledge-management, consolidation, llm, token-limits, data-integrity, best-practices]
+tags: [workflow, quality-gate, critique, metatags, production, gemini, minimax, parallel-processing, jam-skill, tala, rune, knowledge-management, consolidation, llm, token-limits, data-integrity, best-practices, llm-capabilities, llm-selection, notation, prompt-engineering, text-generation, music-lyrics, linguistics, phonetics, homograph-detection, structure, accuracy]
 ---
 
 # Workflow, Quality Control, and Knowledge Management
@@ -20,7 +20,7 @@ When using Large Language Models (LLMs) for structured, multi-file output, it is
 **Lesson:** Always verify the output count matches the plan when using LLMs for structured multi-file output. Token limits cause silent truncation.
 
 ## Gemini Critique Loops
-Tri-critic loops are implemented for Tala (Step 8c: Gemini → MiniMax → Grok) and Rune (Step 8c: Gemini → MiniMax → Grok) to identify issues like instrument overloads, frequency clashes, narrative clichés, and subtle audio quality issues stemming from genre archetypes. Critics are effective at pinpointing these genre-specific pitfalls (refer to `suno-prompt-engineering-and-references.md` for details on 'instrument bleed' and other genre archetype pitfalls).
+Tri-critic loops are implemented for Tala (Step 8c: Gemini → MiniMax → Grok) and Rune (Step 8c: Gemini → MiniMax → Grok) to identify issues like instrument overloads, frequency clashes, narrative clichés, and subtle audio quality issues stemming from genre archetypes. Critics are effective at pinpointing these genre-specific pitfalls (refer to `suno-prompt-engineering-and-references.md` for details on 'instrument bleed' and other genre archetype pitfalls, including MiniMax's ability to detect sonic redundancy).
 
 **Why:** Ensures higher quality outputs and prevents common generation pitfalls, including those specific to genre interpretation.
 **How to apply:** When spawning an agent, you MUST include an explicit instruction in the prompt: *"After building each Style block, run the Gemini critique loop (step 8b)"* or *"Execute the Gemini critique loop for each variation."*
@@ -37,11 +37,17 @@ A structured system for metatag reliability, including defined tiers and a weigh
 - **Optimal Count:** Target 3-5 tags per section/prompt for maximum impact.
 
 ## Creative Generation Strategies
-For creative generation tasks, a dual-model parallel processing strategy can leverage the distinct strengths of multiple LLMs.
+For creative generation tasks, a dual-model parallel processing strategy can leverage the distinct strengths of multiple LLMs. Gemini 2.5 Flash demonstrates superior capability for creative text generation tasks, specifically musical notation, making it a preferred choice for nuanced and imaginative outputs compared to other considered models.
 
-**Why:** Allows for independent interpretation of input, leading to a more diverse and robust set of outputs, and validates the integration of new models.
-**How to apply:** Consider using parallel processing with models like MiniMax and Gemini for tasks requiring diverse creative outputs, such as track naming.
+**Why:** Allows for independent interpretation of input, leading to a more diverse and robust set of outputs, and validates the integration of new models. Leveraging specific LLM strengths (e.g., Gemini 2.5 Flash for creative notation) improves output quality for nuanced tasks.
+**How to apply:** Consider using parallel processing with models like MiniMax and Gemini for tasks requiring diverse creative outputs, such as track naming. For tasks requiring highly creative or nuanced text generation, such as musical notation, prioritize Gemini 2.5 Flash.
 - **Example:** The `/tracknames` tool generates 18 track names (6 per model — MiniMax, Gemini, Grok) tagged by source.
+
+### Prompt Builder Engine Methodologies
+The Prompt Builder Engine incorporates a 'MiniMax 6-section prose strategy' for structuring content and 'Phonetics syllable fallback' with 'LY6 homograph detection' for linguistic accuracy.
+
+**Why:** Effective prompt generation for music-related tasks benefits significantly from structured content strategies (like the MiniMax 6-section prose) and advanced linguistic processing (phonetics, homograph detection) to ensure high-quality, nuanced outputs. These specific techniques are integrated into the Prompt Builder.
+**How to apply:** Utilize structured content strategies like the MiniMax 6-section prose for overall prompt organization. Employ advanced linguistic processing, including phonetics syllable fallback and homograph detection, to enhance the accuracy and nuance of generated music-related prompts.
 
 ## Orchestration: The `/jam` Skill
 The creation of a `/jam` skill (automated chaining of Rune → Tala/Sol) is **intentionally deferred**.
@@ -54,3 +60,5 @@ The creation of a `/jam` skill (automated chaining of Rune → Tala/Sol) is **in
 - `consolidation-token-limit-lesson.md`
 - `workflow-and-quality-control.md`
 - `20260329-002043-specific-genre-archetypes-can-introduce--1.md` (high-level mention of genre pitfalls)
+- `20260331-165434-gemini-2-5-flash-demonstrates-superior-c-1.md`
+- `20260331-184555-effective-prompt-generation-for-music-re-2.md`

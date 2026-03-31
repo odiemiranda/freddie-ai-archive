@@ -1,5 +1,38 @@
 [
   {
+    "file": "knowledge/agent-communication-and-identity.md",
+    "name": "Agent Communication and Identity",
+    "description": "Guidelines for naming internal agents and entities, and establishing consistent communication patterns for clear attribution.",
+    "type": "knowledge",
+    "tags": [
+      "user_preference",
+      "naming_convention",
+      "persona",
+      "communication",
+      "agent_voice",
+      "output_formatting",
+      "clarity"
+    ],
+    "consolidated": "2026-03-31"
+  },
+  {
+    "file": "knowledge/platform-and-tool-behaviors.md",
+    "name": "Platform and Tool Behaviors",
+    "description": "Documented observations of platform-specific behaviors and tool instabilities that impact development and workflow.",
+    "type": "knowledge",
+    "tags": [
+      "platform-behavior",
+      "tool-behavior",
+      "bug",
+      "instability",
+      "development-environment",
+      "bun",
+      "windows",
+      "testing"
+    ],
+    "consolidated": "2026-03-31"
+  },
+  {
     "file": "knowledge/studio-architecture-and-tools.md",
     "name": "Studio Architecture and Tools",
     "description": "Core infrastructure, file organization, indexing, and tool execution constraints for the music studio, including practical insights for Music Cards.",
@@ -23,12 +56,12 @@
       "weirdness",
       "style-influence"
     ],
-    "consolidated": "2026-03-30"
+    "consolidated": "2026-03-31"
   },
   {
     "file": "knowledge/suno-prompt-engineering-and-references.md",
     "name": "Suno Prompt Engineering and References",
-    "description": "Unified syntax, best practices, and advanced techniques for Suno AI music generation, including new insights on style block length, genre normalization, vocal style, arrangement, and common pitfalls.",
+    "description": "Unified syntax, best practices, and advanced techniques for Suno AI music generation, including lyrical structure (energy arcs), style block length, genre normalization, vocal style, arrangement, common pitfalls, and observed undocumented behaviors.",
     "type": "knowledge",
     "tags": [
       "suno",
@@ -70,14 +103,20 @@
       "atmosphere",
       "subordination",
       "multi-layered-control",
-      "platform-behavior"
+      "platform-behavior",
+      "fade-in",
+      "undocumented-feature",
+      "energy-arc",
+      "lyrical-structure",
+      "validation",
+      "repetition"
     ],
-    "consolidated": "2026-03-30"
+    "consolidated": "2026-03-31"
   },
   {
     "file": "knowledge/workflow-quality-and-knowledge-management.md",
     "name": "Workflow, Quality Control, and Knowledge Management",
-    "description": "Guidelines for agent critique loops, metatag management, strategic generation approaches, and best practices for managing knowledge, especially concerning LLM token limits.",
+    "description": "Guidelines for agent critique loops, metatag management, strategic generation approaches, including advanced prompt generation methodologies, LLM capabilities and selection (e.g., for creative notation), and best practices for managing knowledge, especially concerning LLM token limits.",
     "type": "knowledge",
     "tags": [
       "workflow",
@@ -96,24 +135,19 @@
       "llm",
       "token-limits",
       "data-integrity",
-      "best-practices"
+      "best-practices",
+      "llm-capabilities",
+      "llm-selection",
+      "notation",
+      "prompt-engineering",
+      "text-generation",
+      "music-lyrics",
+      "linguistics",
+      "phonetics",
+      "homograph-detection",
+      "structure",
+      "accuracy"
     ],
-    "consolidated": "2026-03-30"
-  },
-  {
-    "file": "knowledge/agent-communication-and-identity.md",
-    "name": "Agent Communication and Identity",
-    "description": "Guidelines for naming internal agents and entities, and establishing consistent communication patterns for clear attribution.",
-    "type": "knowledge",
-    "tags": [
-      "user_preference",
-      "naming_convention",
-      "persona",
-      "communication",
-      "agent_voice",
-      "output_formatting",
-      "clarity"
-    ],
-    "consolidated": "2026-03-30"
+    "consolidated": "2026-03-31"
   }
 ]

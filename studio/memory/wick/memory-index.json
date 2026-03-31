@@ -1,0 +1,17 @@
+[
+  {
+    "file": "knowledge/wick-prompt-data-management.md",
+    "name": "Wick's Prompt Data Management and Integrity",
+    "description": "Details Wick's capabilities in initializing, updating, and verifying critical prompt-data libraries for consistent prompt generation.",
+    "type": "knowledge",
+    "tags": [
+      "prompt-data",
+      "data-management",
+      "library-initialization",
+      "file-operations",
+      "verification",
+      "core-resources"
+    ],
+    "consolidated": "2026-03-31"
+  }
+]
