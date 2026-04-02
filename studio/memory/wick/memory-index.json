@@ -1,5 +1,36 @@
 [
   {
+    "file": "knowledge/wick-minimax-prompt-strategy.md",
+    "name": "Wick's MiniMax Prompt Strategy",
+    "description": "Describes Wick's advanced 6-section prose builder strategy for prompt generation, known as MiniMax.",
+    "type": "knowledge",
+    "tags": [
+      "prompt-generation",
+      "strategy",
+      "prose-builder",
+      "minimax",
+      "structured-prompts",
+      "testing"
+    ],
+    "consolidated": "2026-04-01"
+  },
+  {
+    "file": "knowledge/wick-notebooklm-cli-wrapper.md",
+    "name": "Wick's NotebookLM CLI Wrapper Integration",
+    "description": "Details Wick's integration with NotebookLM through a command-line interface wrapper for listing and searching.",
+    "type": "knowledge",
+    "tags": [
+      "tool-integration",
+      "notebooklm",
+      "cli",
+      "data-retrieval",
+      "external-tools",
+      "search",
+      "list"
+    ],
+    "consolidated": "2026-04-01"
+  },
+  {
     "file": "knowledge/wick-prompt-data-management.md",
     "name": "Wick's Prompt Data Management and Integrity",
     "description": "Details Wick's capabilities in initializing, updating, and verifying critical prompt-data libraries for consistent prompt generation.",
@@ -12,6 +43,74 @@
       "verification",
       "core-resources"
     ],
-    "consolidated": "2026-03-31"
+    "consolidated": "2026-04-01"
+  },
+  {
+    "file": "knowledge/wick-raw-data-management-system.md",
+    "name": "Wick's Raw Data Management System",
+    "description": "Details Wick's comprehensive system for capturing, processing, and indexing raw interaction data from various sources.",
+    "type": "knowledge",
+    "tags": [
+      "data-management",
+      "raw-data",
+      "capture",
+      "processing",
+      "indexing",
+      "cli",
+      "claude",
+      "jsonl",
+      "fts",
+      "reflect"
+    ],
+    "consolidated": "2026-04-01"
+  },
+  {
+    "file": "knowledge/wick-suno-vocal-lyrics-strategy.md",
+    "name": "Wick's Suno Vocal Lyrics Strategy",
+    "description": "Details Wick's capability to generate structured vocal lyrics for Suno, including schema, parser, and formatter.",
+    "type": "knowledge",
+    "tags": [
+      "prompt-generation",
+      "vocal-lyrics",
+      "suno",
+      "strategy",
+      "schema",
+      "parser",
+      "formatter"
+    ],
+    "consolidated": "2026-04-01"
+  },
+  {
+    "file": "knowledge/wick-obsidian-md-integration.md",
+    "name": "Wick's Obsidian MD Integration",
+    "description": "Details Wick's capability to parse, serialize, and manage Obsidian Markdown files, including migration of existing tools.",
+    "type": "knowledge",
+    "tags": [
+      "tool-integration",
+      "obsidian",
+      "markdown",
+      "parser",
+      "serializer",
+      "data-management",
+      "knowledge-base"
+    ],
+    "consolidated": "2026-04-01"
+  },
+  {
+    "file": "knowledge/wick-embeddings-and-recall-system.md",
+    "name": "Wick's Embeddings and Recall System",
+    "description": "Describes Wick's updated embedding infrastructure using local ONNX models and the new `recall` tool for query classification and full-text search.",
+    "type": "knowledge",
+    "tags": [
+      "embeddings",
+      "onnx",
+      "transformers",
+      "recall",
+      "search",
+      "query-classification",
+      "information-retrieval",
+      "brain"
+    ],
+    "consolidated": "2026-04-01"
   }
 ]

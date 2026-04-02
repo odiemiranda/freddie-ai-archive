@@ -1,9 +1,9 @@
 ---
 name: Workflow, Quality Control, and Knowledge Management
-description: Guidelines for agent critique loops, metatag management, strategic generation approaches, including advanced prompt generation methodologies, LLM capabilities and selection (e.g., for creative notation), and best practices for managing knowledge, especially concerning LLM token limits.
+description: Guidelines for agent critique loops, metatag management, strategic generation approaches, including advanced prompt generation methodologies, LLM capabilities and selection (e.g., for creative notation), and best practices for managing knowledge, general development, and tooling.
 type: knowledge
 agent: shared
-tags: [workflow, quality-gate, critique, metatags, production, gemini, minimax, parallel-processing, jam-skill, tala, rune, knowledge-management, consolidation, llm, token-limits, data-integrity, best-practices, llm-capabilities, llm-selection, notation, prompt-engineering, text-generation, music-lyrics, linguistics, phonetics, homograph-detection, structure, accuracy]
+tags: [workflow, quality-gate, critique, metatags, production, gemini, minimax, parallel-processing, jam-skill, tala, rune, knowledge-management, consolidation, llm, token-limits, data-integrity, best-practices, llm-capabilities, llm-selection, notation, prompt-engineering, text-generation, music-lyrics, linguistics, phonetics, homograph-detection, structure, accuracy, tool_development, cli_first, user_preference, workflow_design, readability, maintainability, code_style, architecture, parser, serializer, testing, library_design]
 ---
 
 # Workflow, Quality Control, and Knowledge Management
@@ -49,6 +49,20 @@ The Prompt Builder Engine incorporates a 'MiniMax 6-section prose strategy' for 
 **Why:** Effective prompt generation for music-related tasks benefits significantly from structured content strategies (like the MiniMax 6-section prose) and advanced linguistic processing (phonetics, homograph detection) to ensure high-quality, nuanced outputs. These specific techniques are integrated into the Prompt Builder.
 **How to apply:** Utilize structured content strategies like the MiniMax 6-section prose for overall prompt organization. Employ advanced linguistic processing, including phonetics syllable fallback and homograph detection, to enhance the accuracy and nuance of generated music-related prompts.
 
+## Tooling and Development Best Practices
+
+### CLI-First Tool Design
+Avoid using inline code blocks (e.g., `bun -e`) directly within workflows. Instead, encapsulate such logic into dedicated CLI tools. A `no-inline-code` rule should be enforced across all skill workflows.
+
+**Why:** Improves readability, maintainability, and aligns with user preference for explicit, well-defined tool calls, contributing to more robust workflow design.
+**How to apply:** For any new or refactored workflow logic, develop dedicated CLI tools for encapsulation rather than embedding inline code. Ensure all skill workflows adhere to a `no-inline-code` rule.
+
+### Modular Data Parsing Architecture
+For developing robust data parsing and manipulation libraries, a modular architecture separating `types`, `parser`, `serializer`, and `operations` components, coupled with comprehensive roundtrip testing, is a highly effective pattern.
+
+**Why:** Ensures data integrity and reliable functionality by promoting clear separation of concerns and thorough validation throughout the development lifecycle.
+**How to apply:** When building new parsing or data manipulation libraries, implement a modular design with distinct components for `types`, `parser`, `serializer`, and `operations`. Verify integrity using 'roundtrip gate' tests across multiple data files.
+
 ## Orchestration: The `/jam` Skill
 The creation of a `/jam` skill (automated chaining of Rune → Tala/Sol) is **intentionally deferred**.
 
@@ -62,3 +76,5 @@ The creation of a `/jam` skill (automated chaining of Rune → Tala/Sol) is **in
 - `20260329-002043-specific-genre-archetypes-can-introduce--1.md` (high-level mention of genre pitfalls)
 - `20260331-165434-gemini-2-5-flash-demonstrates-superior-c-1.md`
 - `20260331-184555-effective-prompt-generation-for-music-re-2.md`
+- `20260401-020156-avoid-using-inline-code-blocks-e-g-bun-e-3.md`
+- `20260401-175949-for-developing-robust-data-parsing-and-m-2.md`

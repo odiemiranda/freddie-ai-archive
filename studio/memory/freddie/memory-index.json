@@ -2,7 +2,7 @@
   {
     "file": "knowledge/knowledge_agent_architecture_and_workflow.md",
     "name": "Agent Architecture and Workflow",
-    "description": "Guidelines for designing agent workflows, managing context in iterative skills, establishing internal agent hierarchies, and standardizing agent initialization.",
+    "description": "Guidelines for designing agent workflows, managing context in iterative skills, establishing internal agent hierarchies, standardizing agent initialization, optimizing documentation for context, employing effective development methodologies, managing project-specific configurations, and detailing core cognitive capabilities.",
     "type": "knowledge",
     "tags": [
       "architecture",
@@ -15,9 +15,81 @@
       "infrastructure",
       "initialization",
       "boot_flow",
-      "agent_soul"
+      "agent_soul",
+      "documentation_management",
+      "context_optimization",
+      "development_methodology",
+      "parallel_execution",
+      "worktrees",
+      "agent_hierarchy",
+      "review_process",
+      "dev_session",
+      "AST",
+      "performance_optimization",
+      "code_quality",
+      "project_management",
+      "gitignore",
+      "dev-start",
+      "configuration",
+      "research",
+      "methodology",
+      "NotebookLM",
+      "web_search",
+      "information_gathering",
+      "iterative_process",
+      "McCall",
+      "planning",
+      "detail",
+      "workflow_validation",
+      "dependency_management",
+      "bun",
+      "npm",
+      "ARCHITECT",
+      "local_llm",
+      "cognitive_engine",
+      "Qwen3_4B",
+      "llama_server",
+      "strategic_discussion",
+      "neural_networks",
+      "The_Foundry",
+      "vision",
+      "capability",
+      "persona_analysis",
+      "gap_analysis",
+      "template_design",
+      "synthesis",
+      "risk_analysis",
+      "staff_engineer_mindset",
+      "AI_persona_systems",
+      "research_topic",
+      "system_design_pattern",
+      "ADR",
+      "solo_dev",
+      "design_technique",
+      "agent_improvement",
+      "persona_refinement",
+      "Wick",
+      "defensive_coding",
+      "postmortem_analysis",
+      "robustness",
+      "continuous_improvement",
+      "behavioral_constraints",
+      "operationalization",
+      "persona_development",
+      "soul_profile",
+      "creative_generation",
+      "conflict_resolution",
+      "protocol",
+      "internal_agents",
+      "adaptability",
+      "scope_management",
+      "tactical_pivot",
+      "feasibility_spike",
+      "templates",
+      "arc42",
+      "SPIKE"
     ],
-    "consolidated": "2026-03-30"
+    "consolidated": "2026-04-02"
   },
   {
     "file": "knowledge/knowledge_communication_and_interaction_standards.md",
@@ -34,14 +106,29 @@
       "persona",
       "output_formatting",
       "agent_voice",
-      "clarity"
+      "clarity",
+      "music_card"
     ],
-    "consolidated": "2026-03-30"
+    "consolidated": "2026-04-02"
+  },
+  {
+    "file": "knowledge/knowledge_linguistic_capabilities.md",
+    "name": "Linguistic Capabilities",
+    "description": "Details Freddie's advanced phonetic analysis system for deeper linguistic understanding in creative tasks.",
+    "type": "knowledge",
+    "tags": [
+      "phonetics",
+      "lyrics_analysis",
+      "infrastructure",
+      "capability",
+      "linguistics"
+    ],
+    "consolidated": "2026-04-02"
   },
   {
     "file": "knowledge/knowledge_memory_system_architecture.md",
     "name": "Memory System Architecture and Management",
-    "description": "Comprehensive guidelines and mechanisms for managing agent memory, ensuring knowledge integrity, optimizing context, and leveraging advanced retrieval and representation features.",
+    "description": "Comprehensive guidelines and mechanisms for managing agent memory, ensuring knowledge integrity, optimizing context, and leveraging advanced retrieval and representation features, including enhanced project entity tracking.",
     "type": "knowledge",
     "tags": [
       "memory",
@@ -71,14 +158,42 @@
       "brain.db",
       "tool",
       "checkpoints",
-      "HTTP"
+      "HTTP",
+      "integration",
+      "standardization",
+      "context_capture",
+      "automation",
+      "hooks",
+      "implementation_detail",
+      "exchange_level_chunking",
+      "entity_tracking",
+      "sync",
+      "data_integrity",
+      "agent_improvement",
+      "data_granularity",
+      "subagents"
     ],
-    "consolidated": "2026-03-30"
+    "consolidated": "2026-04-02"
+  },
+  {
+    "file": "knowledge/knowledge_music_generation_capabilities.md",
+    "name": "Music Generation Capabilities",
+    "description": "Details Freddie's ability to accurately infer complex musical characteristics from minimal, high-level thematic input for music card generation.",
+    "type": "knowledge",
+    "tags": [
+      "music_card",
+      "inference",
+      "contextual_understanding",
+      "music_generation",
+      "minimal_input",
+      "capability"
+    ],
+    "consolidated": "2026-04-02"
   },
   {
     "file": "knowledge/knowledge_tooling_and_platform_guidelines.md",
     "name": "Tooling and Platform Guidelines",
-    "description": "Best practices for tool execution, prioritizing CLI-first calls, and specific technical considerations for developing and managing tools on Windows, including process management and PowerShell integration.",
+    "description": "Best practices for tool execution, development, prioritizing CLI-first calls, and specific technical considerations for developing and managing tools on Windows, including process management and PowerShell integration.",
     "type": "knowledge",
     "tags": [
       "tool_execution",
@@ -91,22 +206,17 @@
       "nodejs",
       "tool-development",
       "process-management",
-      "obsidian"
+      "obsidian",
+      "cli_first",
+      "readability",
+      "maintainability",
+      "code_style",
+      "parser",
+      "serializer",
+      "testing",
+      "data_integrity",
+      "library_design"
     ],
-    "consolidated": "2026-03-30"
-  },
-  {
-    "file": "knowledge/knowledge_linguistic_capabilities.md",
-    "name": "Linguistic Capabilities",
-    "description": "Details Freddie's advanced phonetic analysis system for deeper linguistic understanding in creative tasks.",
-    "type": "knowledge",
-    "tags": [
-      "phonetics",
-      "lyrics_analysis",
-      "infrastructure",
-      "capability",
-      "linguistics"
-    ],
-    "consolidated": "2026-03-30"
+    "consolidated": "2026-04-02"
   }
 ]

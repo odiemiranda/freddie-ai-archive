@@ -35,5 +35,5 @@ When generating performance notation, utilize the default creative mode for imag
 - `20260331-165434-gemini-2-5-flash-demonstrates-superior-c-1.md`
 - `raw-log-20260331-151817-note.md`
 - `raw-log-20260331-152712-decision.md`
-- `raw-log-20260331-153406-note.md` (superseded task doc, but content on rules/integration is relevant to design)
-- `raw-log-20260331-154745-note.md` (for context on task doc unification)
+- `raw-log-20260331-153406-note.md`
+- `raw-log-20260331-154745-note.md`

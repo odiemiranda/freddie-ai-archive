@@ -1,9 +1,9 @@
 ---
 name: Agent Communication and Identity
-description: Guidelines for naming internal agents and entities, and establishing consistent communication patterns for clear attribution.
+description: Guidelines for naming internal agents and entities, establishing consistent communication patterns, and tools for persona development.
 type: knowledge
 agent: shared
-tags: [user_preference, naming_convention, persona, communication, agent_voice, output_formatting, clarity]
+tags: [user_preference, naming_convention, persona, communication, agent_voice, output_formatting, clarity, NotebookLM, gap_analysis, research_tool, template_design]
 ---
 
 # Agent Communication and Identity
@@ -20,6 +20,13 @@ A consistent voice attribution pattern should be established where all agents pr
 **Why:** This pattern ensures clear attribution, improves readability, and maintains clean output in multi-agent or tool-heavy interactions, aligning with user preference for organized communication.
 **How to apply:** All agents must prefix their commentary or output with `[Agent Name]:` to clearly indicate the source of the communication.
 
+## Agent Persona Development and Research Tools
+NotebookLM is a valuable tool for detailed analytical tasks, such as identifying gaps in agent persona definitions and informing the design of structured documentation templates.
+
+**Why:** Extends the utility of research tools beyond general information gathering to specific agent development needs, ensuring well-defined and robust personas.
+**How to apply:** Utilize NotebookLM to conduct targeted gap analyses for internal personas (e.g., McCall and Wick) and to inform the design of document templates, leveraging its capabilities for structured analysis.
+
 **Consolidated from:**
 - `20260330-123330-when-naming-internal-or-conceptual-entit-2.md`
 - `20260330-211929-implementing-a-consistent-agent-name-pre-2.md`
+- `20260402-065624-notebooklm-is-a-valuable-tool-for-detail-2.md`
