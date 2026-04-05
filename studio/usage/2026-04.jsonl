@@ -7,3 +7,6 @@
 {"ts":"2026-04-05T02:14:55.409Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-project-sync","inputTokens":601918,"outputTokens":0,"costUsd":0}
 {"ts":"2026-04-05T02:20:13.767Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":40248,"outputTokens":0,"costUsd":0}
 {"ts":"2026-04-05T02:21:03.930Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":40861,"outputTokens":0,"costUsd":0}
+{"ts":"2026-04-05T02:22:14.928Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":41361,"outputTokens":0,"costUsd":0}
+{"ts":"2026-04-05T02:23:17.683Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":43236,"outputTokens":0,"costUsd":0}
+{"ts":"2026-04-05T02:24:57.331Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":45974,"outputTokens":0,"costUsd":0}
