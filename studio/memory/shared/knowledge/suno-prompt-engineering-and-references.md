@@ -3,7 +3,7 @@ name: Suno Prompt Engineering and References
 description: Unified syntax, best practices, and advanced techniques for Suno AI music generation, including lyrical structure (energy arcs), style block length, genre normalization, vocal style, arrangement, common pitfalls, and observed undocumented behaviors.
 type: knowledge
 agent: shared
-tags: [suno, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, prompt-design, clarity, performance-notation, ad-libs, genre-recipes, tempo, key, music-theory, special-techniques, char-budget, prompt-optimization, variation, control, weight, suno-interpretation, gradient, fine-tuning, genre-normalization, lo-fi-jazz, nuance, critic-feedback, prompt-refinement, instrumentation, arrangement, frequency-stacking, organ, audio-quality, sfx, atmosphere, subordination, multi-layered-control, platform-behavior, fade-in, undocumented-feature, energy-arc, lyrical-structure, validation, repetition]
+tags: [suno, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, prompt-design, clarity, performance-notation, ad-libs, genre-recipes, tempo, key, music-theory, special-techniques, char-budget, prompt-optimization, variation, control, weight, suno-interpretation, gradient, fine-tuning, genre-normalization, lo-fi-jazz, nuance, critic-feedback, prompt-refinement, instrumentation, arrangement, frequency-stacking, organ, audio-quality, sfx, atmosphere, subordination, multi-layered-control, platform-behavior, fade-in, undocumented-feature, energy-arc, lyrical-structure, validation, repetition, archetype, layered-control, complexity]
 ---
 
 # Suno Prompt Engineering and References
@@ -93,6 +93,12 @@ Subtle global sonic characteristics, such as brightness or specific instrument p
 **Why:** Provides comprehensive and precise control over nuanced sonic characteristics that single-layer prompting might miss.
 **How to apply:** Implement a combination of these strategies, considering the interaction between Style Block, Lyrics, and Exclude sections, to achieve desired global sonic outcomes.
 
+## Archetype Blending for Complex Styles
+Explicitly defining a 'primary + secondary' archetype blend with specific vocal or thematic roles (e.g., 'chanting' for primary, 'spoken word' for secondary) is an effective prompt design strategy for achieving complex, multi-layered thematic and vocal styles within a single track.
+
+**Why:** Enables the creation of nuanced, multi-layered thematic and vocal styles, enhancing creative control and depth in generated tracks.
+**How to apply:** When designing prompts for complex vocal or thematic tracks, define a primary archetype with its associated vocal/thematic role (e.g., 'chanting') and a secondary archetype with its distinct role (e.g., 'spoken word').
+
 ## Lyrical Structure: Energy Arcs
 The concept of an 'energy arc' with predefined shapes is a valuable and effective structural element for generating BGM lyrics, providing a high-level control over the dynamic flow and intensity of the lyrical output.
 
@@ -156,3 +162,4 @@ The 'Weight' (W) and 'Suno Interpretation' (SI) parameters offer precise control
 - `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`
 - `20260331-145249-the-concept-of-an-energy-arc-with-predef-1.md`
 - `20260331-193044-the-upper-end-of-the-flexible-character--3.md`
+- `20260405-122651-explicitly-defining-a-primary-secondary--2.md`

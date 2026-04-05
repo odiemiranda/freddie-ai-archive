@@ -3,7 +3,7 @@ name: suno-agent-workflow-and-control
 description: Advanced workflow patterns, parameter tuning, validated agent autonomy in multi-critic reconciliation, phase-gated skill execution, and effective lyrics input for Suno prompt engineering.
 type: knowledge
 agent: tala
-tags: [suno, workflow, orchestrator-pattern, variation, control, weight, suno-interpretation, critic-reconciliation, llm-feedback, agent-autonomy, goal-priority, lyrics-input, user-intent, skill-design, llm-integration, gemini, context-flags, prompt-refinement, minimax, repetition, workflow-validation, quality, structure]
+tags: [suno, workflow, orchestrator-pattern, variation, control, weight, suno-interpretation, critic-reconciliation, llm-feedback, agent-autonomy, goal-priority, lyrics-input, user-intent, skill-design, llm-integration, gemini, context-flags, prompt-refinement, minimax, repetition, workflow-validation, quality, structure, grok]
 ---
 
 # Suno Agent Workflow and Control
@@ -37,12 +37,12 @@ These parameters allow fine-tuning the balance between prompt tightness (adheren
 The agent's core task goals must consistently override critic suggestions that would compromise those goals.
 
 ### Why
-Critics may flag for 'missing' elements or suggest additions that, while technically valid, conflict with the primary objective (e.g., adding drums to an ambient track). Agent autonomy ensures goal-driven prompt construction remains intact.
+Critics may flag for 'missing' elements or suggest additions that, while technically valid, conflict with the primary objective (e.g., adding drums to an ambient track). Agent autonomy ensures goal-driven prompt construction remains intact. High rates of critic rejection do not necessarily indicate a failed workflow or a flawed prompt.
 
 #### How to apply
 -   Define clear core task goals (e.g., ambient focus, specific mood) at the outset of prompt construction.
 -   Consistently reject critic suggestions that would compromise these defined goals, even if critics flag for 'missing' elements.
--   **Validation:** Agent autonomy in selectively rejecting critic suggestions, especially those that propose 'wholesale changes' or conflict with core task goals/established prompt principles, is validated as an effective strategy for successful outcomes. Not all critic flags need to be addressed for a high-quality generation. When a user provides specific behavioral or textural instructions (e.g., 'brush texture'), the agent must prioritize and protect these core user intents, even when a critic might initially flag them. This reinforces the importance of agent autonomy in enforcing subtle but impactful sonic details, overriding critic suggestions (e.g., 'MiniMax catch') that conflict with user intent.
+-   **Validation:** Agent autonomy in selectively rejecting critic suggestions, especially those that propose 'wholesale changes' or conflict with core task goals/established prompt principles, is validated as an effective strategy for successful outcomes. Not all critic flags need to be addressed for a high-quality generation. When a user provides specific behavioral or textural instructions (e.g., 'brush texture'), the agent must prioritize and protect these core user intents, even when a critic might initially flag them. This reinforces the importance of agent autonomy in enforcing subtle but impactful sonic details, overriding critic suggestions (e.g., 'MiniMax catch') that conflict with user intent. This principle is further validated by successful outcomes despite high rates of critic rejection (particularly from MiniMax and Grok).
 
 ## 4. Multi-Critic Feedback & LLM Reconciliation
 
@@ -56,9 +56,6 @@ Different critics identify distinct issues, and no single critic reliably catche
 -   When using LLMs for prompt refinement, be vigilant about their tendencies (e.g., stripping instrument direction from instrumental BGM lyrics, recommending unreliable structural tags). **Agent rules must override such general suggestions.**
 -   **Refinement:** LLM critics like Gemini can reliably address specific structural issues (e.g., Break/Outro reliability) when integrated into the multi-critic process, refining previous warnings about their general unreliability for structural tags.
 -   **MiniMax Utility:** The MiniMax critic is effective not only at identifying detrimental layering or over-muffling that would effectively erase an instrument from the mix but also at detecting sonic redundancy or lack of variation, ensuring dynamic range and interest in a track.
-
-### Workflow Validation
-The current prompt engineering and multi-critic reconciliation workflow (e.g., Prompt Builder + multi-critic review with Gemini for structural fixes, MiniMax for repetition, Grok for quality) is highly effective, consistently producing high-quality outputs that exceed typical reroll expectations.
 
 ## 5. Structured Phase-Gated Workflow
 
@@ -80,4 +77,4 @@ Confirming effective methods for lyric input streamlines the generation process 
 -   The 'Path A' workflow, where inline lyrics are provided directly and augmented by the agent, is a viable and effective method for lyric input.
 
 ---
-Consolidated from: `suno-workflow-and-agent-control.md`, `20260329-155500-a-structured-phase-gated-workflow-e-g-me-2.md`, `20260331-193044-minimax-is-effective-not-only-at-identif-2.md`, `20260331-193044-the-current-prompt-engineering-and-multi-1.md`
+Consolidated from: `suno-workflow-and-agent-control.md`, `20260329-155500-a-structured-phase-gated-workflow-e-g-me-2.md`, `20260331-193044-minimax-is-effective-not-only-at-identif-2.md`, `20260331-193044-the-current-prompt-engineering-and-multi-1.md`, `20260405-122651-high-rates-of-critic-rejection-particula-1.md`

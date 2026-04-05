@@ -2,7 +2,7 @@
   {
     "file": "knowledge/agent-communication-and-identity.md",
     "name": "Agent Communication and Identity",
-    "description": "Guidelines for naming internal agents and entities, establishing consistent communication patterns, and tools for persona development.",
+    "description": "Guidelines for naming internal agents and entities, establishing consistent communication patterns, and tools for persona development and structured documentation.",
     "type": "knowledge",
     "tags": [
       "user_preference",
@@ -15,9 +15,13 @@
       "NotebookLM",
       "gap_analysis",
       "research_tool",
-      "template_design"
+      "template_design",
+      "documentation",
+      "architecture",
+      "arc42",
+      "SPIKE"
     ],
-    "consolidated": "2026-04-02"
+    "consolidated": "2026-04-05"
   },
   {
     "file": "knowledge/platform-and-tool-behaviors.md",
@@ -32,9 +36,12 @@
       "development-environment",
       "bun",
       "windows",
-      "testing"
+      "testing",
+      "tool_limitation",
+      "lyrics_analysis",
+      "false_positive"
     ],
-    "consolidated": "2026-04-02"
+    "consolidated": "2026-04-05"
   },
   {
     "file": "knowledge/studio-architecture-and-tools.md",
@@ -60,7 +67,7 @@
       "weirdness",
       "style-influence"
     ],
-    "consolidated": "2026-04-02"
+    "consolidated": "2026-04-05"
   },
   {
     "file": "knowledge/suno-prompt-engineering-and-references.md",
@@ -113,19 +120,25 @@
       "energy-arc",
       "lyrical-structure",
       "validation",
-      "repetition"
+      "repetition",
+      "archetype",
+      "layered-control",
+      "complexity"
     ],
-    "consolidated": "2026-04-02"
+    "consolidated": "2026-04-05"
   },
   {
     "file": "knowledge/workflow-quality-and-knowledge-management.md",
     "name": "Workflow, Quality Control, and Knowledge Management",
-    "description": "Guidelines for agent critique loops, metatag management, strategic generation approaches, including advanced prompt generation methodologies, LLM capabilities and selection (e.g., for creative notation), and best practices for managing knowledge, general development, and tooling.",
+    "description": "Guidelines for agent critique loops, metatag management, strategic generation approaches, including advanced prompt generation methodologies, LLM capabilities and selection (e.g., for creative notation), and best practices for managing knowledge, general development, tooling, and overall system architectural vision.",
     "type": "knowledge",
     "tags": [
       "workflow",
+      "workflow_management",
+      "workflow-pattern",
       "quality-gate",
       "critique",
+      "multi-pass",
       "metatags",
       "production",
       "gemini",
@@ -162,8 +175,21 @@
       "parser",
       "serializer",
       "testing",
-      "library_design"
+      "library_design",
+      "agent-design",
+      "tool-capability",
+      "interaction_protocols",
+      "adaptability",
+      "scope_management",
+      "tactical_pivot",
+      "feasibility_spike",
+      "vision",
+      "ecosystem",
+      "foundation",
+      "strategy",
+      "platform-limits",
+      "timeout"
     ],
-    "consolidated": "2026-04-02"
+    "consolidated": "2026-04-05"
   }
 ]

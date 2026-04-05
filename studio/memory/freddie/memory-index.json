@@ -2,7 +2,7 @@
   {
     "file": "knowledge/knowledge_agent_architecture_and_workflow.md",
     "name": "Agent Architecture and Workflow",
-    "description": "Guidelines for designing agent workflows, managing context in iterative skills, establishing internal agent hierarchies, standardizing agent initialization, optimizing documentation for context, employing effective development methodologies, managing project-specific configurations, and detailing core cognitive capabilities.",
+    "description": "Guidelines for designing agent workflows, managing context in iterative skills, establishing internal agent hierarchies, standardizing agent initialization, optimizing documentation for context, employing effective development methodologies, managing project-specific configurations, detailing core cognitive capabilities, and outlining strategic vision.",
     "type": "knowledge",
     "tags": [
       "architecture",
@@ -43,7 +43,6 @@
       "workflow_validation",
       "dependency_management",
       "bun",
-      "npm",
       "ARCHITECT",
       "local_llm",
       "cognitive_engine",
@@ -68,7 +67,6 @@
       "design_technique",
       "agent_improvement",
       "persona_refinement",
-      "Wick",
       "defensive_coding",
       "postmortem_analysis",
       "robustness",
@@ -87,9 +85,41 @@
       "feasibility_spike",
       "templates",
       "arc42",
-      "SPIKE"
+      "SPIKE",
+      "Holmes",
+      "Ryan",
+      "adversarial_tests",
+      "testing",
+      "investigation",
+      "create_skill",
+      "validation",
+      "tooling",
+      "3-tier_scaffold",
+      "skill_spec",
+      "quality_assurance",
+      "strategy",
+      "ecosystem",
+      "multilingual",
+      "language_processing",
+      "brief_creation",
+      "scope_expansion",
+      "workflow_automation",
+      "task_management",
+      "dev-workflow",
+      "efficiency",
+      "new-technique",
+      "recovery",
+      "git",
+      "data-integrity",
+      "standardization",
+      "backup",
+      "operational_procedure",
+      "creative_generation_pipeline",
+      "lyrics_generation",
+      "music_generation",
+      "pipeline_robustness"
     ],
-    "consolidated": "2026-04-02"
+    "consolidated": "2026-04-05"
   },
   {
     "file": "knowledge/knowledge_communication_and_interaction_standards.md",
@@ -109,21 +139,26 @@
       "clarity",
       "music_card"
     ],
-    "consolidated": "2026-04-02"
+    "consolidated": "2026-04-05"
   },
   {
     "file": "knowledge/knowledge_linguistic_capabilities.md",
     "name": "Linguistic Capabilities",
-    "description": "Details Freddie's advanced phonetic analysis system for deeper linguistic understanding in creative tasks.",
+    "description": "Details Freddie's advanced phonetic analysis system for deeper linguistic understanding in creative tasks, including adaptability to diverse non-English requirements.",
     "type": "knowledge",
     "tags": [
       "phonetics",
       "lyrics_analysis",
       "infrastructure",
       "capability",
-      "linguistics"
+      "linguistics",
+      "multilingual",
+      "adaptability",
+      "brief_creation",
+      "language_processing",
+      "scope_expansion"
     ],
-    "consolidated": "2026-04-02"
+    "consolidated": "2026-04-05"
   },
   {
     "file": "knowledge/knowledge_memory_system_architecture.md",
@@ -171,9 +206,11 @@
       "data_integrity",
       "agent_improvement",
       "data_granularity",
-      "subagents"
+      "subagents",
+      "episodic_memory",
+      "gap_analysis"
     ],
-    "consolidated": "2026-04-02"
+    "consolidated": "2026-04-05"
   },
   {
     "file": "knowledge/knowledge_music_generation_capabilities.md",
@@ -188,12 +225,12 @@
       "minimal_input",
       "capability"
     ],
-    "consolidated": "2026-04-02"
+    "consolidated": "2026-04-05"
   },
   {
     "file": "knowledge/knowledge_tooling_and_platform_guidelines.md",
     "name": "Tooling and Platform Guidelines",
-    "description": "Best practices for tool execution, development, prioritizing CLI-first calls, and specific technical considerations for developing and managing tools on Windows, including process management and PowerShell integration.",
+    "description": "Best practices for tool execution, development, prioritizing CLI-first calls, and specific technical considerations for developing and managing tools on Windows, including process management and PowerShell integration, ensuring robustness and security, and noting known tool limitations.",
     "type": "knowledge",
     "tags": [
       "tool_execution",
@@ -215,8 +252,19 @@
       "serializer",
       "testing",
       "data_integrity",
-      "library_design"
+      "library_design",
+      "infrastructure",
+      "security",
+      "robustness",
+      "defensive_coding",
+      "bun",
+      "standardization",
+      "execution",
+      "tool_limitation",
+      "bug",
+      "false_positive",
+      "tool_behavior"
     ],
-    "consolidated": "2026-04-02"
+    "consolidated": "2026-04-05"
   }
 ]

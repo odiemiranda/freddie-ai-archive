@@ -27,14 +27,15 @@
       "repetition",
       "workflow-validation",
       "quality",
-      "structure"
+      "structure",
+      "grok"
     ],
-    "consolidated": "2026-03-31"
+    "consolidated": "2026-04-05"
   },
   {
     "file": "knowledge/suno-prompt-design-guide.md",
     "name": "suno-prompt-design-guide",
-    "description": "Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, and core prompt engineering principles for clarity and genre precision.",
+    "description": "Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity and genre precision.",
     "type": "knowledge",
     "tags": [
       "suno",
@@ -72,14 +73,15 @@
       "cultural-labels",
       "sfx",
       "platform-behavior",
-      "validation"
+      "validation",
+      "archetype"
     ],
-    "consolidated": "2026-03-31"
+    "consolidated": "2026-04-05"
   },
   {
     "file": "knowledge/suno-quality-and-iteration.md",
     "name": "suno-quality-and-iteration",
-    "description": "Guidelines for managing quality expectations, the iterative reroll process, and insights into internal tool performance for Suno prompt engineering.",
+    "description": "Guidelines for managing quality expectations, the iterative reroll process, and insights into internal tool performance for Suno prompt engineering, including workflow effectiveness validation.",
     "type": "knowledge",
     "tags": [
       "suno",
@@ -92,12 +94,12 @@
       "tool-feedback",
       "workflow-validation"
     ],
-    "consolidated": "2026-03-31"
+    "consolidated": "2026-04-05"
   },
   {
     "file": "knowledge/tala-system-updates.md",
     "name": "tala-system-updates",
-    "description": "Consolidated updates on Tala's internal system, including enhanced knowledge management, operational standardization, internal tool reliability, development workflow improvements, architectural validations, and tool development milestones.",
+    "description": "Consolidated updates on Tala's internal system, including enhanced knowledge management, operational standardization, internal tool reliability and validation, development workflow improvements, architectural validations, and tool development milestones.",
     "type": "knowledge",
     "tags": [
       "tala",
@@ -123,8 +125,10 @@
       "prompt-builder",
       "suno-strategy",
       "tool-development",
-      "workflow-automation"
+      "workflow-automation",
+      "lyrics-input",
+      "llm-integration"
     ],
-    "consolidated": "2026-03-31"
+    "consolidated": "2026-04-05"
   }
 ]

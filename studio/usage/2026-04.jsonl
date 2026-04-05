@@ -72,3 +72,15 @@
 {"ts":"2026-04-05T04:38:33.105Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":83119,"outputTokens":0,"costUsd":0}
 {"ts":"2026-04-05T04:42:36.989Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-project-sync","inputTokens":1472,"outputTokens":0,"costUsd":0}
 {"ts":"2026-04-05T04:43:00.482Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":86107,"outputTokens":0,"costUsd":0}
+{"ts":"2026-04-05T04:47:04.228Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":74623,"outputTokens":0,"costUsd":0}
+{"ts":"2026-04-05T04:47:25.812Z","provider":"gemini","model":"gemini-2.5-flash","caller":"reflect-freddie","inputTokens":11342,"outputTokens":642,"costUsd":0}
+{"ts":"2026-04-05T04:47:42.473Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"consolidate-dedup","inputTokens":7853,"outputTokens":0,"costUsd":0}
+{"ts":"2026-04-05T04:48:30.030Z","provider":"gemini","model":"gemini-2.5-flash","caller":"consolidate-memory","inputTokens":8196,"outputTokens":7650,"costUsd":0}
+{"ts":"2026-04-05T04:48:31.943Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"consolidate-dedup","inputTokens":14071,"outputTokens":0,"costUsd":0}
+{"ts":"2026-04-05T04:49:42.681Z","provider":"gemini","model":"gemini-2.5-flash","caller":"consolidate-memory","inputTokens":13746,"outputTokens":12234,"costUsd":0}
+{"ts":"2026-04-05T04:49:45.243Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"consolidate-dedup","inputTokens":9205,"outputTokens":0,"costUsd":0}
+{"ts":"2026-04-05T04:50:54.218Z","provider":"gemini","model":"gemini-2.5-flash","caller":"consolidate-memory","inputTokens":11180,"outputTokens":8131,"costUsd":0}
+{"ts":"2026-04-05T04:50:56.070Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"consolidate-dedup","inputTokens":10451,"outputTokens":0,"costUsd":0}
+{"ts":"2026-04-05T04:51:42.348Z","provider":"gemini","model":"gemini-2.5-flash","caller":"consolidate-memory","inputTokens":10522,"outputTokens":8993,"costUsd":0}
+{"ts":"2026-04-05T04:52:22.190Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":87845,"outputTokens":0,"costUsd":0}
+{"ts":"2026-04-05T04:53:01.439Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":88368,"outputTokens":0,"costUsd":0}

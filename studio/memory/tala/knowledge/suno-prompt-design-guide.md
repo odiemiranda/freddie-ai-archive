@@ -1,9 +1,9 @@
 ---
 name: suno-prompt-design-guide
-description: Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, and core prompt engineering principles for clarity and genre precision.
+description: Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity and genre precision.
 type: knowledge
 agent: tala
-tags: [suno, lyrics, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, structure, tags, callback, atmosphere, performance-notation, ad-libs, arrangement, frequency-stacking, style-block, char-budget, production, lean, exclude, prompt-optimization, instrumentation, subordination, brightness, layered-control, prompt-design, complexity, genre, signal-clarity, audio-quality, cultural-labels, sfx, platform-behavior, validation]
+tags: [suno, lyrics, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, structure, tags, callback, atmosphere, performance-notation, ad-libs, arrangement, frequency-stacking, style-block, char-budget, production, lean, exclude, prompt-optimization, instrumentation, subordination, brightness, layered-control, prompt-design, complexity, genre, signal-clarity, audio-quality, cultural-labels, sfx, platform-behavior, validation, archetype]
 ---
 
 # Suno Prompt Design Guide
@@ -168,7 +168,7 @@ Suno interprets cultural labels as instructions to "add everything from this tra
 
 ## 4. Advanced Multi-Layered Control
 
-Subtle global sonic characteristics, such as brightness or specific instrument placement/subordination, can be effectively controlled through a multi-layered approach.
+Subtle global sonic characteristics, such as brightness or specific instrument placement/subordination, and complex thematic/vocal styles can be effectively controlled through a multi-layered approach.
 
 ### Why
 Relying on a single prompt element for complex sonic control is often insufficient. Combining multiple strategies across the Style block, Lyrics, and Exclude sections creates a robust, precise instruction set for Suno.
@@ -190,6 +190,14 @@ Over-muffling or repetitive negative descriptors can lead to an instrument being
 -   For instrument subordination, use descriptive language like 'distant/low drone' rather than repeated 'muffled' descriptors.
 -   The MiniMax critic is effective at identifying detrimental layering or over-muffling that would effectively erase an instrument from the mix, so heed its warnings.
 
+### Archetype Blends
+
+#### Why
+Explicitly defining primary and secondary archetypes with specific roles allows for complex, multi-layered thematic and vocal styles within a single track.
+
+#### How to apply
+-   Define a 'primary + secondary' archetype blend with specific vocal or thematic roles (e.g., 'chanting' for primary, 'spoken word' for secondary) as an effective prompt design strategy.
+
 ## 5. What Fails & What Works
 
 ### What Fails
@@ -203,4 +211,4 @@ Over-muffling or repetitive negative descriptors can lead to an instrument being
 -   **Support solo sections** — give support instruments their own section instead of fighting for shared space.
 
 ---
-Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`, `20260331-193044-the-upper-end-of-the-flexible-character--3.md`
+Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`, `20260331-193044-the-upper-end-of-the-flexible-character--3.md`, `20260405-122651-explicitly-defining-a-primary-secondary--2.md`
