@@ -30,12 +30,12 @@
       "structure",
       "grok"
     ],
-    "consolidated": "2026-04-05"
+    "consolidated": "2026-04-06"
   },
   {
-    "file": "knowledge/suno-prompt-design-guide.md",
-    "name": "suno-prompt-design-guide",
-    "description": "Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity and genre precision.",
+    "file": "knowledge/suno-prompt-design.md",
+    "name": "suno-prompt-design",
+    "description": "Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity, genre precision, and descriptor refinement.",
     "type": "knowledge",
     "tags": [
       "suno",
@@ -74,14 +74,18 @@
       "sfx",
       "platform-behavior",
       "validation",
-      "archetype"
+      "archetype",
+      "instrument-hallucination",
+      "genre-artifacts",
+      "dealbreaker",
+      "descriptor-refinement"
     ],
-    "consolidated": "2026-04-05"
+    "consolidated": "2026-04-06"
   },
   {
     "file": "knowledge/suno-quality-and-iteration.md",
     "name": "suno-quality-and-iteration",
-    "description": "Guidelines for managing quality expectations, the iterative reroll process, and insights into internal tool performance for Suno prompt engineering, including workflow effectiveness validation.",
+    "description": "Guidelines for managing quality expectations, the iterative reroll process, and insights into internal tool performance for Suno prompt engineering.",
     "type": "knowledge",
     "tags": [
       "suno",
@@ -91,10 +95,9 @@
       "critic",
       "prompt-refinement",
       "internal-tool",
-      "tool-feedback",
-      "workflow-validation"
+      "tool-feedback"
     ],
-    "consolidated": "2026-04-05"
+    "consolidated": "2026-04-06"
   },
   {
     "file": "knowledge/tala-system-updates.md",
@@ -129,6 +132,6 @@
       "lyrics-input",
       "llm-integration"
     ],
-    "consolidated": "2026-04-05"
+    "consolidated": "2026-04-06"
   }
 ]

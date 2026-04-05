@@ -1,9 +1,9 @@
 ---
 name: suno-quality-and-iteration
-description: Guidelines for managing quality expectations, the iterative reroll process, and insights into internal tool performance for Suno prompt engineering, including workflow effectiveness validation.
+description: Guidelines for managing quality expectations, the iterative reroll process, and insights into internal tool performance for Suno prompt engineering.
 type: knowledge
 agent: tala
-tags: [suno, quality, reroll, iteration, critic, prompt-refinement, internal-tool, tool-feedback, workflow-validation]
+tags: [suno, quality, reroll, iteration, critic, prompt-refinement, internal-tool, tool-feedback]
 ---
 
 # Suno Quality and Iteration
@@ -22,7 +22,6 @@ Suno's generative nature involves inherent variability. The prompt's job is to n
 -   **Quality Gate:** The prompt is working if the *worst* generation is still recognizably what was requested. If every generation is chaotic, the prompt is broken.
 -   **Iteration Workflow:** Treat the first generation as a draft. When issues arise (e.g., "chaotic," "layering"), iterate on bracket syntax first, as it's the most impactful lever.
 -   **Track History:** Document iteration history in Style Block Notes or similar logs to learn from past attempts.
--   **Workflow Effectiveness Validation:** The current prompt engineering and multi-critic reconciliation workflow (e.g., Prompt Builder + multi-critic review with Gemini for structural fixes, MiniMax for repetition, Grok for quality) is highly effective, consistently producing high-quality outputs that exceed typical reroll expectations, often yielding keepers on the first few attempts.
 
 ## 2. Internal Tool Quality Concerns
 
@@ -38,4 +37,4 @@ The 'tracknames' tool may produce repetitive or low-quality suggestions ('fatigu
 -   Implement a review and refinement process for the 'tracknames' tool to improve the quality and variety of generated suggestions.
 
 ---
-Consolidated from: `suno-prompt-engineering-principles.md`, `suno-system-notes.md`, `suno-agent-workflow-and-control.md` (Workflow Validation paragraph)
+Consolidated from: `suno-prompt-engineering-principles.md`, `suno-system-notes.md`
