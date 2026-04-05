@@ -133,26 +133,26 @@ Validated lean Style + rich bracket approach. Suggested adding upright bass (rej
 
 ## Track Names
 
-| # | Name | Model | Strategy |
-|---|------|-------|----------|
-| 1 | Morning Light Unfolds | minimax | poetic imagery |
-| 2 | Golden Pulse | minimax | punchy phrase |
-| 3 | Amber Quiet | minimax | abstract mood |
-| 4 | First Light Strings | minimax | narrative tone |
-| 5 | Shamisen Dawn | minimax | musical texture |
-| 6 | Soft Swing Resolve | minimax | emotional resonance |
-| 7 | Waking Warmth | gemini | descriptive/poetic |
-| 8 | Morning Quietude | gemini | evocative |
-| 9 | Gentle Amber Swing | gemini | textural/descriptive |
-| 10 | Unfurling Light | gemini | abstract/poetic |
-| 11 | Intimate Room Tone | gemini | direct/textural |
-| 12 | Reflective Pulse | gemini | evocative/abstract |
-| 13 | Morning Shamisen Glow | grok | poetic mood imagery |
-| 14 | Gentle Pluck Awakening | grok | narrative texture |
-| 15 | Amber Harp Pulse | grok | abstract instrument fusion |
-| 16 | Waking Brushed Swing | grok | punchy rhythmic warmth |
-| 17 | Tender Modal Dawn | grok | evocative key and mood |
-| 18 | Fading Room Warmth | grok | resonant fade resolution |
+| #   | Name                   | Model   | Strategy                   |
+| --- | ---------------------- | ------- | -------------------------- |
+| 1   | Morning Light Unfolds  | minimax | poetic imagery             |
+| 2   | Golden Pulse           | minimax | punchy phrase              |
+| 3   | Amber Quiet            | minimax | abstract mood              |
+| 4   | First Light Strings    | minimax | narrative tone             |
+| 5   | Shamisen Dawn          | minimax | musical texture            |
+| 6   | Soft Swing Resolve     | minimax | emotional resonance        |
+| 7   | Waking Warmth          | gemini  | descriptive/poetic         |
+| 8   | Morning Quietude       | gemini  | evocative                  |
+| 9   | Gentle Amber Swing     | gemini  | textural/descriptive       |
+| 10  | Unfurling Light        | gemini  | abstract/poetic            |
+| 11  | Intimate Room Tone     | gemini  | direct/textural            |
+| 12  | Reflective Pulse       | gemini  | evocative/abstract         |
+| 13  | Morning Shamisen Glow  | grok    | poetic mood imagery        |
+| 14  | Gentle Pluck Awakening | grok    | narrative texture          |
+| 15  | Amber Harp Pulse       | grok    | abstract instrument fusion |
+| 16  | Waking Brushed Swing   | grok    | punchy rhythmic warmth     |
+| 17  | Tender Modal Dawn      | grok    | evocative key and mood     |
+| 18  | Fading Room Warmth     | grok    | resonant fade resolution   |
 
 ---
 

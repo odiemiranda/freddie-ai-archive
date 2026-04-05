@@ -127,26 +127,26 @@ vocals, singing
 
 ## Track Names
 
-| # | Name | Model | Strategy |
-|---|------|-------|----------|
-| 1 | Dawn's Shamisen Pluck | minimax | instrument evocation |
-| 2 | Whispered Harp Sunrise | minimax | mood imagery |
-| 3 | Unhurried Morning Strings | minimax | narrative description |
-| 4 | Misty A-Minor Reverie | minimax | tonal reference |
-| 5 | Soft Brush Echoes | minimax | rhythmic texture |
-| 6 | Intimate Warm Plucks | minimax | intimate mood |
-| 7 | Wistful Morning Light | gemini | mood and time |
-| 8 | Shamisen Harp Echoes | gemini | instrumental blend |
-| 9 | Quiet Unhurried Warmth | gemini | overall feeling |
-| 10 | Amber Dawn Plucks | gemini | sensory + sound |
-| 11 | Brushed Silk Morning | gemini | texture and time |
-| 12 | Drifting on A Minor | gemini | musical and mood |
-| 13 | Wistful Shamisen Dawn | grok | poetic |
-| 14 | Brushed Morning Plucks | grok | texture-based |
-| 15 | Unhurried Harp Whisper | grok | mood-evoking |
-| 16 | Warm A Minor Reverie | grok | key and mood |
-| 17 | Intimate Jazzhop Glow | grok | abstract intimate |
-| 18 | Fading Shamisen Haze | grok | wistful narrative |
+| #   | Name                      | Model   | Strategy              |
+| --- | ------------------------- | ------- | --------------------- |
+| 1   | Dawn's Shamisen Pluck     | minimax | instrument evocation  |
+| 2   | Whispered Harp Sunrise    | minimax | mood imagery          |
+| 3   | Unhurried Morning Strings | minimax | narrative description |
+| 4   | Misty A-Minor Reverie     | minimax | tonal reference       |
+| 5   | Soft Brush Echoes         | minimax | rhythmic texture      |
+| 6   | Intimate Warm Plucks      | minimax | intimate mood         |
+| 7   | Wistful Morning Light     | gemini  | mood and time         |
+| 8   | Shamisen Harp Echoes      | gemini  | instrumental blend    |
+| 9   | Quiet Unhurried Warmth    | gemini  | overall feeling       |
+| 10  | Amber Dawn Plucks         | gemini  | sensory + sound       |
+| 11  | Brushed Silk Morning      | gemini  | texture and time      |
+| 12  | Drifting on A Minor       | gemini  | musical and mood      |
+| 13  | Wistful Shamisen Dawn     | grok    | poetic                |
+| 14  | Brushed Morning Plucks    | grok    | texture-based         |
+| 15  | Unhurried Harp Whisper    | grok    | mood-evoking          |
+| 16  | Warm A Minor Reverie      | grok    | key and mood          |
+| 17  | Intimate Jazzhop Glow     | grok    | abstract intimate     |
+| 18  | Fading Shamisen Haze      | grok    | wistful narrative     |
 
 ---
 
