@@ -189,3 +189,8 @@
 {"ts":"2026-04-05T15:30:44.297Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":155952,"outputTokens":0,"costUsd":0}
 {"ts":"2026-04-05T15:33:57.445Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":156690,"outputTokens":0,"costUsd":0}
 {"ts":"2026-04-05T15:38:42.238Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":157303,"outputTokens":0,"costUsd":0}
+{"ts":"2026-04-05T17:05:39.566Z","provider":"gemini","model":"gemini-2.5-flash","caller":"reflect-freddie","inputTokens":12216,"outputTokens":835,"costUsd":0}
+{"ts":"2026-04-05T17:05:43.245Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":148779,"outputTokens":0,"costUsd":0}
+{"ts":"2026-04-05T17:07:08.232Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":159041,"outputTokens":0,"costUsd":0}
+{"ts":"2026-04-05T17:08:13.486Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":159565,"outputTokens":0,"costUsd":0}
+{"ts":"2026-04-05T17:13:55.478Z","provider":"local","model":"all-MiniLM-L6-v2","caller":"brain-raw-sync","inputTokens":160928,"outputTokens":0,"costUsd":0}
