@@ -1,12 +1,18 @@
 ---
 name: Workflow, Quality Control, and Knowledge Management
-description: Guidelines for agent critique loops, metatag management, strategic generation approaches, including advanced prompt generation methodologies, LLM capabilities and selection (e.g., for creative notation), and best practices for managing knowledge, general development, and tooling.
+description: Guidelines for agent critique loops, metatag management, strategic generation approaches, including advanced prompt generation methodologies, LLM capabilities and selection (e.g., for creative notation), and best practices for managing knowledge, general development, tooling, and overall system architectural vision.
 type: knowledge
 agent: shared
-tags: [workflow, quality-gate, critique, metatags, production, gemini, minimax, parallel-processing, jam-skill, tala, rune, knowledge-management, consolidation, llm, token-limits, data-integrity, best-practices, llm-capabilities, llm-selection, notation, prompt-engineering, text-generation, music-lyrics, linguistics, phonetics, homograph-detection, structure, accuracy, tool_development, cli_first, user_preference, workflow_design, readability, maintainability, code_style, architecture, parser, serializer, testing, library_design]
+tags: [workflow, workflow_management, workflow-pattern, quality-gate, critique, multi-pass, metatags, production, gemini, minimax, parallel-processing, jam-skill, tala, rune, knowledge-management, consolidation, llm, token-limits, data-integrity, best-practices, llm-capabilities, llm-selection, notation, prompt-engineering, text-generation, music-lyrics, linguistics, phonetics, homograph-detection, structure, accuracy, tool_development, cli_first, user_preference, workflow_design, readability, maintainability, code_style, architecture, parser, serializer, testing, library_design, agent-design, tool-capability, interaction_protocols, adaptability, scope_management, tactical_pivot, feasibility_spike, vision, ecosystem, foundation, strategy, platform-limits, timeout]
 ---
 
 # Workflow, Quality Control, and Knowledge Management
+
+## Strategic Vision and Architectural Principles
+The strategic direction emphasizes building a robust, composable tool ecosystem with a strong foundational infrastructure, prioritizing stability and interoperability before engaging in extensive creative experimentation. This aligns with the user's articulated vision for the system as an 'ecosystem not framework,' where 'tools compound on each other' and the 'foundation must be solid before creative testing.'
+
+**Why:** Ensures long-term system stability, scalability, and composability, aligning with user preference for a robust, interconnected tool ecosystem.
+**How to apply:** Prioritize the development of stable, interoperable foundational tools and infrastructure. Defer extensive creative experimentation until the underlying ecosystem is solid and proven. Design tools to be composable and to build upon each other's capabilities.
 
 ## LLM Token Limits and Silent Data Loss
 When using Large Language Models (LLMs) for structured, multi-file output, it is critical to be aware of `maxOutputTokens` limits. If the output exceeds this limit, the model will silently truncate its response, leading to incomplete or lost data without error notification.
@@ -22,8 +28,12 @@ When using Large Language Models (LLMs) for structured, multi-file output, it is
 ## Gemini Critique Loops
 Tri-critic loops are implemented for Tala (Step 8c: Gemini → MiniMax → Grok) and Rune (Step 8c: Gemini → MiniMax → Grok) to identify issues like instrument overloads, frequency clashes, narrative clichés, and subtle audio quality issues stemming from genre archetypes. Critics are effective at pinpointing these genre-specific pitfalls (refer to `suno-prompt-engineering-and-references.md` for details on 'instrument bleed' and other genre archetype pitfalls, including MiniMax's ability to detect sonic redundancy).
 
-**Why:** Ensures higher quality outputs and prevents common generation pitfalls, including those specific to genre interpretation.
-**How to apply:** When spawning an agent, you MUST include an explicit instruction in the prompt: *"After building each Style block, run the Gemini critique loop (step 8b)"* or *"Execute the Gemini critique loop for each variation."*
+**Gemini is also a capable tool for critiquing agent design documents**, demonstrating proficiency in identifying structural bloat, tactical deficiencies, and qualitative aspects like opinion strength and voice consistency. A **multi-stage critique workflow** is effective, utilizing an initial 'flash' pass for high-level structural issues (e.g., redundancy, intentionality) followed by a 'pro-level' pass for deeper content and qualitative analysis (e.g., tactical depth, voice, opinion quality).
+
+**Note on MiniMax Reliability:** MiniMax may exhibit timeout issues during intensive council reviews, suggesting a preference for Gemini and Grok for reliable real-time collaborative architectural discussions.
+
+**Why:** Ensures higher quality outputs and prevents common generation pitfalls, including those specific to genre interpretation and agent design. The multi-stage approach provides comprehensive critique, and understanding LLM-specific behaviors ensures reliable tool selection.
+**How to apply:** When spawning an agent, you MUST include an explicit instruction in the prompt: *"After building each Style block, run the Gemini critique loop (step 8b)"* or *"Execute the Gemini critique loop for each variation."* For document critique, consider a multi-stage approach with 'flash' for initial structural review and 'pro-level' for detailed content analysis. For critical, real-time collaborative reviews, prioritize Gemini and Grok over MiniMax due to potential timeout issues.
 - **Limits:** Up to 3 passes per variation.
 - **Exit Criteria:** Early exit if no high-confidence issues remain.
 - **Integration:** Suggestions are filtered against reference rules; fixes are mined individually rather than applying rewrites wholesale. Results are logged in Production/Style Notes.
@@ -48,6 +58,12 @@ The Prompt Builder Engine incorporates a 'MiniMax 6-section prose strategy' for 
 
 **Why:** Effective prompt generation for music-related tasks benefits significantly from structured content strategies (like the MiniMax 6-section prose) and advanced linguistic processing (phonetics, homograph detection) to ensure high-quality, nuanced outputs. These specific techniques are integrated into the Prompt Builder.
 **How to apply:** Utilize structured content strategies like the MiniMax 6-section prose for overall prompt organization. Employ advanced linguistic processing, including phonetics syllable fallback and homograph detection, to enhance the accuracy and nuance of generated music-related prompts.
+
+## Agent Interaction Protocols
+Formalizing interaction protocols for specific complex workflow scenarios (e.g., scope change, tactical pivot, feasibility spike) significantly enhances agent coordination, adaptability, and decision-making under pressure.
+
+**Why:** Improves agent coordination, adaptability, and decision-making in complex or high-pressure workflow scenarios.
+**How to apply:** Develop and adhere to specific interaction protocols for handling workflow events such as scope changes, tactical pivots, and feasibility spikes to ensure consistent and effective agent responses.
 
 ## Tooling and Development Best Practices
 
@@ -78,3 +94,8 @@ The creation of a `/jam` skill (automated chaining of Rune → Tala/Sol) is **in
 - `20260331-184555-effective-prompt-generation-for-music-re-2.md`
 - `20260401-020156-avoid-using-inline-code-blocks-e-g-bun-e-3.md`
 - `20260401-175949-for-developing-robust-data-parsing-and-m-2.md`
+- `20260402-200615-a-multi-stage-critique-workflow-utilizin-2.md`
+- `20260402-200615-gemini-is-a-capable-tool-for-critiquing--1.md`
+- `20260402-083610-formalizing-interaction-protocols-for-sp-1.md`
+- `20260403-082246-the-strategic-direction-emphasizes-build-3.md`
+- `20260403-163656-minimax-may-exhibit-timeout-issues-durin-2.md`

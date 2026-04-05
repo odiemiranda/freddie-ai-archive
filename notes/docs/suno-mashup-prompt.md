@@ -1,0 +1,1 @@
+Professional mashup reconstruction. Blend two source tracks into one unified arrangement by matching BPM, tempo grid, and musical key. Recompose sections so vocals alternate instead of overlapping.

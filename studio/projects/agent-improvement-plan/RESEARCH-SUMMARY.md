@@ -3,7 +3,7 @@ id: project-agent-improvement-research
 title: "McCall, Ryan & Holmes — Agent Improvement Research Summary"
 type: research-summary
 project: agent-improvement-plan
-status: research-complete
+status: implemented
 created: 2026-04-02
 author: freddie
 notebook: 44692f23 (NotebookLM — "McCall & Wick Agent Improvement", 20 sources)
