@@ -53,6 +53,7 @@ Different critics identify distinct issues, and no single critic reliably catche
 
 ### How to apply
 -   Implement a **multi-critic reconciliation process** to aggregate diverse insights and ensure all critical issues are identified and addressed.
+-   Multi-critic reconciliation is highly effective in enforcing established prompt engineering principles, such as limiting genres (e.g., "Max 2 genres"), thereby preventing prompt dilution and improving output quality.
 -   When using LLMs for prompt refinement, be vigilant about their tendencies (e.g., stripping instrument direction from instrumental BGM lyrics, recommending unreliable structural tags). **Agent rules must override such general suggestions.**
 -   **Refinement:** LLM critics like Gemini can reliably address specific structural issues (e.g., Break/Outro reliability) when integrated into the multi-critic process, refining previous warnings about their general unreliability for structural tags.
 -   **MiniMax Utility:** The MiniMax critic is effective not only at identifying detrimental layering or over-muffling that would effectively erase an instrument from the mix but also at detecting sonic redundancy or lack of variation, ensuring dynamic range and interest in a track.
@@ -77,4 +78,4 @@ Confirming effective methods for lyric input streamlines the generation process 
 -   The 'Path A' workflow, where inline lyrics are provided directly and augmented by the agent, is a viable and effective method for lyric input.
 
 ---
-Consolidated from: `suno-workflow-and-agent-control.md`, `20260329-155500-a-structured-phase-gated-workflow-e-g-me-2.md`, `20260331-193044-minimax-is-effective-not-only-at-identif-2.md`, `20260331-193044-the-current-prompt-engineering-and-multi-1.md`, `20260405-122651-high-rates-of-critic-rejection-particula-1.md`
+Consolidated from: `suno-workflow-and-agent-control.md`, `20260329-155500-a-structured-phase-gated-workflow-e-g-me-2.md`, `20260331-193044-minimax-is-effective-not-only-at-identif-2.md`, `20260331-193044-the-current-prompt-engineering-and-multi-1.md`, `20260405-122651-high-rates-of-critic-rejection-particula-1.md`, `20260406-064001-multi-critic-reconciliation-is-highly-ef-1.md`

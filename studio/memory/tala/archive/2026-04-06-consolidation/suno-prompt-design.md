@@ -1,6 +1,6 @@
 ---
 name: suno-prompt-design
-description: Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity and genre precision.
+description: Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity, genre precision, and descriptor refinement.
 type: knowledge
 agent: tala
 tags: [suno, lyrics, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, structure, tags, callback, atmosphere, performance-notation, ad-libs, arrangement, frequency-stacking, style-block, char-budget, production, lean, exclude, prompt-optimization, instrumentation, subordination, brightness, layered-control, prompt-design, complexity, genre, signal-clarity, audio-quality, cultural-labels, sfx, platform-behavior, validation, archetype, instrument-hallucination, genre-artifacts, dealbreaker, descriptor-refinement]
@@ -150,7 +150,7 @@ Fewer ingredients lead to clearer signals and cleaner audio. Over-stuffing promp
 -   **Max 3 instruments:** Use specific instrument names (e.g., "cello" instead of "low strings"). Overlapping registers cause frequency fighting. For example, organs can cause frequency stacking issues, particularly in verses. An effective strategy is to pull organs from verses (where they might clash with vocals or other instruments) and reintroduce them in choruses or bridges for impact and clarity.
 -   **Max 1 rhythm source:** Usually drums or a driving bassline.
 -   **Max 2 textures, max 2 mood words:** Cut in order: chords → textures → mood (keep 1) if over budget.
--   **Translate abstract terms:** Convert ambiguous 'vibe' terms (e.g., 'raw') into concrete, positive, and less ambiguous descriptors (e.g., 'organic').
+-   **Translate abstract terms:** Convert ambiguous 'vibe' terms (e.g., 'raw') into concrete, positive, and less ambiguous descriptors (e.g., 'organic'). Explicitly adding specific timbre anchors (e.g., 'twangy') to instrument descriptions or the Style block is an effective technique to guide Suno towards desired, unique sonic qualities for instruments, especially when aiming for cultural or specific textural characteristics. Using more precise and less ambiguous descriptors like 'harmonic beds' instead of generic terms like 'pads' can effectively prevent unwanted sonic artifacts (e.g., 'synth drift') and enhance control over instrument and texture rendering.
 -   **Audio Quality vs. Length:** Aim for 9.5/10 clarity with a lean Style block. Less information generally yields cleaner audio.
 
 ### Genre & Cultural Label Precision
@@ -210,4 +210,4 @@ Explicitly defining primary and secondary archetypes with specific roles allows 
 -   **Support solo sections** — give support instruments their own section instead of fighting for shared space.
 
 ---
-Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`, `20260331-193044-the-upper-end-of-the-flexible-character--3.md`, `20260405-122651-explicitly-defining-a-primary-secondary--2.md`, `20260406-061139-explicitly-avoiding-cultural-or-regional-1.md`, `20260406-061139-strategic-exclusion-of-instruments-can-b-3.md`, `20260406-061139-subdued-is-a-more-precise-and-effective--2.md`
+Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`, `20260331-193044-the-upper-end-of-the-flexible-character--3.md`, `20260405-122651-explicitly-defining-a-primary-secondary--2.md`, `20260406-061139-explicitly-avoiding-cultural-or-regional-1.md`, `20260406-061139-strategic-exclusion-of-instruments-can-b-3.md`, `20260406-061139-subdued-is-a-more-precise-and-effective--2.md`, `20260406-064001-explicitly-adding-specific-timbre-anchor-3.md`, `20260406-064001-using-more-precise-and-less-ambiguous-de-2.md`
