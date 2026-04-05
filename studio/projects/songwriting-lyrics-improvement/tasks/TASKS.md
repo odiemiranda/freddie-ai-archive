@@ -95,10 +95,10 @@ graph LR
 | [OT-0024](OT-0024-repetition-analyzer.md) | Repetition Analyzer | 2 | G5 | Yes | OT-0022 | done |
 | [OT-0025](OT-0025-rhyme-scheme-identifier.md) | Rhyme Scheme Identifier | 2 | G6 | No | OT-0023, OT-0024 | done |
 | [OT-0026](OT-0026-singability-prosody-and-phase-2-cli-update.md) | Singability + Prosody + CLI | 2 | G7 | No | OT-0025 | done |
-| [OT-0027](OT-0027-craft-references-agent-update-and-brain-db-sync.md) | Craft Refs + Agent + Sync | 3 | G8 | Yes | OT-0022 | ready |
-| [OT-0028](OT-0028-workflow-node-008-update-and-gap-fixes.md) | Node 008 + Gap Fixes | 3 | G8 | Yes | OT-0022 | ready |
-| [OT-0029](OT-0029-node-009-and-critic-prompt-update.md) | Node 009 + Critic Update | 3 | G9 | No | OT-0028 | ready |
-| [OT-0030](OT-0030-node-013-advisory-gate.md) | Node 013 Advisory Gate | 3 | G10 | No | OT-0026, OT-0029 | ready |
+| [OT-0027](OT-0027-craft-references-agent-update-and-brain-db-sync.md) | Craft Refs + Agent + Sync | 3 | G8 | Yes | OT-0022 | done |
+| [OT-0028](OT-0028-workflow-node-008-update-and-gap-fixes.md) | Node 008 + Gap Fixes | 3 | G8 | Yes | OT-0022 | done |
+| [OT-0029](OT-0029-node-009-and-critic-prompt-update.md) | Node 009 + Critic Update | 3 | G9 | No | OT-0028 | done |
+| [OT-0030](OT-0030-node-013-advisory-gate.md) | Node 013 Advisory Gate | 3 | G10 | No | OT-0026, OT-0029 | done |
 
 ## Consolidation Notes
 

@@ -2,7 +2,7 @@
 title: "Workflow Node 008 Update and Gap Fixes"
 type: task
 project: songwriting-lyrics-improvement
-status: ready
+status: done
 created: 2026-04-03
 author: mccall
 architect: "vault/studio/projects/songwriting-lyrics-improvement/ARCHITECT.md"

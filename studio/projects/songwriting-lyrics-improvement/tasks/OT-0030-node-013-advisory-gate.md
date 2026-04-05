@@ -2,7 +2,7 @@
 title: "Node 013 Advisory Gate"
 type: task
 project: songwriting-lyrics-improvement
-status: ready
+status: done
 created: 2026-04-03
 author: mccall
 architect: "vault/studio/projects/songwriting-lyrics-improvement/ARCHITECT.md"
