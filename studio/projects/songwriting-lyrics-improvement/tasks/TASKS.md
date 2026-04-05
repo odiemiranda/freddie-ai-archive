@@ -2,14 +2,17 @@
 title: "Task Index: Songwriting and Lyrics Composition Improvement"
 type: task-index
 project: songwriting-lyrics-improvement
-status: approved
+status: complete
 created: 2026-04-03
 author: mccall
 architect: "vault/studio/projects/songwriting-lyrics-improvement/ARCHITECT.md"
+project-code: SLI
 total-tasks: 15
 ---
 
 # Task Index
+
+> **Note:** This project uses the `OT-` task prefix (grandfathered). New projects adopt project-derived prefixes (e.g., `SLI-`). See `.claude/rules/task-numbering.md`.
 
 ## Execution Order
 
