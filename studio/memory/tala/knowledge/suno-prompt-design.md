@@ -24,7 +24,7 @@ The Style block sets the global genre, BPM, and foundational mood. Detailed per-
 Leaner prompts result in cleaner audio. Every element added can dilute the core signal. When comprehensive per-section control is achieved via typed brackets in Lyrics, the Style block can operate at the higher end of its recommended character range (up to ~150 chars) without degrading audio quality, provided it remains lean on global elements and avoids redundancy with Lyrics. The upper end of the flexible character budget (~150 chars) for the Style block is validated as effective when combined with detailed per-section control via typed brackets in the Lyrics, maintaining audio clarity and prompt adherence.
 
 #### How to apply
-Adhere to the character budget above. Prioritize essential global elements and remove anything that can be implied by genre or controlled more precisely in the Lyrics section.
+Adhere to the character budget above. Prioritize essential global elements and remove anything that can be implied by genre or controlled more precisely in the Lyrics section. Style blocks should consistently use comma-separated descriptors, not pipe delimiters. Pipe delimiters are reserved for combining elements within typed brackets in the Lyrics section.
 
 ### What to Include (Never Cut)
 
@@ -85,6 +85,12 @@ Typed brackets per section for ALL tracks (instrumental and vocal). Pipe (`|`) i
 
 #### Community-Confirmed Structure Tags
 Use these for advanced section control: `[Pre-Chorus]`, `[Post-Chorus]`, `[Breakdown]`, `[Bridge 2]`, `[Interlude]`, `[Coda]`, `[Refrain]`, `[Drop]`, `[Solo]`, `[Transition]`, `[Vamp]`, `[Ad-lib Outro]`.
+
+#### Known Unreliable Structural Tags
+#### Why
+Certain structural tags have been consistently flagged by critics as unreliable, leading to inconsistent or undesirable outputs.
+#### How to apply
+-   The `[Fade Out]` structural tag is confirmed to be unreliable. Minimize its use or manage fade-outs carefully through other means (e.g., `[Outro]` with specific instrumentation fading).
 
 #### Atmosphere/Ambient Tags
 These tags add environmental or musical effects.
@@ -147,7 +153,7 @@ Fewer ingredients lead to clearer signals and cleaner audio. Over-stuffing promp
 
 #### How to apply
 -   **Max 2 genres:** Use rhythm-clear genres.
--   **Max 3 instruments:** Use specific instrument names (e.g., "cello" instead of "low strings"). Overlapping registers cause frequency fighting. For example, organs can cause frequency stacking issues, particularly in verses. An effective strategy is to pull organs from verses (where they might clash with vocals or other instruments) and reintroduce them in choruses or bridges for impact and clarity.
+-   **Max 3 instruments per section:** Use specific instrument names (e.g., "cello" instead of "low strings"). Overlapping registers cause frequency fighting. Consistent critic feedback validates the importance of adhering to this lean instrumentation for audio clarity. For example, organs can cause frequency stacking issues, particularly in verses. An effective strategy is to pull organs from verses (where they might clash with vocals or other instruments) and reintroduce them in choruses or bridges for impact and clarity.
 -   **Max 1 rhythm source:** Usually drums or a driving bassline.
 -   **Max 2 textures, max 2 mood words:** Cut in order: chords → textures → mood (keep 1) if over budget.
 -   **Translate abstract terms:** Convert ambiguous 'vibe' terms (e.g., 'raw') into concrete, positive, and less ambiguous descriptors (e.g., 'organic'). Explicitly adding specific timbre anchors (e.g., 'twangy') to instrument descriptions or the Style block is an effective technique to guide Suno towards desired, unique sonic qualities for instruments, especially when aiming for cultural or specific textural characteristics. Using more precise and less ambiguous descriptors like 'harmonic beds' instead of generic terms like 'pads' can effectively prevent unwanted sonic artifacts (e.g., 'synth drift') and enhance control over instrument and texture rendering.
@@ -208,6 +214,7 @@ Explicitly defining primary and secondary archetypes with specific roles allows 
 -   **`[Instrument: Shamisen jazz phrases | warm Rhodes underneath | brushed drums barely there]`** — all in one typed bracket with pipes.
 -   **Atmosphere cues as mood** — `[Mood: Morning quiet]`, `[Mood: Still]`.
 -   **Support solo sections** — give support instruments their own section instead of fighting for shared space.
+-   When aiming for a 'skank' rhythm in reggae/hip-hop, use the descriptor 'offbeat strum' instead of 'skank' to guide Suno more effectively and avoid problematic interpretations, refining the existing 'skank hallucination' exclusion advice by providing a positive alternative.
 
 ---
-Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`, `20260331-193044-the-upper-end-of-the-flexible-character--3.md`, `20260405-122651-explicitly-defining-a-primary-secondary--2.md`, `20260406-061139-explicitly-avoiding-cultural-or-regional-1.md`, `20260406-061139-strategic-exclusion-of-instruments-can-b-3.md`, `20260406-061139-subdued-is-a-more-precise-and-effective--2.md`, `20260406-064001-explicitly-adding-specific-timbre-anchor-3.md`, `20260406-064001-using-more-precise-and-less-ambiguous-de-2.md`, `20260406-070153-suno-can-effectively-interpret-and-rende-3.md`, `20260406-070153-using-directive-verbs-within-instrument--2.md`
+Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`, `20260331-193044-the-upper-end-of-the-flexible-character--3.md`, `20260405-122651-explicitly-defining-a-primary-secondary--2.md`, `20260406-061139-explicitly-avoiding-cultural-or-regional-1.md`, `20260406-061139-strategic-exclusion-of-instruments-can-b-3.md`, `20260406-061139-subdued-is-a-more-precise-and-effective--2.md`, `20260406-064001-explicitly-adding-specific-timbre-anchor-3.md`, `20260406-064001-using-more-precise-and-less-ambiguous-de-2.md`, `20260406-070153-suno-can-effectively-interpret-and-rende-3.md`, `20260406-070153-using-directive-verbs-within-instrument--2.md`, `20260406-173715-consistent-critic-feedback-validates-the-3.md`, `20260406-173715-style-blocks-should-consistently-use-com-2.md`, `20260406-173715-when-aiming-for-a-skank-rhythm-in-reggae-1.md`

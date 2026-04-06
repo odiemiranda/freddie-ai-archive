@@ -3,7 +3,7 @@ name: Workflow, Quality Control, and Knowledge Management
 description: Guidelines for agent critique loops, metatag management, strategic generation approaches, including advanced prompt generation methodologies, LLM capabilities and selection (e.g., for creative notation), and best practices for managing knowledge, general development, tooling, and overall system architectural vision.
 type: knowledge
 agent: shared
-tags: [workflow, workflow_management, workflow-pattern, quality-gate, critique, multi-pass, metatags, production, gemini, minimax, parallel-processing, jam-skill, tala, rune, knowledge-management, consolidation, llm, token-limits, data-integrity, best-practices, llm-capabilities, llm-selection, notation, prompt-engineering, text-generation, music-lyrics, linguistics, phonetics, homograph-detection, structure, accuracy, tool_development, cli_first, user_preference, workflow_design, readability, maintainability, code_style, architecture, parser, serializer, testing, library_design, agent-design, tool-capability, interaction_protocols, adaptability, scope_management, tactical_pivot, feasibility_spike, vision, ecosystem, foundation, strategy, platform-limits, timeout]
+tags: [workflow, workflow_management, workflow-pattern, quality-gate, critique, multi-pass, metatags, production, gemini, minimax, parallel-processing, jam-skill, tala, rune, knowledge-management, consolidation, llm, token-limits, data-integrity, best-practices, llm-capabilities, llm-selection, notation, prompt-engineering, text-generation, music-lyrics, linguistics, phonetics, homograph-detection, structure, accuracy, tool_development, cli_first, user_preference, workflow_design, readability, maintainability, code_style, architecture, parser, serializer, testing, library_design, agent-design, tool-capability, interaction_protocols, adaptability, scope_management, tactical_pivot, feasibility_spike, vision, ecosystem, foundation, strategy, platform-limits, timeout, critic-reconciliation, genre-limits, validation]
 ---
 
 # Workflow, Quality Control, and Knowledge Management
@@ -26,7 +26,7 @@ When using Large Language Models (LLMs) for structured, multi-file output, it is
 **Lesson:** Always verify the output count matches the plan when using LLMs for structured multi-file output. Token limits cause silent truncation.
 
 ## Gemini Critique Loops
-Tri-critic loops are implemented for Tala (Step 8c: Gemini → MiniMax → Grok) and Rune (Step 8c: Gemini → MiniMax → Grok) to identify issues like instrument overloads, frequency clashes, narrative clichés, and subtle audio quality issues stemming from genre archetypes. Critics are effective at pinpointing these genre-specific pitfalls (refer to `suno-prompt-engineering-and-references.md` for details on 'instrument bleed' and other genre archetype pitfalls, including MiniMax's ability to detect sonic redundancy).
+Tri-critic loops are implemented for Tala (Step 8c: Gemini → MiniMax → Grok) and Rune (Step 8c: Gemini → MiniMax → Grok) to identify issues like instrument overloads, frequency clashes, narrative clichés, and subtle audio quality issues stemming from genre archetypes. Critics are effective at pinpointing these genre-specific pitfalls (refer to `suno-prompt-engineering-and-references.md` for details on 'instrument bleed' and other genre archetype pitfalls, including MiniMax's ability to detect sonic redundancy). Multi-critic reconciliation is highly effective in enforcing established prompt engineering principles, such as limiting genres (e.g., 'Max 2 genres'), thereby preventing prompt dilution and improving output quality.
 
 **Gemini is also a capable tool for critiquing agent design documents**, demonstrating proficiency in identifying structural bloat, tactical deficiencies, and qualitative aspects like opinion strength and voice consistency. A **multi-stage critique workflow** is effective, utilizing an initial 'flash' pass for high-level structural issues (e.g., redundancy, intentionality) followed by a 'pro-level' pass for deeper content and qualitative analysis (e.g., tactical depth, voice, opinion quality).
 
@@ -99,3 +99,4 @@ The creation of a `/jam` skill (automated chaining of Rune → Tala/Sol) is **in
 - `20260402-083610-formalizing-interaction-protocols-for-sp-1.md`
 - `20260403-082246-the-strategic-direction-emphasizes-build-3.md`
 - `20260403-163656-minimax-may-exhibit-timeout-issues-durin-2.md`
+- `20260406-064001-multi-critic-reconciliation-is-highly-ef-1.md`

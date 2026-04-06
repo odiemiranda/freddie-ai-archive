@@ -53,7 +53,7 @@ Different critics identify distinct issues, and no single critic reliably catche
 
 ### How to apply
 -   Implement a **multi-critic reconciliation process** to aggregate diverse insights and ensure all critical issues are identified and addressed.
--   Multi-critic reconciliation is highly effective in enforcing established prompt engineering principles, such as limiting genres (e.g., "Max 2 genres"), thereby preventing prompt dilution and improving output quality.
+-   Multi-critic reconciliation is highly effective in enforcing established prompt engineering principles, suchs as limiting genres (e.g., "Max 2 genres"), thereby preventing prompt dilution and improving output quality.
 -   When using LLMs for prompt refinement, be vigilant about their tendencies (e.g., stripping instrument direction from instrumental BGM lyrics, recommending unreliable structural tags). **Agent rules must override such general suggestions.**
 -   **Refinement:** LLM critics like Gemini can reliably address specific structural issues (e.g., Break/Outro reliability) when integrated into the multi-critic process, refining previous warnings about their general unreliability for structural tags.
 -   **MiniMax Utility:** The MiniMax critic is effective not only at identifying detrimental layering or over-muffling that would effectively erase an instrument from the mix but also at detecting sonic redundancy or lack of variation, ensuring dynamic range and interest in a track.

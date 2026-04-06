@@ -3,7 +3,7 @@ name: Platform and Tool Behaviors
 description: Documented observations of platform-specific behaviors and tool instabilities that impact development and workflow.
 type: knowledge
 agent: shared
-tags: [platform-behavior, tool-behavior, bug, instability, development-environment, bun, windows, testing, tool_limitation, lyrics_analysis, false_positive]
+tags: [platform-behavior, tool-behavior, bug, instability, development-environment, bun, windows, testing, tool_limitation, lyrics_analysis, false_positive, minimax-video, local_files, video_generation]
 ---
 
 # Platform and Tool Behaviors
@@ -20,6 +20,13 @@ The `section-balance` tool has a known limitation where it misinterprets typed b
 **Why:** This limitation can lead to inaccurate analysis of lyrical structure, potentially misguiding prompt adjustments or workflow decisions.
 **How to apply:** Be aware of this behavior when using the `section-balance` tool. Consider manual verification or alternative methods for balance assessment when lyrics contain typed brackets.
 
+## Minimax Video Tool Local File Support
+The `minimax-video` tool now reliably supports local file paths for its `--first-frame` argument, enhancing its flexibility and integration within local video generation workflows.
+
+**Why:** This fix improves the tool's reliability and allows for seamless integration of locally stored images as video first frames, streamlining video generation workflows.
+**How to apply:** Utilize local file paths directly with the `minimax-video` tool's `--first-frame` argument without concern for previous compatibility issues.
+
 **Consolidated from:**
 - `20260331-145249-the-bun-test-runner-has-a-known-instabil-3.md`
 - `20260405-124725-the-section-balance-tool-has-a-specific--2.md`
+- `20260406-081746-the-minimax-video-tool-now-reliably-supp-1.md`

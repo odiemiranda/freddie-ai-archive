@@ -134,7 +134,19 @@
       "dealbreaker",
       "descriptor-refinement",
       "timbre",
-      "dynamic-roles"
+      "dynamic-roles",
+      "instrument-density",
+      "structural-tags",
+      "fade-out",
+      "reliability",
+      "style-block",
+      "syntax",
+      "formatting",
+      "genre-specific",
+      "reggae",
+      "hip-hop",
+      "instrument-behavior",
+      "descriptor-choice"
     ],
     "consolidated": "2026-04-06"
   },

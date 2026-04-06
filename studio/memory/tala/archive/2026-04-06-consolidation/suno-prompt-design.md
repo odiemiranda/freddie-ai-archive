@@ -1,9 +1,9 @@
 ---
 name: suno-prompt-design
-description: Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity, genre precision, and descriptor refinement.
+description: Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity, genre precision, and descriptor refinement, including guidance for dynamic instrument roles.
 type: knowledge
 agent: tala
-tags: [suno, lyrics, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, structure, tags, callback, atmosphere, performance-notation, ad-libs, arrangement, frequency-stacking, style-block, char-budget, production, lean, exclude, prompt-optimization, instrumentation, subordination, brightness, layered-control, prompt-design, complexity, genre, signal-clarity, audio-quality, cultural-labels, sfx, platform-behavior, validation, archetype, instrument-hallucination, genre-artifacts, dealbreaker, descriptor-refinement]
+tags: [suno, lyrics, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, structure, tags, callback, atmosphere, performance-notation, ad-libs, arrangement, frequency-stacking, style-block, char-budget, production, lean, exclude, prompt-optimization, instrumentation, subordination, brightness, layered-control, prompt-design, complexity, genre, signal-clarity, audio-quality, cultural-labels, sfx, platform-behavior, validation, archetype, instrument-hallucination, genre-artifacts, dealbreaker, descriptor-refinement, dynamic-roles, directive-verbs]
 ---
 
 # Suno Prompt Design Guide
@@ -69,7 +69,7 @@ Typed brackets per section for ALL tracks (instrumental and vocal). Pipe (`|`) i
 | Type | Purpose | Examples | Behavior |
 |------|---------|---------|----------|
 | `[Energy:]` | Section energy | `[Energy: Low]`, `[Energy: Rising]`, `[Energy: Maximum]`, `[Energy: Medium→High]` | Controls intensity and drive. Gradient notation works. |
-| `[Instrument:]` | Per-section instrumentation | `[Instrument: Shamisen alone | single slow pluck]`, `[Instrument: Shamisen lazy jazz phrases | warm Rhodes underneath | brushed drums barely there]` | Positive per-section instructions for instruments. Pipes combine elements. |
+| `[Instrument:]` | Per-section instrumentation and dynamic roles | `[Instrument: Shamisen alone | single slow pluck]`, `[Instrument: Harp active fill/call-response]`, `[Instrument: Shamisen lazy jazz phrases | warm Rhodes underneath | brushed drums barely there]` | Positive per-section instructions for instruments. **Using directive verbs (e.g., 'active fill', 'plucks', 'phrases') effectively guides Suno's interpretation of instrument behavior and dynamic roles beyond static background elements.** Pipes combine elements. |
 | `[Mood:]` | Section mood/atmosphere | `[Mood: Morning quiet]`, `[Mood: Triumphant]`, `[Mood: Anticipation]` | Guides emotional tone and ambiance. |
 | `[Texture:]` | Section sonic quality | `[Texture: Tape-Saturated]`, `[Texture: Lo-fi]` | Adds specific audio characteristics. |
 | `[Vocal Style:]` | Vocal delivery direction (vocal only) | `[Vocal Style: Power]`, `[Vocal Style: Belt]`, `[Vocal Style: Open, Confident]` | Directs how vocals are performed. **Refinement:** 'Projected vocals' is more precise and effective than 'Powerful vocals'. |
@@ -210,4 +210,4 @@ Explicitly defining primary and secondary archetypes with specific roles allows 
 -   **Support solo sections** — give support instruments their own section instead of fighting for shared space.
 
 ---
-Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`, `20260331-193044-the-upper-end-of-the-flexible-character--3.md`, `20260405-122651-explicitly-defining-a-primary-secondary--2.md`, `20260406-061139-explicitly-avoiding-cultural-or-regional-1.md`, `20260406-061139-strategic-exclusion-of-instruments-can-b-3.md`, `20260406-061139-subdued-is-a-more-precise-and-effective--2.md`, `20260406-064001-explicitly-adding-specific-timbre-anchor-3.md`, `20260406-064001-using-more-precise-and-less-ambiguous-de-2.md`
+Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`, `20260331-193044-the-upper-end-of-the-flexible-character--3.md`, `20260405-122651-explicitly-defining-a-primary-secondary--2.md`, `20260406-061139-explicitly-avoiding-cultural-or-regional-1.md`, `20260406-061139-strategic-exclusion-of-instruments-can-b-3.md`, `20260406-061139-subdued-is-a-more-precise-and-effective--2.md`, `20260406-064001-explicitly-adding-specific-timbre-anchor-3.md`, `20260406-064001-using-more-precise-and-less-ambiguous-de-2.md`, `20260406-070153-suno-can-effectively-interpret-and-rende-3.md`, `20260406-070153-using-directive-verbs-within-instrument--2.md`
