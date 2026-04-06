@@ -21,7 +21,7 @@
       "arc42",
       "SPIKE"
     ],
-    "consolidated": "2026-04-05"
+    "consolidated": "2026-04-06"
   },
   {
     "file": "knowledge/platform-and-tool-behaviors.md",
@@ -39,9 +39,12 @@
       "testing",
       "tool_limitation",
       "lyrics_analysis",
-      "false_positive"
+      "false_positive",
+      "minimax-video",
+      "local_files",
+      "video_generation"
     ],
-    "consolidated": "2026-04-05"
+    "consolidated": "2026-04-06"
   },
   {
     "file": "knowledge/studio-architecture-and-tools.md",
@@ -67,7 +70,7 @@
       "weirdness",
       "style-influence"
     ],
-    "consolidated": "2026-04-05"
+    "consolidated": "2026-04-06"
   },
   {
     "file": "knowledge/suno-prompt-engineering-and-references.md",
@@ -123,9 +126,17 @@
       "repetition",
       "archetype",
       "layered-control",
-      "complexity"
+      "complexity",
+      "cultural-labels",
+      "instrument-hallucination",
+      "exclude",
+      "genre-artifacts",
+      "dealbreaker",
+      "descriptor-refinement",
+      "timbre",
+      "dynamic-roles"
     ],
-    "consolidated": "2026-04-05"
+    "consolidated": "2026-04-06"
   },
   {
     "file": "knowledge/workflow-quality-and-knowledge-management.md",
@@ -188,8 +199,11 @@
       "foundation",
       "strategy",
       "platform-limits",
-      "timeout"
+      "timeout",
+      "critic-reconciliation",
+      "genre-limits",
+      "validation"
     ],
-    "consolidated": "2026-04-05"
+    "consolidated": "2026-04-06"
   }
 ]
