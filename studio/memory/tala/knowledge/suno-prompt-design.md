@@ -1,9 +1,9 @@
 ---
 name: suno-prompt-design
-description: Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity, genre precision, and descriptor refinement, including guidance for dynamic instrument roles.
+description: Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity, genre precision, descriptor refinement, and effects management, including guidance for dynamic instrument roles and genre anchoring.
 type: knowledge
 agent: tala
-tags: [suno, lyrics, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, structure, tags, callback, atmosphere, performance-notation, ad-libs, arrangement, frequency-stacking, style-block, char-budget, production, lean, exclude, prompt-optimization, instrumentation, subordination, brightness, layered-control, prompt-design, complexity, genre, signal-clarity, audio-quality, cultural-labels, sfx, platform-behavior, validation, archetype, instrument-hallucination, genre-artifacts, dealbreaker, descriptor-refinement, dynamic-roles, directive-verbs]
+tags: [suno, lyrics, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, structure, tags, callback, atmosphere, performance-notation, ad-libs, arrangement, frequency-stacking, style-block, char-budget, production, lean, exclude, prompt-optimization, instrumentation, subordination, brightness, layered-control, prompt-design, complexity, genre, signal-clarity, audio-quality, cultural-labels, sfx, platform-behavior, validation, archetype, instrument-hallucination, genre-artifacts, dealbreaker, descriptor-refinement, dynamic-roles, directive-verbs, effects, delay, shamisen, genre-anchoring]
 ---
 
 # Suno Prompt Design Guide
@@ -69,7 +69,7 @@ Typed brackets per section for ALL tracks (instrumental and vocal). Pipe (`|`) i
 | Type | Purpose | Examples | Behavior |
 |------|---------|---------|----------|
 | `[Energy:]` | Section energy | `[Energy: Low]`, `[Energy: Rising]`, `[Energy: Maximum]`, `[Energy: Medium→High]` | Controls intensity and drive. Gradient notation works. |
-| `[Instrument:]` | Per-section instrumentation and dynamic roles | `[Instrument: Shamisen alone | single slow pluck]`, `[Instrument: Harp active fill/call-response]`, `[Instrument: Shamisen lazy jazz phrases | warm Rhodes underneath | brushed drums barely there]` | Positive per-section instructions for instruments. **Using directive verbs (e.g., 'active fill', 'plucks', 'phrases') effectively guides Suno's interpretation of instrument behavior and dynamic roles beyond static background elements.** Pipes combine elements. |
+| `[Instrument:]` | Per-section instrumentation and dynamic roles | `[Instrument: Shamisen alone | single slow pluck]`, `[Instrument: Harp active fill/call-response]`, `[Instrument: Shamisen lazy jazz phrases | warm Rhodes underneath | brushed drums barely there]` | Positive per-section instructions for instruments. **Using directive verbs (e.g., 'active fill', 'plucks', 'phrases') effectively guides Suno's interpretation of instrument behavior and dynamic roles beyond static background elements.** Pipes combine elements. **Refinement:** For instruments like shamisen, directive verbs implying increasing intensity (e.g., 'building') can inadvertently generate undesirable timbres such as 'twang'. Opt for more controlled descriptors like 'steady' to achieve desired sonic characteristics and avoid unintended artifacts. |
 | `[Mood:]` | Section mood/atmosphere | `[Mood: Morning quiet]`, `[Mood: Triumphant]`, `[Mood: Anticipation]` | Guides emotional tone and ambiance. |
 | `[Texture:]` | Section sonic quality | `[Texture: Tape-Saturated]`, `[Texture: Lo-fi]` | Adds specific audio characteristics. |
 | `[Vocal Style:]` | Vocal delivery direction (vocal only) | `[Vocal Style: Power]`, `[Vocal Style: Belt]`, `[Vocal Style: Open, Confident]` | Directs how vocals are performed. **Refinement:** 'Projected vocals' is more precise and effective than 'Powerful vocals'. |
@@ -159,6 +159,14 @@ Fewer ingredients lead to clearer signals and cleaner audio. Over-stuffing promp
 -   **Translate abstract terms:** Convert ambiguous 'vibe' terms (e.g., 'raw') into concrete, positive, and less ambiguous descriptors (e.g., 'organic'). Explicitly adding specific timbre anchors (e.g., 'twangy') to instrument descriptions or the Style block is an effective technique to guide Suno towards desired, unique sonic qualities for instruments, especially when aiming for cultural or specific textural characteristics. Using more precise and less ambiguous descriptors like 'harmonic beds' instead of generic terms like 'pads' can effectively prevent unwanted sonic artifacts (e.g., 'synth drift') and enhance control over instrument and texture rendering.
 -   **Audio Quality vs. Length:** Aim for 9.5/10 clarity with a lean Style block. Less information generally yields cleaner audio.
 
+### Effects & Audio Clarity
+
+#### Why
+Combining certain effects and descriptors can lead to undesirable sonic artifacts that reduce clarity.
+
+#### How to apply
+-   Be cautious when combining 'echo delay' with 'ambient' descriptors, as this can lead to an undesirable 'wash' effect, potentially reducing clarity or over-saturating the soundscape. Consider alternative effect applications or more precise layering.
+
 ### Genre & Cultural Label Precision
 
 #### Why
@@ -171,6 +179,7 @@ Suno interprets cultural labels as instructions to "add everything from this tra
 -   **Genre Naming:** While single-word genres are generally preferred for clarity (e.g., "Jazz" not "Jazz fusion"), certain two-word, commonly understood sub-genres like 'lo-fi jazz' can be effectively used, indicating Suno's ability to interpret them as coherent stylistic entities. However, specific genre archetypes (e.g., 'Jazz Lounge') can introduce subtle audio quality issues like 'instrument bleed' due to Suno's interpretation. Critics are effective at pinpointing these genre-specific pitfalls, necessitating prompt adjustments such as exclusion or more precise instrument control.
 -   **Pattern:** `{rhythm-template} {instrument} fusion` (e.g., "Jazz shamisen fusion"). The genre gives Suno the rhythm template (jazz = swing, brushed drums). The instrument gives the cultural color (shamisen = Japanese). For leaner blocks, a single genre word like "Jazz" is often sufficient.
 -   **Validated Archetypes:** A pre-tested genre archetype, even if it triggers 'genre-flood' warnings from critics, can sometimes override individual critic flags due to its proven robustness.
+-   When choosing between similar or related genres, some (e.g., 'Roots Reggae') may provide a more robust and consistent 'anchor' for Suno's interpretation than others (e.g., 'Reggae Dub'). Prioritize genres with proven stronger anchoring for higher fidelity to the intended style.
 
 ## 4. Advanced Multi-Layered Control
 
@@ -217,4 +226,4 @@ Explicitly defining primary and secondary archetypes with specific roles allows 
 -   When aiming for a 'skank' rhythm in reggae/hip-hop, use the descriptor 'offbeat strum' instead of 'skank' to guide Suno more effectively and avoid problematic interpretations, refining the existing 'skank hallucination' exclusion advice by providing a positive alternative.
 
 ---
-Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`, `20260331-193044-the-upper-end-of-the-flexible-character--3.md`, `20260405-122651-explicitly-defining-a-primary-secondary--2.md`, `20260406-061139-explicitly-avoiding-cultural-or-regional-1.md`, `20260406-061139-strategic-exclusion-of-instruments-can-b-3.md`, `20260406-061139-subdued-is-a-more-precise-and-effective--2.md`, `20260406-064001-explicitly-adding-specific-timbre-anchor-3.md`, `20260406-064001-using-more-precise-and-less-ambiguous-de-2.md`, `20260406-070153-suno-can-effectively-interpret-and-rende-3.md`, `20260406-070153-using-directive-verbs-within-instrument--2.md`, `20260406-173715-consistent-critic-feedback-validates-the-3.md`, `20260406-173715-style-blocks-should-consistently-use-com-2.md`, `20260406-173715-when-aiming-for-a-skank-rhythm-in-reggae-1.md`
+Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`, `20260331-193044-the-upper-end-of-the-flexible-character--3.md`, `20260405-122651-explicitly-defining-a-primary-secondary--2.md`, `20260406-061139-explicitly-avoiding-cultural-or-regional-1.md`, `20260406-061139-strategic-exclusion-of-instruments-can-b-3.md`, `20260406-061139-subdued-is-a-more-precise-and-effective--2.md`, `20260406-064001-explicitly-adding-specific-timbre-anchor-3.md`, `20260406-064001-using-more-precise-and-less-ambiguous-de-2.md`, `20260406-070153-suno-can-effectively-interpret-and-rende-3.md`, `20260406-070153-using-directive-verbs-within-instrument--2.md`, `20260406-173715-consistent-critic-feedback-validates-the-3.md`, `20260406-173715-style-blocks-should-consistently-use-com-2.md`, `20260406-173715-when-aiming-for-a-skank-rhythm-in-reggae-1.md`, `20260406-205642-be-cautious-when-combining-echo-delay-wi-2.md`, `20260406-205642-for-instruments-like-shamisen-directive--1.md`, `20260406-205642-when-choosing-between-similar-or-related-3.md`

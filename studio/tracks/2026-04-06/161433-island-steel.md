@@ -51,7 +51,7 @@ batch: "reggae-hiphop-port-6v"
 ## Style
 
 ```
-[Instrumental] Caribbean Reggae Hip-Hop, steel drum melody, shamisen offbeat strums, warm harp plucks, island bounce, clean mix, airy, Bb Major, 108 BPM [No Vocals]
+[Instrumental] Caribbean Reggae Hip-Hop, steel drum melody, shamisen offbeat strums, offbeat harp plucks, island reggae bounce, clean mix, airy, Bb Major, 108 BPM [No Vocals]
 ```
 
 ## Exclude Style
@@ -73,32 +73,32 @@ fiddle, violin, high notes, high-pitched, vocals, singing, auto-tune
 [Short Instrumental Intro]
 [BPM: 108]
 [Key: Bb Major]
-[Energy: Low-Medium, Island]
-[Instrument: Steel drum intro melody | Light bongo tap | Warm bass pulse]
+[Energy: Medium, Island]
+[Instrument: Steel drum intro melody | Bongo tap | Reggae bass pulse]
 
 [Verse]
-[Energy: Medium, Bouncy]
-[Instrument: Steel drum melody lead | Shamisen offbeat strums | Warm harp plucks | Reggae muffled drums | Warm bouncy bass]
+[Energy: Medium-High, Bouncy]
+[Instrument: Steel drum melody lead | Shamisen offbeat strums | Offbeat harp plucks | One-drop reggae drums | Reggae bouncy bass]
 
 [Chorus]
-[Energy: Medium-High, Bright]
-[Instrument: Steel drum melody lead | Shamisen offbeat strums | Harp pluck accents | Full muffled drums | Deep bouncy bass]
+[Energy: High, Bright]
+[Instrument: Steel drum melody lead | Shamisen offbeat strums | Offbeat harp plucks | Full one-drop reggae drums | Reggae bass groove]
 
 [Verse]
-[Energy: Medium, Groovy]
-[Instrument: Steel drum melody | Shamisen offbeat strums | Harp plucks | Muffled drums | Warm bass]
+[Energy: Medium-High, Groovy]
+[Instrument: Steel drum melody | Shamisen offbeat strums | Offbeat harp plucks | One-drop reggae drums | Reggae bass]
 
 [Interlude]
-[Energy: Low-Medium, Breezy]
-[Instrument: Shamisen offbeat strums solo | Bongo rhythm | Light bass]
+[Energy: Medium, Breezy]
+[Instrument: Shamisen offbeat strums solo | Bongo rhythm | Reggae bass]
 
 [Chorus]
-[Energy: Medium-High, Bright]
-[Instrument: Steel drum melody | Shamisen offbeat strums | Harp plucks | Full muffled drums | Bouncy bass]
+[Energy: High, Bright]
+[Instrument: Steel drum melody | Shamisen offbeat strums | Offbeat harp plucks | Full one-drop reggae drums | Reggae bass]
 
 [Fade Out]
-[Energy: Low, Fading]
-[Instrument: Steel drum fade | Shamisen pluck | Soft bongo | Bass fade]
+[Energy: Medium, Fading]
+[Instrument: Steel drum fade | Shamisen pluck | Bongo | Reggae bass fade]
 ```
 
 ---

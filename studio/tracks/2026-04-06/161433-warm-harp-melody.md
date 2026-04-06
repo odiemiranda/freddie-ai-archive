@@ -50,7 +50,7 @@ batch: "reggae-hiphop-port-6v"
 ## Style
 
 ```
-[Instrumental] Reggae Hip-Hop Fusion, warm harp melody lead, shamisen pluck accents, dub bass, upbeat summer, clean mix, analog warmth, C Major, 98 BPM [No Vocals]
+[Instrumental] Reggae Hip-Hop Fusion, warm harp melody lead, shamisen pluck accents, walking reggae bass, island reggae groove, clean mix, analog warmth, C Major, 98 BPM [No Vocals]
 ```
 
 ## Exclude Style
@@ -72,32 +72,32 @@ fiddle, violin, high notes, high-pitched, vocals, singing, auto-tune
 [Short Instrumental Intro]
 [BPM: 98]
 [Key: C Major]
-[Energy: Low, Gentle]
-[Instrument: Warm harp single pluck melody | Soft muffled kick | Light bass]
+[Energy: Medium, Steady]
+[Instrument: Warm harp single pluck melody | One-drop reggae kick | Reggae bass]
 
 [Verse]
 [Energy: Medium, Flowing]
-[Instrument: Warm harp melody lead | Shamisen single pluck accents | Reggae muffled drums | Dub bass groove]
+[Instrument: Warm harp melody lead | Shamisen pluck accents | One-drop reggae drums | Walking reggae bass]
 
 [Chorus]
 [Energy: Medium-High, Bright]
-[Instrument: Warm harp melody lead | Shamisen rhythmic plucks | Full muffled drums | Dub bass | Tambourine groove]
+[Instrument: Warm harp melody lead | Shamisen rhythmic plucks | Full one-drop reggae drums | Reggae bass groove | Tambourine]
 
 [Verse]
-[Energy: Medium, Smooth]
-[Instrument: Harp melody lead | Shamisen pluck accents | Muffled drums | Dub bass]
+[Energy: Medium, Groovy]
+[Instrument: Harp melody lead | Shamisen pluck accents | One-drop reggae drums | Reggae bass]
 
 [Bridge]
-[Energy: Low, Stripped]
-[Instrument: Harp single plucks solo | Light shamisen whisper | Soft bass pulse]
+[Energy: Medium, Smooth]
+[Instrument: Harp pluck melody | Shamisen accent plucks | Reggae bass | Light one-drop drums]
 
 [Chorus]
 [Energy: Medium-High, Bright]
-[Instrument: Warm harp melody | Shamisen rhythmic plucks | Full muffled drums | Dub bass | Tambourine]
+[Instrument: Warm harp melody | Shamisen rhythmic plucks | Full one-drop reggae drums | Reggae bass | Tambourine]
 
 [Fade Out]
-[Energy: Low, Fading]
-[Instrument: Harp pluck fade | Shamisen whisper pluck | Soft bass]
+[Energy: Medium, Fading]
+[Instrument: Harp pluck fade | Shamisen pluck | Reggae bass]
 ```
 
 ---

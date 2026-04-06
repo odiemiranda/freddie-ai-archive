@@ -3,7 +3,7 @@ name: Suno Prompt Engineering and References
 description: Unified syntax, best practices, and advanced techniques for Suno AI music generation, including lyrical structure (energy arcs), style block length, genre normalization, vocal style, arrangement, common pitfalls, and observed undocumented behaviors.
 type: knowledge
 agent: shared
-tags: [suno, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, prompt-design, clarity, performance-notation, ad-libs, genre-recipes, tempo, key, music-theory, special-techniques, char-budget, prompt-optimization, variation, control, weight, suno-interpretation, gradient, fine-tuning, genre-normalization, lo-fi-jazz, nuance, critic-feedback, prompt-refinement, instrumentation, arrangement, frequency-stacking, organ, audio-quality, sfx, atmosphere, subordination, multi-layered-control, platform-behavior, fade-in, undocumented-feature, energy-arc, lyrical-structure, validation, repetition, archetype, layered-control, complexity, cultural-labels, instrument-hallucination, exclude, genre-artifacts, dealbreaker, descriptor-refinement, timbre, dynamic-roles, instrument-density, structural-tags, fade-out, reliability, style-block, syntax, formatting, genre-specific, reggae, hip-hop, instrument-behavior, descriptor-choice]
+tags: [suno, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, prompt-design, clarity, performance-notation, ad-libs, genre-recipes, tempo, key, music-theory, special-techniques, char-budget, prompt-optimization, variation, control, weight, suno-interpretation, gradient, fine-tuning, genre-normalization, lo-fi-jazz, nuance, critic-feedback, prompt-refinement, instrumentation, arrangement, frequency-stacking, organ, audio-quality, sfx, atmosphere, subordination, multi-layered-control, platform-behavior, fade-in, undocumented-feature, energy-arc, lyrical-structure, validation, repetition, archetype, layered-control, complexity, cultural-labels, instrument-hallucination, exclude, genre-artifacts, dealbreaker, descriptor-refinement, timbre, dynamic-roles, instrument-density, structural-tags, fade-out, reliability, style-block, syntax, formatting, genre-specific, reggae, hip-hop, instrument-behavior, descriptor-choice, delay, ambient]
 ---
 
 # Suno Prompt Engineering and References
@@ -38,15 +38,19 @@ Using more precise and less ambiguous descriptors like 'harmonic beds' instead o
 
 ### Dynamic Instrument Roles and Directive Verbs
 Suno can effectively interpret and render specific, dynamic instrument roles (e.g., 'active fill/call-response' for a harp) beyond static background elements, especially when articulated with directive verbs in `[Instrument:]` tags. Using directive verbs within `[Instrument:]` typed brackets is an effective and validated technique for precisely guiding Suno's interpretation of instrument behavior and roles, contributing to successful outcomes.
+**Refinement for Specific Instruments:** For instruments like shamisen, directive verbs implying increasing intensity (e.g., 'building') can inadvertently generate undesirable timbres such as 'twang'. Opt for more controlled descriptors like 'steady' to achieve desired sonic characteristics and avoid unintended artifacts.
 
-**Why:** Improves clarity and generation quality, aligning with critic feedback for specificity, and ensures instruments are present and balanced as intended. Precise descriptors and timbre anchors allow for nuanced sonic control, while directive verbs enable dynamic instrument roles.
-**How to apply:** Replace generic instrument descriptions with precise names in `[Instrument:]` tags. For subordination, use 'distant/low drone' or 'subdued' language instead of 'muffled' to avoid accidental removal. Integrate specific timbre anchors (e.g., 'twangy') and refined descriptors (e.g., 'harmonic beds') for desired sonic qualities. Use directive verbs in `[Instrument:]` tags to define dynamic instrument behaviors.
+**Why:** Improves clarity and generation quality, aligning with critic feedback for specificity, and ensures instruments are present and balanced as intended. Precise descriptors and timbre anchors allow for nuanced sonic control, while directive verbs enable dynamic instrument roles. The refinement provides specific guidance for avoiding problematic timbres with certain instruments and directive verb combinations.
+**How to apply:** Replace generic instrument descriptions with precise names in `[Instrument:]` tags. For subordination, use 'distant/low drone' or 'subdued' language instead of 'muffled' to avoid accidental removal. Integrate specific timbre anchors (e.g., 'twangy') and refined descriptors (e.g., 'harmonic beds') for desired sonic qualities. Use directive verbs in `[Instrument:]` tags to define dynamic instrument behaviors, being mindful that some verbs (e.g., 'building') can produce unintended timbres for specific instruments (e.g., shamisen), in which case 'steady' or similar controlled descriptors are preferred.
 
 ## Instrumentation and Arrangement Best Practices
 To maintain audio clarity and prevent frequency stacking, especially in vocal-heavy sections, limit instrumentation to a maximum of 3 instruments per section. For example, strategically place instruments like organs to avoid stacking, pulling them from verses and reintroducing them in choruses or bridges for impact.
 
-**Why:** Prevents frequency clashes and improves overall mix clarity and impact by enforcing lean instrumentation.
-**How to apply:** Strategically place instruments like organs to avoid stacking, especially in vocal-heavy sections, and adhere to a maximum of 3 instruments per section.
+### Effects and Audio Clarity
+Be cautious when combining 'echo delay' with 'ambient' descriptors, as this can lead to an undesirable 'wash' effect, potentially reducing clarity or over-saturating the soundscape. Consider alternative effect applications or more precise layering.
+
+**Why:** Prevents frequency clashes and improves overall mix clarity and impact by enforcing lean instrumentation. The caution regarding effects combinations helps maintain audio quality and prevents unintended sonic artifacts.
+**How to apply:** Strategically place instruments like organs to avoid stacking, especially in vocal-heavy sections, and adhere to a maximum of 3 instruments per section. When using effects, be mindful of combinations like 'echo delay' with 'ambient' to avoid a 'wash' effect; consider alternative approaches for clarity.
 
 ## Genre Specificity and Normalization
 While single-word genres are generally preferred for clarity, certain two-word, commonly understood sub-genres can be effectively used in Style Blocks. Suno's interpretation of genre tags can lead to the emergence of related instruments even without explicit tagging (e.g., "fiddle" from "folk jazz").
@@ -58,8 +62,11 @@ When aiming for a 'skank' rhythm in reggae/hip-hop, use the descriptor 'offbeat 
 ### Genre Archetype Pitfalls
 Specific genre archetypes can introduce subtle audio quality issues like 'instrument bleed' due to Suno's interpretation. Critics are effective at pinpointing these genre-specific pitfalls, necessitating prompt adjustments such as exclusion or more precise instrument control. For example, the 'Jazz Lounge' descriptor has been observed to lead to undesirable 'instrument bleed'.
 
-**Why:** Improves clarity and generation quality while acknowledging Suno's ability to interpret coherent stylistic entities beyond single-word tags and its "genre gravity." Prevents unintended instrument prominence and addresses specific audio quality issues.
-**How to apply:** Prioritize single-word genres. For specific, well-established sub-genres (e.g., 'lo-fi jazz'), use the two-word descriptor if it accurately conveys the desired style. Be aware that genre tags can subtly influence instrumentation. Avoid cultural or folk genre tags in the Style block if precise instrument hierarchy is critical. When genre archetypes cause issues like 'instrument bleed' (e.g., 'Jazz Lounge'), adjust prompts with exclusions or more precise instrument control. For reggae/hip-hop 'skank' rhythms, use 'offbeat strum' instead of 'skank'.
+### Genre Anchoring Strength
+When choosing between similar or related genres, some (e.g., 'Roots Reggae') may provide a more robust and consistent 'anchor' for Suno's interpretation than others (e.g., 'Reggae Dub'). Prioritize genres with proven stronger anchoring for higher fidelity to the intended style.
+
+**Why:** Improves clarity and generation quality while acknowledging Suno's ability to interpret coherent stylistic entities beyond single-word tags and its "genre gravity." Prevents unintended instrument prominence and addresses specific audio quality issues. Understanding genre anchoring helps select more effective style descriptors.
+**How to apply:** Prioritize single-word genres. For specific, well-established sub-genres (e.g., 'lo-fi jazz'), use the two-word descriptor if it accurately conveys the desired style. Be aware that genre tags can subtly influence instrumentation. Avoid cultural or folk genre tags in the Style block if precise instrument hierarchy is critical. When genre archetypes cause issues like 'instrument bleed' (e.g., 'Jazz Lounge'), adjust prompts with exclusions or more precise instrument control. For reggae/hip-hop 'skank' rhythms, use 'offbeat strum' instead of 'skank'. When selecting between similar genres, opt for those with proven stronger 'anchoring' effects (e.g., 'Roots Reggae' over 'Reggae Dub') for more consistent results.
 
 ## Section Order
 Follow this structure for optimal results:
@@ -183,3 +190,6 @@ The 'Weight' (W) and 'Suno Interpretation' (SI) parameters offer precise control
 - `20260406-173715-consistent-critic-feedback-validates-the-3.md`
 - `20260406-173715-style-blocks-should-consistently-use-com-2.md`
 - `20260406-173715-when-aiming-for-a-skank-rhythm-in-reggae-1.md`
+- `20260406-205642-be-cautious-when-combining-echo-delay-wi-2.md`
+- `20260406-205642-for-instruments-like-shamisen-directive--1.md`
+- `20260406-205642-when-choosing-between-similar-or-related-3.md`

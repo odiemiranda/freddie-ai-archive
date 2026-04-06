@@ -50,7 +50,7 @@ batch: "reggae-hiphop-port-6v"
 ## Style
 
 ```
-[Instrumental] Reggae Hip-Hop Fusion, kalimba melody lead, shamisen plucks, warm harp accents, bouncy summer groove, clean mix, warm analog, A Major, 102 BPM [No Vocals]
+[Instrumental] Reggae Hip-Hop Fusion, kalimba melody lead, shamisen plucks, offbeat harp accents, island reggae bounce, clean mix, warm analog, A Major, 102 BPM [No Vocals]
 ```
 
 ## Exclude Style
@@ -72,32 +72,32 @@ fiddle, violin, high notes, high-pitched, vocals, singing, auto-tune
 [Short Instrumental Intro]
 [BPM: 102]
 [Key: A Major]
-[Energy: Low-Medium, Bright]
-[Instrument: Kalimba melody opening | Light warm bass | Finger snaps]
+[Energy: Medium, Bright]
+[Instrument: Kalimba melody opening | Reggae bass | Finger snaps]
 
 [Verse]
 [Energy: Medium, Bouncy]
-[Instrument: Kalimba melody lead | Shamisen rhythmic plucks | Warm harp accents | Hip-hop muffled drums | Warm bass groove]
+[Instrument: Kalimba melody lead | Shamisen rhythmic plucks | Offbeat harp accents | One-drop reggae drums | Walking reggae bass]
 
 [Chorus]
 [Energy: Medium-High, Upbeat]
-[Instrument: Kalimba melody lead | Shamisen plucks | Harp single plucks | Full muffled drums | Deep warm bass]
+[Instrument: Kalimba melody lead | Shamisen plucks | Offbeat harp plucks | Full one-drop reggae drums | Reggae bass groove]
 
 [Verse]
 [Energy: Medium, Bouncy]
-[Instrument: Kalimba melody | Shamisen rhythmic plucks | Harp accents | Muffled drums | Warm bass]
+[Instrument: Kalimba melody | Shamisen rhythmic plucks | Offbeat harp accents | One-drop reggae drums | Reggae bass]
 
 [Bridge]
-[Energy: Low-Medium, Gentle]
-[Instrument: Harp arpeggios lead | Kalimba light taps | Shamisen whisper | Soft bass]
+[Energy: Medium, Smooth]
+[Instrument: Harp arpeggios lead | Kalimba taps | Shamisen plucks | Reggae bass]
 
 [Chorus]
 [Energy: Medium-High, Upbeat]
-[Instrument: Kalimba melody lead | Shamisen plucks | Harp plucks | Full muffled drums | Warm bass]
+[Instrument: Kalimba melody lead | Shamisen plucks | Offbeat harp plucks | Full one-drop reggae drums | Reggae bass]
 
 [Fade Out]
-[Energy: Low-Medium, Fading]
-[Instrument: Kalimba melody fade | Harp pluck | Soft bass | Light kick]
+[Energy: Medium, Fading]
+[Instrument: Kalimba melody fade | Harp pluck | Reggae bass | One-drop kick]
 ```
 
 ---

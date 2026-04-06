@@ -49,7 +49,7 @@ batch: "reggae-hiphop-port-6v"
 ## Style
 
 ```
-[Instrumental] Reggae Hip-Hop Fusion, shamisen offbeat strums lead, warm harp plucks, muffled drums, upbeat, clean mix, analog warmth, G Major, 92 BPM [No Vocals]
+[Instrumental] Reggae Hip-Hop Fusion, shamisen offbeat strums lead, offbeat harp plucks, one-drop reggae drums, island reggae bounce, clean mix, analog warmth, G Major, 92 BPM [No Vocals]
 ```
 
 ## Exclude Style
@@ -71,32 +71,32 @@ fiddle, violin, high notes, high-pitched, vocals, singing, auto-tune
 [Short Instrumental Intro]
 [BPM: 92]
 [Key: G Major]
-[Energy: Low, Building]
-[Instrument: Warm shamisen offbeat strum | Muffled kick | Sub bass pulse]
+[Energy: Medium, Steady]
+[Instrument: Shamisen offbeat strum | One-drop reggae kick | Reggae bass pulse]
 
 [Verse]
 [Energy: Medium, Groovy]
-[Instrument: Shamisen offbeat strums lead | Warm harp single pluck | Hip-hop muffled drums | Deep warm bass]
+[Instrument: Shamisen offbeat strums lead | Offbeat harp plucks | One-drop reggae drums | Walking reggae bass]
 
 [Chorus]
 [Energy: Medium-High, Upbeat]
-[Instrument: Shamisen offbeat strums lead | Harp pluck melody | Full muffled drums | Deep bass groove | Conga rhythm]
+[Instrument: Shamisen offbeat strums lead | Offbeat harp pluck melody | Full one-drop reggae drums | Reggae bass groove | Conga rhythm]
 
 [Verse]
-[Energy: Medium, Laid-back]
-[Instrument: Shamisen offbeat strums | Warm harp pluck | Muffled drums | Warm bass]
+[Energy: Medium, Groovy]
+[Instrument: Shamisen offbeat strums | Offbeat harp plucks | One-drop reggae drums | Reggae bass]
 
 [Bridge]
-[Energy: Low-Medium, Smooth]
-[Instrument: Harp pluck melody | Shamisen accent plucks | Light bass | Soft muffled kick]
+[Energy: Medium, Smooth]
+[Instrument: Harp pluck melody | Shamisen accent plucks | Reggae bass | Light one-drop drums]
 
 [Chorus]
 [Energy: Medium-High, Upbeat]
-[Instrument: Shamisen offbeat strums lead | Harp plucks | Full muffled drums | Deep bass groove | Conga]
+[Instrument: Shamisen offbeat strums lead | Offbeat harp plucks | Full one-drop reggae drums | Reggae bass groove | Conga]
 
 [Fade Out]
-[Energy: Low, Fading]
-[Instrument: Shamisen single pluck fade | Warm bass | Soft kick]
+[Energy: Medium, Fading]
+[Instrument: Shamisen pluck fade | Reggae bass | One-drop kick]
 ```
 
 ---

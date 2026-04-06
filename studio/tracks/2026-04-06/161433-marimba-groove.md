@@ -50,7 +50,7 @@ batch: "reggae-hiphop-port-6v"
 ## Style
 
 ```
-[Instrumental] Reggae Hip-Hop Fusion, marimba rhythm lead, shamisen plucks, warm harp fills, energetic groove, clean mix, analog warmth, D Major, 115 BPM [No Vocals]
+[Instrumental] Reggae Hip-Hop Fusion, marimba rhythm lead, shamisen plucks, offbeat harp chops, island reggae groove, clean mix, analog warmth, D Major, 115 BPM [No Vocals]
 ```
 
 ## Exclude Style
@@ -72,32 +72,32 @@ fiddle, violin, high notes, high-pitched, vocals, singing, auto-tune
 [Short Instrumental Intro]
 [BPM: 115]
 [Key: D Major]
-[Energy: Low-Medium, Rhythmic]
-[Instrument: Marimba rhythm pattern | Light muffled kick | Bass pulse]
+[Energy: Medium, Rhythmic]
+[Instrument: Marimba rhythm pattern | One-drop reggae kick | Reggae bass pulse]
 
 [Verse]
-[Energy: Medium, Bouncy]
-[Instrument: Marimba rhythm lead | Shamisen plucks | Warm harp fills | Hip-hop muffled drums | Warm bass groove]
+[Energy: Medium-High, Bouncy]
+[Instrument: Marimba rhythm lead | Shamisen plucks | Offbeat harp chops | One-drop reggae drums | Walking reggae bass]
 
 [Chorus]
-[Energy: Medium-High, Driving]
-[Instrument: Marimba rhythm lead | Shamisen pluck melody | Warm harp fills | Full muffled drums | Punchy warm bass]
+[Energy: High, Driving]
+[Instrument: Marimba rhythm lead | Shamisen pluck melody | Offbeat harp chops | Full one-drop reggae drums | Punchy reggae bass]
 
 [Verse]
-[Energy: Medium, Groovy]
-[Instrument: Marimba rhythm | Shamisen accents | Harp single plucks | Muffled drums | Warm bass]
+[Energy: Medium-High, Groovy]
+[Instrument: Marimba rhythm | Shamisen accents | Offbeat harp plucks | One-drop reggae drums | Reggae bass]
 
 [Bridge]
-[Energy: Low-Medium, Smooth]
-[Instrument: Harp fills lead | Marimba light taps | Shamisen whisper plucks | Soft bass]
+[Energy: Medium, Smooth]
+[Instrument: Offbeat harp melody | Marimba taps | Shamisen plucks | Reggae bass]
 
 [Chorus]
-[Energy: Medium-High, Driving]
-[Instrument: Marimba rhythm lead | Shamisen plucks | Warm harp fills | Full muffled drums | Punchy bass]
+[Energy: High, Driving]
+[Instrument: Marimba rhythm lead | Shamisen plucks | Offbeat harp chops | Full one-drop reggae drums | Punchy reggae bass]
 
 [Fade Out]
-[Energy: Low-Medium, Winding]
-[Instrument: Marimba fade | Shamisen pluck | Harp note | Soft kick]
+[Energy: Medium, Winding]
+[Instrument: Marimba fade | Shamisen pluck | Harp note | One-drop kick]
 ```
 
 ---

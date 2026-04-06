@@ -35,7 +35,7 @@
   {
     "file": "knowledge/suno-prompt-design.md",
     "name": "suno-prompt-design",
-    "description": "Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity, genre precision, and descriptor refinement, including guidance for dynamic instrument roles.",
+    "description": "Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity, genre precision, descriptor refinement, and effects management, including guidance for dynamic instrument roles and genre anchoring.",
     "type": "knowledge",
     "tags": [
       "suno",
@@ -80,7 +80,11 @@
       "dealbreaker",
       "descriptor-refinement",
       "dynamic-roles",
-      "directive-verbs"
+      "directive-verbs",
+      "effects",
+      "delay",
+      "shamisen",
+      "genre-anchoring"
     ],
     "consolidated": "2026-04-06"
   },

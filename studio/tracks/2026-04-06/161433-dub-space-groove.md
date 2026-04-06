@@ -50,7 +50,7 @@ batch: "reggae-hiphop-port-6v"
 ## Style
 
 ```
-[Instrumental] Reggae Dub Hip-Hop, deep warm bassline, shamisen sparse plucks, spacious groove, clean mix, dub delay, Eb Major, 90 BPM [No Vocals]
+[Instrumental] Reggae Hip-Hop Fusion, walking reggae bass, shamisen plucks, offbeat harp chops, island reggae bounce, clean mix, analog warmth, Eb Major, 94 BPM [No Vocals]
 ```
 
 ## Exclude Style
@@ -61,8 +61,8 @@ fiddle, violin, high notes, high-pitched, vocals, singing, auto-tune
 
 ## Advanced Settings
 
-- **Weirdness**: 40% — Dub space benefits from experimental production, delay effects, unexpected echoes
-- **Style Influence**: 55% — Lower to let dub and hip-hop elements blend freely
+- **Weirdness**: 30% — Keep the groove predictable, no experimental effects
+- **Style Influence**: 60% — Balanced for clean dub-hiphop groove
 
 ## Lyrics
 
@@ -70,34 +70,34 @@ fiddle, violin, high notes, high-pitched, vocals, singing, auto-tune
 [Instrumental]
 
 [Short Instrumental Intro]
-[BPM: 90]
+[BPM: 94]
 [Key: Eb Major]
-[Energy: Low, Deep]
-[Instrument: Deep warm bass pulse | Muffled kick echo | Light shamisen pluck]
+[Energy: Medium, Steady]
+[Instrument: Walking reggae bass groove | One-drop reggae kick | Shamisen pluck]
 
 [Verse]
-[Energy: Low-Medium, Heavy]
-[Instrument: Deep dub bassline lead | Shamisen sparse plucks | Muffled one-drop drums | Ambient harp wash]
+[Energy: Medium, Groovy]
+[Instrument: Walking reggae bass lead | Shamisen rhythmic plucks | One-drop reggae drums | Offbeat harp chops]
 
 [Chorus]
-[Energy: Medium, Bouncy]
-[Instrument: Deep dub bass groove | Muffled one-drop heavy | Shamisen offbeat accent | Harp single pluck | Delay effects]
+[Energy: Medium-High, Bouncy]
+[Instrument: Walking reggae bass groove | Full one-drop reggae drums | Shamisen offbeat accent | Offbeat harp pluck melody]
 
 [Verse]
-[Energy: Low-Medium, Rolling]
-[Instrument: Dub bassline | Shamisen sparse plucks | Light one-drop drums | Ambient harp]
+[Energy: Medium, Laid-back]
+[Instrument: Reggae bass | Shamisen plucks | One-drop reggae drums | Offbeat harp]
 
 [Bridge]
-[Energy: Low, Stripped]
-[Instrument: Harp ambient plucks | Bass pulse | Soft echo]
+[Energy: Medium, Smooth]
+[Instrument: Offbeat harp melody | Shamisen accent plucks | Soft reggae bass | Light one-drop drums]
 
 [Chorus]
-[Energy: Medium, Bouncy]
-[Instrument: Deep dub bass groove | One-drop drums heavy | Shamisen offbeat chops | Harp plucks | Delay]
+[Energy: Medium-High, Bouncy]
+[Instrument: Walking reggae bass groove | Full one-drop reggae drums | Shamisen offbeat chops | Offbeat harp plucks]
 
 [Fade Out]
-[Energy: Low, Dissolving]
-[Instrument: Bass fade | Shamisen echo pluck | Soft kick]
+[Energy: Low-Medium, Fading]
+[Instrument: Reggae bass fade | Shamisen pluck | Soft kick]
 ```
 
 ---
