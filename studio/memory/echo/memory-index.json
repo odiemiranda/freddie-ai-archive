@@ -1,19 +1,38 @@
 [
   {
-    "file": "knowledge/gemini-suggestion-filter-rules.md",
-    "created": "",
+    "file": "knowledge/gemini-general-critique-workflow.md",
+    "name": "Gemini General Critique Workflow",
+    "description": "A multi-stage workflow leveraging Gemini for comprehensive critique of documents, including agent design files.",
+    "type": "knowledge",
+    "tags": [
+      "gemini",
+      "critique",
+      "workflow",
+      "multi-pass",
+      "document-analysis",
+      "agent-design",
+      "tool-capability"
+    ],
+    "consolidated": "2026-04-07"
+  },
+  {
+    "file": "knowledge/gemini-suno-critique-filter-rules.md",
+    "name": "Gemini Suno Critique Filter Rules",
+    "description": "Guidelines for filtering Gemini's critique responses to ensure suggestions align with Suno-specific prompt behavior.",
     "type": "knowledge",
     "tags": [
       "gemini",
       "critique",
       "filtering",
-      "trust"
+      "trust",
+      "suno"
     ],
-    "summary": "## Overview"
+    "consolidated": "2026-04-07"
   },
   {
     "file": "knowledge/suno-generation-critique-checklist.md",
-    "created": "",
+    "name": "Suno Generation Critique Checklist",
+    "description": "Seven-factor diagnostic pattern for identifying and fixing muddled output quality in Suno AI Style blocks.",
     "type": "knowledge",
     "tags": [
       "suno",
@@ -21,6 +40,6 @@
       "checklist",
       "generation-quality"
     ],
-    "summary": "## Overview"
+    "consolidated": "2026-04-07"
   }
 ]

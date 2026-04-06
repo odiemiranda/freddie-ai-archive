@@ -22,5 +22,6 @@ These integrations extend Wick's capabilities by allowing it to interact with ex
 Utilize the NotebookLM CLI wrapper within Wick's environment to programmatically list and search content within NotebookLM, gathering context or retrieving specific information. Leverage Wick's `obsidian-md` library for any tasks involving reading, writing, or manipulating Obsidian Markdown files, ensuring compatibility with Obsidian's specific syntax and structure for seamless integration with external knowledge bases.
 
 ## Consolidated from
-- `wick-notebooklm-cli-wrapper.md`
-- `wick-obsidian-md-integration.md`
+- `raw-log-20260401-074629-note.md`
+- `raw-log-20260401-165808-note.md`
+- `raw-log-20260401-171811-note.md`

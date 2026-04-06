@@ -22,5 +22,6 @@ The consistent integrity and availability of pre-defined prompt-data files are f
 Leverage Wick's established capabilities for prompt data maintenance. When introducing new prompt-data requirements or updating existing ones, utilize Wick's initialization and merging functionalities. Rely on the routine verification processes to confirm the ongoing health and accuracy of these critical resources. Utilize the `repetition-analyzer` to analyze generated lyrics for unwanted repetition, near-matches, or anaphora, and use the per-section ratio flagging to guide refinements for higher quality outputs.
 
 ## Consolidated from
-- `wick-prompt-data-management.md`
+- `20260331-063543-wick-s-prompt-generation-relies-on-the-c.md`
+- `20260331-064541-wick-possesses-the-capability-to-initial.md`
 - `raw-log-20260403-190846-note.md`

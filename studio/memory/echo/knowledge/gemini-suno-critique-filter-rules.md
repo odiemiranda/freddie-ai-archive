@@ -30,5 +30,6 @@ Gemini's general music knowledge is excellent, but it does not inherently unders
 Cross-reference every Gemini suggestion against the `suno-generation-critique-checklist.md` and `production.md` hard rules. Accept structural/count observations; be skeptical of per-instrument mixing suggestions.
 
 **Consolidated From**:
+- `gemini-suggestion-filter-rules.md`
 - `mem-echo-20260323-060000-02` (Gemini Suggestion Filter — What to Accept and Reject)
 - `mem-shared-20260321-183900-01` (Gemini Critique Loops Live - partial overlap)

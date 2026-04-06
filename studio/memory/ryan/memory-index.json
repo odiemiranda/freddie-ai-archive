@@ -1,0 +1,100 @@
+[
+  {
+    "file": "knowledge/wick-embeddings-and-recall-system.md",
+    "name": "Wick's Embeddings and Recall System",
+    "description": "Describes Wick's updated embedding infrastructure using local ONNX models and the new `recall` tool for query classification and full-text search.",
+    "type": "knowledge",
+    "tags": [
+      "embeddings",
+      "onnx",
+      "transformers",
+      "recall",
+      "search",
+      "query-classification",
+      "information-retrieval",
+      "brain"
+    ],
+    "consolidated": "2026-04-07"
+  },
+  {
+    "file": "knowledge/wick-external-knowledge-integrations.md",
+    "name": "Wick's External Knowledge Integrations",
+    "description": "Details Wick's integrations with external knowledge systems like NotebookLM and Obsidian Markdown for enhanced data access and management.",
+    "type": "knowledge",
+    "tags": [
+      "tool-integration",
+      "notebooklm",
+      "cli",
+      "data-retrieval",
+      "external-tools",
+      "search",
+      "list",
+      "obsidian",
+      "markdown",
+      "parser",
+      "serializer",
+      "data-management",
+      "knowledge-base"
+    ],
+    "consolidated": "2026-04-07"
+  },
+  {
+    "file": "knowledge/wick-prompt-data-and-quality-tools.md",
+    "name": "Wick's Prompt Data and Quality Tools",
+    "description": "Covers Wick's capabilities for managing core prompt-data libraries and analyzing generated text for quality, such as repetition.",
+    "type": "knowledge",
+    "tags": [
+      "prompt-data",
+      "data-management",
+      "library-initialization",
+      "file-operations",
+      "verification",
+      "core-resources",
+      "lyrics-analysis",
+      "repetition-analyzer",
+      "n-gram",
+      "levenshtein",
+      "anaphora"
+    ],
+    "consolidated": "2026-04-07"
+  },
+  {
+    "file": "knowledge/wick-prompt-engineering-strategies.md",
+    "name": "Wick's Prompt Engineering Strategies",
+    "description": "Details Wick's advanced strategies for structured prompt generation, including the MiniMax prose builder and specialized Suno vocal lyrics creation.",
+    "type": "knowledge",
+    "tags": [
+      "prompt-generation",
+      "strategy",
+      "prose-builder",
+      "minimax",
+      "structured-prompts",
+      "testing",
+      "vocal-lyrics",
+      "suno",
+      "schema",
+      "parser",
+      "formatter"
+    ],
+    "consolidated": "2026-04-07"
+  },
+  {
+    "file": "knowledge/wick-raw-data-management-system.md",
+    "name": "Wick's Raw Data Management System",
+    "description": "Details Wick's comprehensive system for capturing, processing, and indexing raw interaction data from various sources.",
+    "type": "knowledge",
+    "tags": [
+      "data-management",
+      "raw-data",
+      "capture",
+      "processing",
+      "indexing",
+      "cli",
+      "claude",
+      "jsonl",
+      "fts",
+      "reflect"
+    ],
+    "consolidated": "2026-04-07"
+  }
+]

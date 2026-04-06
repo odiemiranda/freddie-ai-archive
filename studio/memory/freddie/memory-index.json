@@ -2,7 +2,7 @@
   {
     "file": "knowledge/knowledge_agent_architecture_and_workflow.md",
     "name": "Agent Architecture and Workflow",
-    "description": "Guidelines for designing agent workflows, managing context in iterative skills, establishing internal agent hierarchies, standardizing agent initialization, optimizing documentation for context, employing effective development methodologies, managing project-specific configurations, detailing core cognitive capabilities, and outlining strategic vision.",
+    "description": "Guidelines for designing agent workflows, managing context in iterative skills, establishing internal agent hierarchies, standardizing agent initialization, optimizing documentation for context, employing effective development methodologies, managing project-specific configurations, detailing core cognitive capabilities, outlining strategic vision, and implementing self-learning autonomy pipelines.",
     "type": "knowledge",
     "tags": [
       "architecture",
@@ -127,9 +127,25 @@
       "orchestration",
       "suno",
       "iris",
-      "veo"
+      "veo",
+      "AAR",
+      "self-learning",
+      "autonomy",
+      "knowledge_management",
+      "reflection",
+      "decision_making",
+      "evaluation",
+      "new_capability",
+      "prioritization",
+      "importance_scoring",
+      "workflow_rule",
+      "rebase",
+      "code_review",
+      "bug_detection",
+      "Freddie",
+      "collaboration"
     ],
-    "consolidated": "2026-04-06"
+    "consolidated": "2026-04-07"
   },
   {
     "file": "knowledge/knowledge_communication_and_interaction_standards.md",
@@ -149,7 +165,7 @@
       "clarity",
       "music_card"
     ],
-    "consolidated": "2026-04-06"
+    "consolidated": "2026-04-07"
   },
   {
     "file": "knowledge/knowledge_linguistic_capabilities.md",
@@ -168,7 +184,7 @@
       "language_processing",
       "scope_expansion"
     ],
-    "consolidated": "2026-04-06"
+    "consolidated": "2026-04-07"
   },
   {
     "file": "knowledge/knowledge_memory_system_architecture.md",
@@ -220,7 +236,7 @@
       "episodic_memory",
       "gap_analysis"
     ],
-    "consolidated": "2026-04-06"
+    "consolidated": "2026-04-07"
   },
   {
     "file": "knowledge/knowledge_music_generation_capabilities.md",
@@ -249,7 +265,7 @@
       "reggae",
       "shamisen"
     ],
-    "consolidated": "2026-04-06"
+    "consolidated": "2026-04-07"
   },
   {
     "file": "knowledge/knowledge_tooling_and_platform_guidelines.md",
@@ -298,6 +314,6 @@
       "audio_artifacts",
       "content_filters"
     ],
-    "consolidated": "2026-04-06"
+    "consolidated": "2026-04-07"
   }
 ]

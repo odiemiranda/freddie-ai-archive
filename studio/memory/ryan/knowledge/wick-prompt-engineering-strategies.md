@@ -22,5 +22,5 @@ The MiniMax strategy provides a structured and robust method for generating comp
 Leverage the MiniMax strategy for generating detailed, multi-section prose prompts, especially when a structured narrative or complex prompt architecture is required. Utilize the `buildVocalLyrics()` function or the CLI `--build vocal-lyrics` option to generate structured vocal lyrics for Suno, ensuring adherence to the `VocalLyricsInput` schema for consistent output.
 
 ## Consolidated from
-- `wick-minimax-prompt-strategy.md`
-- `wick-suno-vocal-lyrics-strategy.md`
+- `raw-log-20260331-173542-note.md`
+- `raw-log-20260331-162743-note.md`

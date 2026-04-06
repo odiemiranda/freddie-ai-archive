@@ -1,13 +1,13 @@
 ---
 name: Suno Generation Critique Checklist
-description: Six-factor diagnostic pattern for identifying and fixing muddled output quality in Suno AI Style blocks.
+description: Seven-factor diagnostic pattern for identifying and fixing muddled output quality in Suno AI Style blocks.
 type: knowledge
 agent: echo
 tags: [suno, critique, checklist, generation-quality]
 ---
 
 ## Overview
-When diagnosing muddled or low-quality Suno output, compare the failing Style block against a known clean track from the same genre or instrument family. Use these six factors to identify structural issues that often outweigh frequency collisions in their impact on generation quality.
+When diagnosing muddled or low-quality Suno output, compare the failing Style block against a known clean track from the same genre or instrument family. Use these seven factors to identify structural issues that often outweigh frequency collisions in their impact on generation quality.
 
 ## The Seven Factors (Ranked by Impact)
 
@@ -23,7 +23,7 @@ When diagnosing muddled or low-quality Suno output, compare the failing Style bl
 Analysis of "Morning Market" vs "Tavern" tracks confirmed that structural factors are the primary cause of muddled output. Applying these fixes improved generation quality from ~60% to consistent cleanliness.
 
 ## How to Apply
-Before performing a frequency-based analysis via `/sound`, validate the Style block against this six-factor checklist. Address structural failures first.
+Before performing a frequency-based analysis via `/sound`, validate the Style block against this seven-factor checklist. Address structural failures first.
 
 **Consolidated From**:
 - `mem-echo-20260323-060000-01` (Clean vs Muddled Comparison Analysis Pattern)
