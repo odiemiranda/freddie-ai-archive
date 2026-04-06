@@ -110,6 +110,7 @@ fiddle, violin, guitar, vocals
 [Instrument: Subdued drums | drives one-drop hip-hop hybrid]
 [Texture: vibrant, forward]
 
+[Outro]
 [Big Finish]
 [Energy: High]
 [Mood: Warm, satisfying]
@@ -119,7 +120,8 @@ fiddle, violin, guitar, vocals
 [Texture: open, resolved]
 
 [No Vocals]
-[End]
+
+[END]
 ```
 
 ---

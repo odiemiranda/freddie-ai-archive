@@ -61,17 +61,16 @@ fiddle, violin, high notes, high-pitched, vocals, singing, auto-tune
 [Energy: High, Groovy]
 [Instrument: Punchy shamisen strums | Offbeat harp chops | One-drop reggae drums | Punchy reggae bass]
 
-[Bridge]
-[Energy: Medium-High, Bouncy]
-[Instrument: Offbeat harp melody | Shamisen accent strums | Reggae bass groove | One-drop drums]
-
 [Chorus]
 [Energy: High, Infectious]
 [Instrument: Punchy shamisen strums lead | Offbeat harp chops | Full one-drop reggae drums | Punchy reggae bass driving | Tambourine]
 
+[Outro]
 [Fade Out]
 [Energy: Medium-High, Fading]
 [Instrument: Punchy shamisen strum fade | Reggae bass | One-drop kick]
+
+[END]
 ```
 
 ---

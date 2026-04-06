@@ -96,6 +96,7 @@ fiddle, violin, guitar, vocals
 [Instrument: Shamisen confident varied twangy plucks, prominent | Harp deep sustained harmonic beds steady | Subdued drums lo-fi swing full offbeat]
 [Texture: Warm production, natural]
 
+[Outro]
 [Fade Out]
 [Energy: Low]
 [Mood: bright, warm]
@@ -103,7 +104,8 @@ fiddle, violin, guitar, vocals
 [Texture: Vinyl crackle, fading]
 
 [No Vocals]
-[End]
+
+[END]
 ```
 
 ---

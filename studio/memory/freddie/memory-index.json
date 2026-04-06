@@ -225,7 +225,7 @@
   {
     "file": "knowledge/knowledge_music_generation_capabilities.md",
     "name": "Music Generation Capabilities",
-    "description": "Details Freddie's ability to accurately infer complex musical characteristics from minimal, high-level thematic input for music card generation.",
+    "description": "Details Freddie's ability to accurately infer musical characteristics from minimal input, along with practical guidelines for track structure, section control, and iterative parameter exploration in music generation workflows.",
     "type": "knowledge",
     "tags": [
       "music_card",
@@ -233,14 +233,28 @@
       "contextual_understanding",
       "music_generation",
       "minimal_input",
-      "capability"
+      "capability",
+      "bgm",
+      "track_structure",
+      "workflow_optimization",
+      "section_length",
+      "outro",
+      "fade_out",
+      "section_ordering",
+      "create_track_skill",
+      "skill_improvement",
+      "section_control",
+      "iteration",
+      "parameters",
+      "reggae",
+      "shamisen"
     ],
     "consolidated": "2026-04-06"
   },
   {
     "file": "knowledge/knowledge_tooling_and_platform_guidelines.md",
     "name": "Tooling and Platform Guidelines",
-    "description": "Best practices for tool execution, development, prioritizing CLI-first calls, and specific technical considerations for developing and managing tools on Windows, including process management and PowerShell integration, ensuring robustness and security, and noting known tool limitations.",
+    "description": "Best practices for tool execution, development, prioritizing CLI-first calls, and specific technical considerations for developing and managing tools on Windows, including process management and PowerShell integration. This also covers platform-specific behaviors and known tool limitations, ensuring robustness and security.",
     "type": "knowledge",
     "tags": [
       "tool_execution",
@@ -277,7 +291,12 @@
       "minimax-video",
       "bug_fix",
       "local_files",
-      "video_generation"
+      "video_generation",
+      "suno",
+      "platform_behavior",
+      "prompting",
+      "audio_artifacts",
+      "content_filters"
     ],
     "consolidated": "2026-04-06"
   }

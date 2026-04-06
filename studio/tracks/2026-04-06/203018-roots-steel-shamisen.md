@@ -61,17 +61,16 @@ fiddle, violin, high notes, high-pitched, vocals, singing, auto-tune
 [Energy: High, Groovy]
 [Instrument: Steel drum melody | Shamisen offbeat strums | Offbeat harp chops | One-drop reggae drums | Reggae bass]
 
-[Bridge]
-[Energy: Medium-High, Bouncy]
-[Instrument: Shamisen offbeat strums solo | Bongo rhythm | Reggae bass groove | One-drop drums]
-
 [Chorus]
 [Energy: High, Driving]
 [Instrument: Steel drum melody | Shamisen offbeat strums | Offbeat harp chops | Full one-drop reggae drums | Punchy reggae bass | Bongo]
 
+[Outro]
 [Fade Out]
 [Energy: Medium-High, Fading]
 [Instrument: Steel drum fade | Shamisen pluck | Reggae bass | One-drop kick]
+
+[END]
 ```
 
 ---

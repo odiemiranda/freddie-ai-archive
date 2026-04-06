@@ -86,17 +86,16 @@ fiddle, violin, high notes, high-pitched, vocals, singing, auto-tune
 [Energy: Medium, Groovy]
 [Instrument: Shamisen offbeat strums | Offbeat harp plucks | One-drop reggae drums | Reggae bass]
 
-[Bridge]
-[Energy: Medium, Smooth]
-[Instrument: Harp pluck melody | Shamisen accent plucks | Reggae bass | Light one-drop drums]
-
 [Chorus]
 [Energy: Medium-High, Upbeat]
 [Instrument: Shamisen offbeat strums lead | Offbeat harp plucks | Full one-drop reggae drums | Reggae bass groove | Conga]
 
+[Outro]
 [Fade Out]
 [Energy: Medium, Fading]
 [Instrument: Shamisen pluck fade | Reggae bass | One-drop kick]
+
+[END]
 ```
 
 ---

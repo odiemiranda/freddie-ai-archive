@@ -73,11 +73,6 @@ fiddle, violin, guitar, vocals
 [Instrument: Shamisen | mid-register warm single plucks, sparse]
 [Atmosphere: still, early morning air]
 
-[Build]
-[Instrument: Shamisen | mid-register warm melodic plucks | Harp | deep low sustained notes, gentle]
-[Rhythm: Subdued kick, light hi-hat, subtle swing]
-[Energy: rising]
-
 [Verse]
 [Instrument: Shamisen | mid-register warm plucks leading | Harp | deep low warm chords | Subdued drums | lo-fi swing, steady]
 [Atmosphere: city waking, sun through windows]
@@ -91,12 +86,12 @@ fiddle, violin, guitar, vocals
 [Instrument: Shamisen | mid-register warm plucks, variation | Harp | deep low sustained | Subdued drums | lo-fi swing]
 [Atmosphere: warm, purposeful]
 
-[Big Finish]
+[Outro]
+[Fade Out]
 [Instrument: Shamisen | mid-register sparse trailing plucks | Harp | deep low fading notes]
 [Energy: fading]
 
-[No Vocals]
-[End]
+[END]
 ```
 
 ---

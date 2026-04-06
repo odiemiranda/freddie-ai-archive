@@ -87,17 +87,16 @@ fiddle, violin, high notes, high-pitched, vocals, singing, auto-tune
 [Energy: Medium-High, Groovy]
 [Instrument: Marimba rhythm | Shamisen accents | Offbeat harp plucks | One-drop reggae drums | Reggae bass]
 
-[Bridge]
-[Energy: Medium, Smooth]
-[Instrument: Offbeat harp melody | Marimba taps | Shamisen plucks | Reggae bass]
-
 [Chorus]
 [Energy: High, Driving]
 [Instrument: Marimba rhythm lead | Shamisen plucks | Offbeat harp chops | Full one-drop reggae drums | Punchy reggae bass]
 
+[Outro]
 [Fade Out]
 [Energy: Medium, Winding]
 [Instrument: Marimba fade | Shamisen pluck | Harp note | One-drop kick]
+
+[END]
 ```
 
 ---

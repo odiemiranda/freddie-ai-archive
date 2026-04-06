@@ -87,17 +87,16 @@ fiddle, violin, high notes, high-pitched, vocals, singing, auto-tune
 [Energy: Medium, Groovy]
 [Instrument: Harp melody lead | Shamisen pluck accents | One-drop reggae drums | Reggae bass]
 
-[Bridge]
-[Energy: Medium, Smooth]
-[Instrument: Harp pluck melody | Shamisen accent plucks | Reggae bass | Light one-drop drums]
-
 [Chorus]
 [Energy: Medium-High, Bright]
 [Instrument: Warm harp melody | Shamisen rhythmic plucks | Full one-drop reggae drums | Reggae bass | Tambourine]
 
+[Outro]
 [Fade Out]
 [Energy: Medium, Fading]
 [Instrument: Harp pluck fade | Shamisen pluck | Reggae bass]
+
+[END]
 ```
 
 ---
