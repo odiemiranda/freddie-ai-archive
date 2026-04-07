@@ -17,11 +17,14 @@ The strategic direction emphasizes building a robust, composable tool ecosystem 
 ## LLM Token Limits and Silent Data Loss
 When using Large Language Models (LLMs) for structured, multi-file output, it is critical to be aware of `maxOutputTokens` limits. If the output exceeds this limit, the model will silently truncate its response, leading to incomplete or lost data without error notification.
 
-**Why:** Prevents silent data loss and ensures the integrity and completeness of consolidated knowledge.
+**Specific MiniMax Limitation:** The MiniMax LLM has a strict 256 token limit, which can be easily exhausted by complex reasoning tasks (e.g., during 'reasoning' within the AAR Phase 1 pipeline), leading to silent truncation and bugs.
+
+**Why:** Prevents silent data loss and ensures the integrity and completeness of consolidated knowledge. Understanding specific LLM limitations (like MiniMax's 256 token limit) is crucial for effective prompt engineering.
 **How to apply:**
 1.  **Increase `maxOutputTokens`:** Set the limit significantly higher than the expected output, providing ample headroom (e.g., 4x the estimated need).
 2.  **Implement Post-Parse Checks:** After the LLM generates its output, compare the planned number of output files/sections with the actual parsed count. Warn if there's a mismatch.
 3.  **Implement Post-Write Verification:** After writing files to disk, verify that the contents of the knowledge directory match the consolidation plan.
+4.  **For MiniMax:** When using MiniMax for cognitive or reasoning tasks, employ careful prompt engineering, including explicit output constraints or chunking of reasoning steps, to prevent truncation and ensure complete processing.
 
 **Lesson:** Always verify the output count matches the plan when using LLMs for structured multi-file output. Token limits cause silent truncation.
 
@@ -100,3 +103,4 @@ The creation of a `/jam` skill (automated chaining of Rune → Tala/Sol) is **in
 - `20260403-082246-the-strategic-direction-emphasizes-build-3.md`
 - `20260403-163656-minimax-may-exhibit-timeout-issues-durin-2.md`
 - `20260406-064001-multi-critic-reconciliation-is-highly-ef-1.md`
+- `20260407-095424-minimax-has-a-strict-256-token-limit-tha-2.md`
