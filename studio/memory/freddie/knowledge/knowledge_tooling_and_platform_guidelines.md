@@ -3,7 +3,7 @@ name: Tooling and Platform Guidelines
 description: Best practices for tool execution, development, prioritizing CLI-first calls, and specific technical considerations for developing and managing tools on Windows, including process management and PowerShell integration. This also covers platform-specific behaviors and known tool limitations, ensuring robustness and security.
 type: knowledge
 agent: freddie
-tags: [tool_execution, user_preference, debuggability, architecture, workflow, windows, powershell, nodejs, tool-development, process-management, obsidian, cli_first, readability, maintainability, code_style, parser, serializer, testing, data_integrity, library_design, infrastructure, security, robustness, defensive_coding, bun, standardization, execution, tool_limitation, bug, false_positive, tool_behavior, minimax-video, bug_fix, local_files, video_generation, suno, platform_behavior, prompting, audio_artifacts, content_filters]
+tags: [tool_execution, user_preference, debuggability, architecture, workflow, windows, powershell, nodejs, tool-development, process-management, obsidian, cli_first, readability, maintainability, code_style, parser, serializer, testing, data_integrity, library_design, infrastructure, security, robustness, defensive_coding, bun, standardization, execution, tool_limitation, bug, false_positive, tool_behavior, minimax-video, bug_fix, local_files, video_generation, suno, platform_behavior, prompting, audio_artifacts, content_filters, isTTY, workaround, environment_variable, chokidar, file_watching, polling, delay, failure_mode, child_process]
 ---
 
 ## Tool Execution Preference
@@ -27,8 +27,9 @@ tags: [tool_execution, user_preference, debuggability, architecture, workflow, w
 ## Windows Specifics for Tool Development
 ### Process Management on Windows
 - **Node.js `spawn` Behavior:** When using Node.js `spawn({ detached: true })` on Windows for console applications, a console window will always pop up due to an unfixed Node.js bug. The `windowsHide: true` option is ineffective.
+- **Bun.spawn vs. Node.js child_process.spawn:** It is necessary to differentiate between `Bun.spawn` and Node.js `child_process.spawn` based on specific use cases, as they are not always interchangeable and have distinct optimal applications for process management.
 - **Reliable Window Hiding:** The only reliable method to manage window state for spawned processes on Windows is to use PowerShell's `Start-Process -WindowStyle Hidden`. This manages the window state at the operating system level.
-- **`pm2` on Windows:** `pm2` also exhibits the terminal window popping issue on Windows (showing `node.exe` titles), indicating the same underlying `spawn` problem. Direct PowerShell approaches are preferred to avoid this.
+- **`pm2` on Windows:** `pm2` also exhibits the terminal window popping issue on Windows (showing `node.exe` titles), indicating the same underlying `spawn` problem. Furthermore, `pm2` on Windows may be susceptible to user-driven invalidation or prove less robust for daemonization. Direct PowerShell approaches are preferred to avoid these issues and ensure more stable process management for critical services.
 
 ### PowerShell Integration Best Practices
 - **Argument Handling:** When passing arguments to PowerShell scripts using `-ArgumentList`, provide arguments as comma-separated quoted items (e.g., `'-sync','--path','vault'`) rather than a single concatenated string (`'-sync --path vault'`).
@@ -38,6 +39,12 @@ tags: [tool_execution, user_preference, debuggability, architecture, workflow, w
 - **Continuous Sync:** The `ob sync --continuous` command initiates a long-running watcher process, not an interval-based synchronization. Tools should manage its PID file for daemonization.
 - **Portable Vault Path Resolution:** Vault paths can be resolved dynamically by matching an `OBSIDIAN_VAULT_ID` environment variable against the output of `ob sync-list-local`, enabling portability across different machine setups.
 
+### File Watching on Windows
+- **Chokidar Polling Delay:** When implementing file watching with `chokidar` on Windows using polling, it is critical to include a 600ms settling delay after the 'ready' event to ensure stability, prevent race conditions, and avoid missed events.
+
+## Bun-Specific Behaviors
+- **`Bun.isTTY` Unreliability:** `Bun.isTTY` was consistently found to be undefined and is unreliable. It should be replaced by an environment variable for accurate TTY detection in Bun-based applications to ensure correct conditional logic.
+
 ## Known Tool Limitations and Platform Behaviors
 - **`section-balance` Tool:** The `section-balance` tool has a specific known limitation where it misinterprets typed brackets (e.g., `[Chorus]`) as structural elements, leading to incorrect balance assessments. This behavior needs to be considered when interpreting its output or when designing lyrics inputs.
 - **Suno Platform Behavior:** Specific musical terms ('skank') can trigger platform content flags or unexpected interpretations.
@@ -46,7 +53,7 @@ tags: [tool_execution, user_preference, debuggability, architecture, workflow, w
 ## Tool Specific Improvements
 - **`minimax-video` Local File Path Support:** The `minimax-video` tool now reliably supports local file paths for its `--first-frame` argument, enhancing its flexibility and integration within local video generation workflows.
 
-**Why:** Prioritizing CLI-first calls and encapsulating logic in dedicated tools, including robust CLI routers and specific defensive coding mechanisms, significantly enhances visibility, debuggability, readability, maintainability, security, and robustness of internal processes, aligning directly with user preference. Standardizing `bun run` as the system-wide execution mechanism improves consistency and efficiency. Understanding Windows-specific platform and tool interactions (e.g., unwanted console windows, incorrect command execution) is crucial for robust tool development and impacts tool reliability and user experience. Adopting a modular architecture with comprehensive testing for data parsing libraries ensures data integrity and reliable functionality, which is critical for system stability. Documenting known tool limitations and platform-specific behaviors helps in interpreting tool outputs correctly, informs future development or workarounds, and prevents undesirable outcomes. Specific tool improvements like `minimax-video`'s local file path support enhance flexibility and integration.
+**Why:** Prioritizing CLI-first calls and encapsulating logic in dedicated tools, including robust CLI routers and specific defensive coding mechanisms, significantly enhances visibility, debuggability, readability, maintainability, security, and robustness of internal processes, aligning directly with user preference. Standardizing `bun run` as the system-wide execution mechanism improves consistency and efficiency. Understanding Windows-specific platform and tool interactions (e.g., unwanted console windows, `Bun.spawn` vs. `child_process.spawn` differentiation, `pm2`'s robustness issues, `chokidar` polling delays) is crucial for robust tool development and impacts tool reliability and user experience. Adopting a modular architecture with comprehensive testing for data parsing libraries ensures data integrity and reliable functionality, which is critical for system stability. Documenting known tool limitations and platform-specific behaviors helps in interpreting tool outputs correctly, informs future development or workarounds, and prevents undesirable outcomes. Specific tool improvements like `minimax-video`'s local file path support enhance flexibility and integration.
 
 **How to apply:**
 - When designing or implementing tool calls within any agent or subagent workflow, ensure the primary method of execution is via CLI commands where a CLI alternative exists.
@@ -55,12 +62,15 @@ tags: [tool_execution, user_preference, debuggability, architecture, workflow, w
 - Consider developing dedicated CLI routers for internal tools to enhance auto-discovery, aliases, subprocess isolation, and integrate defensive coding practices like path traversal guards and PreToolUse bash-guards.
 - When developing data parsing or manipulation libraries, implement a modular architecture (types, parser, serializer, operations) and include comprehensive roundtrip testing.
 - When spawning background processes on Windows, especially console applications, favor PowerShell's `Start-Process -WindowStyle Hidden` over Node.js `spawn` with `detached: true` for silent execution.
-- Avoid `pm2` for daemonizing Node.js applications on Windows if silent execution is critical.
+- Differentiate between `Bun.spawn` and `child_process.spawn` based on specific process management needs.
+- Avoid `pm2` for daemonizing Node.js applications on Windows if silent execution and robustness against user invalidation are critical; prefer direct PowerShell approaches.
 - Ensure correct argument formatting for PowerShell `-ArgumentList`.
 - Implement separate logging for stdout and stderr when redirecting PowerShell output.
 - Design Obsidian CLI integrations to account for `ob sync --continuous` being a watcher and use dynamic vault path resolution for portability.
+- When implementing file watching with `chokidar` on Windows using polling, include a 600ms settling delay after the 'ready' event.
+- For TTY detection in Bun-based applications, use an environment variable instead of relying on `Bun.isTTY`.
 - Be aware of the `section-balance` tool's limitation regarding typed brackets and account for this when interpreting its output or designing lyrics inputs.
 - When using music generation platforms like Suno, be mindful that certain terms ('skank') might trigger content flags or unexpected interpretations. Avoid descriptive terms ('Building', 'echo/delay/ambient') in prompts that have been been observed to cause undesirable sonic artifacts ('twang', 'wash').
 - Leverage the `minimax-video` tool's enhanced support for local file paths in `--first-frame` arguments for more flexible video generation workflows.
 
-*Consolidated from: knowledge_tool_execution_guidelines.md, knowledge_windows_development.md, 20260401-020156-avoid-using-inline-code-blocks-e-g-bun-e-3.md, 20260401-175949-for-developing-robust-data_parsing_and_m-2.md, 20260403-070905-developing-a-dedicated-cli-router-with-a-1.md, 20260403-082246-bun-run-has-been-established-as-the-stan-2.md, 20260403-082246-the-combination-of-rigorous-mccall-revie-1.md, 20260405-124725-the-section-balance-tool-has-a-specific--2.md, 20260406-081746-the-minimax-video-tool-now-reliably-supp-1.md, 20260406-222827-specific-musical-terms-skank-can-trigger-1.md*
+*Consolidated from: knowledge_tool_execution_guidelines.md, knowledge_windows_development.md, 20260401-020156-avoid-using-inline-code-blocks-e-g-bun-e-3.md, 20260401-175949-for-developing-robust-data_parsing_and_m-2.md, 20260403-070905-developing-a-dedicated-cli-router-with-a-1.md, 20260403-082246-bun-run-has-been-established-as-the-stan-2.md, 20260403-082246-the-combination-of-rigorous-mccall-revie-1.md, 20260405-124725-the-section-balance-tool-has-a-specific--2.md, 20260406-081746-the-minimax-video-tool-now-reliably-supp-1.md, 20260406-222827-specific-musical-terms-skank-can-trigger-1.md, 20260408-031043-bun-istty-is-unreliable-always-undefined-3.md, 20260408-031043-it-is-necessary-to-differentiate-between-2.md, 20260408-031043-pm2-on-windows-may-be-susceptible-to-use-1.md, 20260408-031043-when-implementing-file-watching-with-cho-4.md*

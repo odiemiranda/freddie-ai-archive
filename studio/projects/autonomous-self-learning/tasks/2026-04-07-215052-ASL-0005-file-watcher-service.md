@@ -2,9 +2,11 @@
 id: ASL-0005
 title: File watcher service — `src/libs/file-watcher.ts`
 project-code: ASL
-status: ready-for-implementation
+status: shipped
 priority: P1
 created: 2026-04-07
+shipped: 2026-04-07
+shipped-commit: 55132c8
 author: mccall
 implementer: ryan
 reviewer: mccall
@@ -17,6 +19,16 @@ files:
 estimated-complexity: medium (3-5 hours)
 tags: [task, library, file-watcher, chokidar, coalesce, asl-phase-2]
 ---
+
+> **Production behavior — Windows polling settling delay (post-implementation finding, 2026-04-07):**
+>
+> `start()` includes a **600ms settling delay AFTER chokidar emits the `ready` event** before resolving. This is empirically required on Windows when `usePolling: true` is set — chokidar's `ready` event fires before its initial directory tree scan is fully populated, so files written immediately after `await start()` returns can be missed otherwise. The 600ms is `interval (500) + 100ms jitter margin`, derived from one full poll cycle.
+>
+> **ASL-0007 implementers:** do NOT add additional sleep or settling logic after `await watcher.start()`. The watcher handles polling settling internally. Startup reconciliation can run immediately after `start()` resolves.
+>
+> **Spec example correction (post-implementation, 2026-04-07):**
+>
+> The original spec used a bare path (`.DS_Store`) in the `WATCHER_IGNORE_PATTERN` one-liner test example. The actual regex `[\/\\]\.[^\/\\]+$` requires a path separator before the dot. Real chokidar events always pass absolute paths (which always have separators), so production behavior is correct. The bare-path example was misleading. Use a separator-prefixed path like `/memory/.DS_Store` when verifying the regex by hand.
 
 # ASL-0005 — File watcher service
 

@@ -2,9 +2,11 @@
 id: ASL-0001
 title: MiniMax judge parser defensive fix + judge health check pre-flight
 project-code: ASL
-status: ready-for-implementation
+status: shipped
 priority: P0
 created: 2026-04-07
+shipped: 2026-04-07
+shipped-commit: 8e7a92d
 author: mccall
 implementer: ryan
 reviewer: mccall

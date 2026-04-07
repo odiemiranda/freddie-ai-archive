@@ -21,7 +21,7 @@
       "arc42",
       "SPIKE"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/platform-and-tool-behaviors.md",
@@ -42,9 +42,24 @@
       "false_positive",
       "minimax-video",
       "local_files",
-      "video_generation"
+      "video_generation",
+      "isTTY",
+      "workaround",
+      "environment_variable",
+      "nodejs",
+      "spawn",
+      "child_process",
+      "process_management",
+      "pm2",
+      "daemon",
+      "robustness",
+      "failure_mode",
+      "chokidar",
+      "file_watching",
+      "polling",
+      "delay"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/studio-architecture-and-tools.md",
@@ -70,7 +85,7 @@
       "weirdness",
       "style-influence"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/suno-prompt-engineering-and-references.md",
@@ -150,7 +165,7 @@
       "delay",
       "ambient"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/workflow-quality-and-knowledge-management.md",
@@ -216,8 +231,17 @@
       "timeout",
       "critic-reconciliation",
       "genre-limits",
-      "validation"
+      "validation",
+      "implementation",
+      "spec-drift",
+      "dependencies",
+      "debugging",
+      "assumptions",
+      "spec-compliance",
+      "communication",
+      "issue-resolution",
+      "quality-assurance"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   }
 ]

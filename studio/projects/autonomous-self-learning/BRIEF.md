@@ -127,35 +127,53 @@ The self-learning pipeline shipped in AAR Phase 1 works as a proof of concept bu
 
 ### 1a. Daemon lifecycle management
 
-**Process supervisor: PM2 + `pm2-windows-startup`.**
+**Process supervisor: the existing PID-file + `child_process.spawn` pattern from `src/servers/freddie-ai/daemon.ts`.** NOT PM2.
 
-| Option | Verdict | Why |
-|--------|---------|-----|
-| NSSM / WinSW / Servy / node-windows | Rejected | Requires admin, overkill for single-user dev scope |
-| Windows Task Scheduler "At log on" | **Rejected** | Silently assigns Below-Normal process priority + Low I/O priority + memory priority 4 — daemon runs **2-3x slower than interactive**. Fix requires XML-editing `<Priority>7</Priority>` → `<Priority>4</Priority>` which cannot be done through the Task Scheduler GUI. Too error-prone for a permanent daemon. |
-| Startup folder | Rejected | No auto-restart on crash, leaves CMD window visible |
-| **PM2 + `pm2-windows-startup`** | **Chosen** | Registry-based autostart via `HKCU\...\Run`, tied to user login, halts cleanly on logoff (matches single-user dev scope). Native crash-restart with exponential backoff. `pm2 install pm2-logrotate` handles rotation. |
+**REVERSAL from original research finding:** The Holmes research round recommended PM2 + `pm2-windows-startup`. This recommendation is **invalidated by real-world user experience** — the user attempted PM2 on Windows previously and found it does not work reliably. The repo already has a battle-tested daemon lifecycle pattern that works on Windows without any external process manager or dependency. The ASL daemon will copy this pattern rather than introduce PM2.
 
-**PM2 responsibilities:**
-- Auto-start on user login (writes registry Run key via `pm2-windows-startup`)
-- Crash-restart with exponential backoff (default max 5 attempts, then manual intervention)
-- Halt on user logoff — desired, the user is the only consumer
-- Log capture to `~/.pm2/logs/` with `pm2-logrotate` managing rotation
+**Reference implementation: `src/servers/freddie-ai/daemon.ts`** (the MCP server daemon, ~120 lines). Study it before implementing ASL-0007. Key mechanics:
+
+| Concern | Pattern |
+|--------|---------|
+| Spawn | `child_process.spawn("bun", [scriptPath, ...args], { cwd: projectRoot, detached: true, stdio: ["ignore", logFd, logFd], env })` followed by `child.unref()` so the parent CLI can exit while the daemon keeps running |
+| PID tracking | Write `child.pid` to `out/asl-daemon.pid` after spawn |
+| Liveness check | `process.kill(pid, 0)` (throws if dead) PLUS optional port/health check (netstat on Windows for TCP ports, or a file marker for non-HTTP daemons) |
+| Stop — Windows | `execSync("taskkill /F /T /PID ${pid}")` — `/T` kills the entire process tree including worker children |
+| Stop — Unix | `process.kill(pid, "SIGTERM")` |
+| Log capture | `openSync(LOG_FILE, "a")` and redirect stdout+stderr to the log file descriptor in the `stdio` option |
+| Restart | `stop()` → loop checking liveness with `Bun.sleepSync(500)` until dead → `start()` |
+
+**Why this pattern wins for ASL:**
+- **Zero external dependencies.** No PM2, no pm2-windows-startup, no registry manipulation, no XML editing. Just Node stdlib.
+- **Battle-tested on the user's actual machine.** The MCP server has been running on this pattern for weeks. Known-good.
+- **`taskkill /F /T /PID` kills the process tree** — solves the "how do I also kill the worker children when the daemon stops" problem for free.
+- **Matches existing `npm run mcp:*` script conventions** — users already know this lifecycle.
+
+**Auto-start on login:** This pattern does NOT auto-start on boot the way PM2 does. Two options for ASL:
+1. **Manual start** — user runs `npm run asl:start` when they want the daemon running. Stops on reboot. User restarts manually next session. Simplest, matches current MCP server behavior.
+2. **Windows Startup folder** — drop a shortcut at `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\asl-daemon.lnk` that runs `npm run asl:start --prefix <project-root>`. Auto-starts on login. No admin required. No visible CMD window if the shortcut is configured with `start /B` or wrapped in a VBScript helper.
+
+**Lock Option 1 for the first release.** Auto-start is a nice-to-have that can be added later via a separate task if the manual-start friction becomes a problem. Shipping without auto-start does NOT block external MCP readiness — the user opens a terminal at the start of their work session either way.
+
+**Crash auto-restart:** The MCP daemon pattern does NOT currently auto-restart on crash. This is the ONE gap vs PM2. Mitigation options:
+1. **Accept it for the first release.** The daemon is expected to be stable (no experimental worker_threads, no flaky IPC). Manual restart via `npm run asl:restart` is acceptable.
+2. **Add a simple supervisor loop inside the daemon** — wrap the main event loop in a try/catch, log the error, delay, and re-enter. Catches most runtime exceptions without needing an external supervisor. Does NOT catch process-level crashes (segfault, OOM), but those should be rare.
+3. **Add a tiny Bash/PowerShell wrapper script** as `asl:start` that loops `bun src/services/self-learning-daemon/index.ts` with a 5-second delay between exits. Simpler than a supervisor but less observable.
+
+**Lock Option 2 for the first release.** The try/catch supervisor loop inside the daemon is the cleanest fit — keeps everything in one process, adds observability for each restart, and has zero additional dependencies.
 
 **Daemon logging:**
-- stdout/stderr captured by PM2 → rotated by `pm2-logrotate`
-- Daemon itself additionally writes **structured JSON lines to `daemon.log`** for the observability HTTP API to tail. Two log sinks is deliberate: PM2 logs are human-readable failure diagnostics; `daemon.log` is machine-parseable operational state.
+- stdout/stderr captured via `openSync(LOG_FILE, "a")` + stdio redirection → `out/asl-daemon.log`
+- Log rotation is a future concern — for the first release, the log file grows unbounded. Add rotation via a separate task if it becomes a problem (unlikely at ASL's event volume — structured JSON lines averaging a few KB per hour). Reference: the existing `src/servers/freddie-ai/daemon.ts` does not rotate either.
+- Daemon writes **structured JSON lines** to the same log file for the observability HTTP API to tail.
 
-**Empirical unknown — ASL-0007 MUST verify in a 1-hour smoke test:**
-- PM2 + Bun compatibility on Windows 11 is **not source-confirmed** by the research round. PM2 is historically Node.js-focused. Likely works via `pm2 start bun -- <script>` but needs testing.
-- Smoke test checklist:
-  1. `pm2 start bun -- src/services/self-learning-daemon/index.ts`
-  2. Verify daemon is running via `pm2 list`
-  3. Reboot the machine
-  4. Verify daemon auto-restarted after login
-  5. Verify graceful shutdown on `pm2 stop` and on user logoff
-  6. Trigger a deliberate crash (kill worker, throw uncaught in daemon) — verify auto-restart kicks in
-- If PM2 + Bun fails on Windows 11: fall back to **Task Scheduler with XML-patched `<Priority>4</Priority>`** as the only working alternative. Do not attempt unpatched Task Scheduler. Document whichever path is chosen in ASL-0007's completion notes.
+**ASL-0007 responsibilities:**
+1. Create `src/services/self-learning-daemon/daemon.ts` (lifecycle controller) mirroring `src/servers/freddie-ai/daemon.ts` exactly
+2. Create `src/services/self-learning-daemon/index.ts` (the long-running process entry — this is what `daemon.ts` spawns)
+3. Add `package.json` scripts: `asl:start`, `asl:stop`, `asl:restart`, `asl:status`
+4. Wire `index.ts` to compose the file watcher (ASL-0005) and worker pool (ASL-0006)
+5. Wrap the main event loop in a try/catch supervisor with structured crash logging
+6. Smoke test: start → verify PID file → verify workers spawned → kill parent via Ctrl-C → verify workers cleaned up via taskkill /T → restart → verify recovery
 
 ### 2. Task queue in brain.db
 
@@ -358,7 +376,7 @@ All 8 questions from the original draft are resolved. Research and resolution tr
 | Q1 | Windows file watching reliability (chokidar config, Obsidian Sync interaction) | `chokidar@^3.6.0` pinned + `usePolling: true` mandatory + `awaitWriteFinish` + `atomic: true` | `research/2026-04-07-daemon-architecture-findings.md` §Q1 |
 | Q2 | Worker thread vs child process | **Child processes via `Bun.spawn()` with IPC.** Reverses original BRIEF preference — Bun `worker_threads` has open Windows segfault issues (#14332, #15964, #24405) that crash the host daemon. | `research/2026-04-07-daemon-architecture-findings.md` §Q2 |
 | Q3 | Task queue crash recovery semantics | **Heartbeat-based lease** (60s default + 30s heartbeat) instead of fixed 5-min lease. Matches AWS SQS / BullMQ / Temporal / Celery pattern. | `research/2026-04-07-daemon-architecture-findings.md` §Q3 |
-| Q4 | Daemon lifecycle management on Windows | **PM2 + `pm2-windows-startup`**. Do NOT use Task Scheduler (silent Below-Normal priority gotcha). PM2 + Bun compatibility needs 1-hour smoke test in ASL-0007. | `research/2026-04-07-daemon-architecture-findings.md` §Q4 |
+| Q4 | Daemon lifecycle management on Windows | **REVERSED from original research.** Research recommended PM2 — user confirmed PM2 does not work reliably on Windows from prior experience. Use the existing `src/servers/freddie-ai/daemon.ts` pattern instead: PID file + `child_process.spawn(..., detached: true)` + `child.unref()` + `taskkill /F /T /PID` on Windows. Zero external dependencies. Pattern is battle-tested in this repo. Supervisor loop (try/catch around main event loop) handles runtime crashes; manual restart via `npm run asl:restart` handles process-level crashes. Auto-start on login deferred to a future task. | `research/2026-04-07-daemon-architecture-findings.md` §Q4 + **user invalidation 2026-04-07 + reference implementation `src/servers/freddie-ai/daemon.ts`** |
 | Q5 | Local LLM quality at 7B scale | **DEFERRED** — gated on GPU hardware commitment that the user has explicitly declined for this phase. Research preserved for future revival. | `research/2026-04-07-local-llm-findings.md` |
 | Q6 | MiniMax parser root cause | Resolved by defensive fix — commit `8e7a92d` (ASL-0001). Root cause diagnosis deferred until next fire of the raw-body log. | `tasks/2026-04-07-181755-ASL-0001-minimax-parser-fix.md` |
 | Q7 | Judge quorum under degraded mode | Resolved by ASL-0001 quorum-among-alive with 1-alive autonomy floor (never auto-applies, always stages). | `tasks/2026-04-07-181755-ASL-0001-minimax-parser-fix.md` §ADR |
@@ -369,17 +387,18 @@ All 8 questions from the original draft are resolved. Research and resolution tr
 Remaining slices numbered ASL-0002 through ASL-0012. ASL-0010 skipped; no renumbering — **numbering is permanent** to preserve stable references in decisions/commits/tasks registry.
 
 - **ASL-0001 — MiniMax parser fix + judge health check** — **SHIPPED** (commit `8e7a92d`)
-- **ASL-0002 — brain.db schema: `tasks` + `agent_lifecycle` tables** (migration, no behavior change)
-- **ASL-0003 — Task queue library** (`src/libs/task-queue.ts` with heartbeat-based claim/lease semantics)
-- **ASL-0004 — Agent lifecycle library** (`src/libs/agent-lifecycle.ts` with upsert/query)
-- **ASL-0005 — File watcher service** (chokidar@3.6.0 + polling + coalesce + enqueue)
-- **ASL-0006 — Worker pool** (`src/services/self-learning-daemon/worker.ts` — child processes via `Bun.spawn()`)
-- **ASL-0007 — Daemon entry point** (`src/services/self-learning-daemon/index.ts` + PM2 lifecycle scripts + 1-hour smoke test)
+- **ASL-0002 — brain.db schema: `tasks` + `agent_lifecycle` tables** — **SHIPPED** (commit `1f5fa1a`)
+- **ASL-0003 — Task queue library** (`src/libs/task-queue.ts` with heartbeat-based claim/lease semantics) — **SHIPPED** (commit `d61f6fc`)
+- **ASL-0004 — Agent lifecycle library** (`src/libs/agent-lifecycle.ts` with upsert/query) — **SHIPPED** (commit `bab968c`)
+- **ASL-0005 — File watcher service** (chokidar@3.6.0 + polling + coalesce + enqueue) — **SHIPPED** (commit `55132c8`). **Production note for ASL-0007:** `await watcher.start()` includes a 600ms internal settling delay after chokidar's `ready` event. Do NOT add additional sleep or settling logic in the daemon — the watcher handles polling settling internally.
+- **ASL-0006 — Worker pool** (`src/services/self-learning-daemon/worker.ts` + `pool.ts` — child processes via `Bun.spawn()`) — **SHIPPED** (commit `a40ea77`).
+- **ASL-0007 — Daemon entry point** (`src/services/self-learning-daemon/index.ts` composes watcher + worker pool; `src/services/self-learning-daemon/daemon.ts` mirrors existing `src/servers/freddie-ai/daemon.ts` pattern for start/stop/restart/status lifecycle control; `npm run asl:{start,stop,restart,status}` scripts; supervisor loop for runtime crash recovery) — **SHIPPED** (commit `5716043`). **Production note for ASL-0008:** daemon lifecycle is working end-to-end on Windows. `npm run asl:start` spawns detached, workers spawn as children, `taskkill /F /T /PID` cleans up the tree on `asl:stop`. Log file at `out/asl-daemon.log`, PID file at `out/asl-daemon.pid`. ASL-0008 can safely remove distill from session-end hooks now that the daemon handles it.
 - **ASL-0008 — Hook decoupling** (remove distill from session-end hooks)
 - **ASL-0009 — `agent-state` CLI tool**
 - **ASL-0010 — Local LLM integration for gate-regression** — **DEFERRED (no GPU commitment)**
 - **ASL-0011 — External MCP readiness gate** (settings flag + startup check)
 - **ASL-0012 — Review-staged CLI tool** (deferred from AAR-0008 triage; on the readiness checklist)
+- **ASL-0013 — `asl-sync` CLI** (one-shot foreground catch-up tool, refuses to run if daemon is up; manual force-sync before session handoffs) — **SHIPPED** (commit `d60739c`)
 
 Slice order is roughly dependency-ordered. ASL-0001 shipped independently. ASL-0002 is the foundation for everything after — nothing else can be built without the schema in place.
 
@@ -390,7 +409,8 @@ This brief synthesizes:
 - User proposal for daemon + task queue + meta-tracking architecture
 - Freddie's analysis of Phase 1 ceiling and bottleneck patterns
 - **Holmes research round 2026-04-07** — NotebookLM-backed findings on Q1-Q5, Q8 (see `research/2026-04-07-daemon-architecture-findings.md` and `research/2026-04-07-local-llm-findings.md`)
-- **McCall architecture pass 2026-04-07** — reversed 3 BRIEF assumptions (worker model, lease semantics, file-watcher pattern); added PM2 lifecycle section; deferred local LLM per user decision
+- **McCall architecture pass 2026-04-07** — reversed 3 BRIEF assumptions (worker model, lease semantics, file-watcher pattern); added daemon lifecycle section; deferred local LLM per user decision
+- **User invalidation 2026-04-07 (post-ASL-0005)** — PM2 recommendation in §1a replaced with the existing `src/servers/freddie-ai/daemon.ts` PID-file + taskkill pattern. User confirmed PM2 does not work reliably on Windows from prior experience. Reference implementation is already in-repo and battle-tested.
 - Explicit user constraints: chokidar on Windows, `src/services/{name}/` folder convention, no UI this phase, no GPU commitment this phase, iCloud backup is piggybacking via manual backup.ts and does not conflict with brain.db
 
 ## Next Steps

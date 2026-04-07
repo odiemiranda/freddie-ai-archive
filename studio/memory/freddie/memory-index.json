@@ -158,7 +158,7 @@
       "workflow_validation",
       "worktrees"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/knowledge_communication_and_interaction_standards.md",
@@ -178,7 +178,7 @@
       "clarity",
       "music_card"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/knowledge_linguistic_capabilities.md",
@@ -197,7 +197,7 @@
       "language_processing",
       "scope_expansion"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/knowledge_memory_system_architecture.md",
@@ -249,7 +249,7 @@
       "episodic_memory",
       "gap_analysis"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/knowledge_music_generation_capabilities.md",
@@ -278,7 +278,7 @@
       "reggae",
       "shamisen"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/knowledge_tooling_and_platform_guidelines.md",
@@ -325,8 +325,17 @@
       "platform_behavior",
       "prompting",
       "audio_artifacts",
-      "content_filters"
+      "content_filters",
+      "isTTY",
+      "workaround",
+      "environment_variable",
+      "chokidar",
+      "file_watching",
+      "polling",
+      "delay",
+      "failure_mode",
+      "child_process"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   }
 ]

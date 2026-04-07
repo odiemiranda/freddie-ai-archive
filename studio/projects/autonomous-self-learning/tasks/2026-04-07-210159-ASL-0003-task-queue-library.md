@@ -2,9 +2,11 @@
 id: ASL-0003
 title: Task queue library — `src/libs/task-queue.ts`
 project-code: ASL
-status: ready-for-implementation
+status: shipped
 priority: P1
 created: 2026-04-07
+shipped: 2026-04-07
+shipped-commit: d61f6fc
 author: mccall
 implementer: ryan
 reviewer: mccall

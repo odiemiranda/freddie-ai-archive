@@ -3,7 +3,7 @@ name: Workflow, Quality Control, and Knowledge Management
 description: Guidelines for agent critique loops, metatag management, strategic generation approaches, including advanced prompt generation methodologies, LLM capabilities and selection (e.g., for creative notation), and best practices for managing knowledge, general development, tooling, and overall system architectural vision.
 type: knowledge
 agent: shared
-tags: [workflow, workflow_management, workflow-pattern, quality-gate, critique, multi-pass, metatags, production, gemini, minimax, parallel-processing, jam-skill, tala, rune, knowledge-management, consolidation, llm, token-limits, data-integrity, best-practices, llm-capabilities, llm-selection, notation, prompt-engineering, text-generation, music-lyrics, linguistics, phonetics, homograph-detection, structure, accuracy, tool_development, cli_first, user_preference, workflow_design, readability, maintainability, code_style, architecture, parser, serializer, testing, library_design, agent-design, tool-capability, interaction_protocols, adaptability, scope_management, tactical_pivot, feasibility_spike, vision, ecosystem, foundation, strategy, platform-limits, timeout, critic-reconciliation, genre-limits, validation]
+tags: [workflow, workflow_management, workflow-pattern, quality-gate, critique, multi-pass, metatags, production, gemini, minimax, parallel-processing, jam-skill, tala, rune, knowledge-management, consolidation, llm, token-limits, data-integrity, best-practices, llm-capabilities, llm-selection, notation, prompt-engineering, text-generation, music-lyrics, linguistics, phonetics, homograph-detection, structure, accuracy, tool_development, cli_first, user_preference, workflow_design, readability, maintainability, code_style, architecture, parser, serializer, testing, library_design, agent-design, tool-capability, interaction_protocols, adaptability, scope_management, tactical_pivot, feasibility_spike, vision, ecosystem, foundation, strategy, platform-limits, timeout, critic-reconciliation, genre-limits, validation, implementation, spec-drift, dependencies, debugging, assumptions, spec-compliance, communication, issue-resolution, quality-assurance]
 ---
 
 # Workflow, Quality Control, and Knowledge Management
@@ -88,6 +88,12 @@ The creation of a `/jam` skill (automated chaining of Rune → Tala/Sol) is **in
 **Why:** The current focus is on instrumental/lo-fi tracks where Tala operates independently, and the complexity of chaining requires careful consideration.
 **How to apply:** Activate this skill only once the user manually chains lyrics-to-track generation more than twice, indicating a clear need.
 
+## Specification Discrepancies and Resolution
+Specifications may contain outdated assumptions, omit necessary dependencies, overlook side effects in different operational modes, or fail to account for the need to test critical guardrails. These are common areas where spec drift and missing details can occur during implementation.
+
+**Why:** Identifying and addressing these discrepancies proactively ensures alignment, prevents technical debt from silent workarounds, and leads to more robust and correctly implemented features.
+**How to apply:** When encountering discrepancies between a specification and reality during implementation, proactively flag and escalate these issues to relevant stakeholders for clarification and resolution, rather than attempting silent workarounds.
+
 **Consolidated from:**
 - `knowledge-management-best-practices.md`
 - `consolidation-token-limit-lesson.md`
@@ -104,3 +110,5 @@ The creation of a `/jam` skill (automated chaining of Rune → Tala/Sol) is **in
 - `20260403-163656-minimax-may-exhibit-timeout-issues-durin-2.md`
 - `20260406-064001-multi-critic-reconciliation-is-highly-ef-1.md`
 - `20260407-095424-minimax-has-a-strict-256-token-limit-tha-2.md`
+- `20260408-031138-specifications-may-contain-outdated-assu-1.md`
+- `20260408-031138-when-encountering-discrepancies-between--2.md`

@@ -1,100 +1,71 @@
 [
   {
-    "file": "knowledge/wick-embeddings-and-recall-system.md",
-    "name": "Wick's Embeddings and Recall System",
-    "description": "Describes Wick's updated embedding infrastructure using local ONNX models and the new `recall` tool for query classification and full-text search.",
+    "file": "knowledge/ryan-development-best-practices.md",
+    "name": "Ryan's Development Best Practices",
+    "description": "Ryan's approach to identifying and resolving specification discrepancies, emphasizing proactive communication and defensive flagging.",
     "type": "knowledge",
     "tags": [
-      "embeddings",
-      "onnx",
-      "transformers",
-      "recall",
-      "search",
-      "query-classification",
-      "information-retrieval",
-      "brain"
+      "development",
+      "best-practice",
+      "spec-drift",
+      "communication",
+      "issue-resolution",
+      "quality-assurance",
+      "implementation"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
-    "file": "knowledge/wick-external-knowledge-integrations.md",
-    "name": "Wick's External Knowledge Integrations",
-    "description": "Details Wick's integrations with external knowledge systems like NotebookLM and Obsidian Markdown for enhanced data access and management.",
+    "file": "knowledge/ryan-core-system-architecture.md",
+    "name": "Ryan's Core System Architecture Contributions",
+    "description": "Details Ryan's work on foundational system components including worker pools, file-watcher services, and daemon lifecycle management.",
     "type": "knowledge",
     "tags": [
-      "tool-integration",
-      "notebooklm",
-      "cli",
-      "data-retrieval",
-      "external-tools",
-      "search",
-      "list",
-      "obsidian",
-      "markdown",
-      "parser",
-      "serializer",
-      "data-management",
-      "knowledge-base"
-    ],
-    "consolidated": "2026-04-07"
-  },
-  {
-    "file": "knowledge/wick-prompt-data-and-quality-tools.md",
-    "name": "Wick's Prompt Data and Quality Tools",
-    "description": "Covers Wick's capabilities for managing core prompt-data libraries and analyzing generated text for quality, such as repetition.",
-    "type": "knowledge",
-    "tags": [
-      "prompt-data",
-      "data-management",
-      "library-initialization",
-      "file-operations",
-      "verification",
-      "core-resources",
-      "lyrics-analysis",
-      "repetition-analyzer",
-      "n-gram",
-      "levenshtein",
-      "anaphora"
-    ],
-    "consolidated": "2026-04-07"
-  },
-  {
-    "file": "knowledge/wick-prompt-engineering-strategies.md",
-    "name": "Wick's Prompt Engineering Strategies",
-    "description": "Details Wick's advanced strategies for structured prompt generation, including the MiniMax prose builder and specialized Suno vocal lyrics creation.",
-    "type": "knowledge",
-    "tags": [
-      "prompt-generation",
-      "strategy",
-      "prose-builder",
-      "minimax",
-      "structured-prompts",
+      "system-architecture",
+      "worker-pool",
+      "file-watcher",
+      "daemon",
+      "lifecycle-management",
+      "production-handlers",
       "testing",
-      "vocal-lyrics",
-      "suno",
-      "schema",
-      "parser",
-      "formatter"
+      "robustness"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
-    "file": "knowledge/wick-raw-data-management-system.md",
-    "name": "Wick's Raw Data Management System",
-    "description": "Details Wick's comprehensive system for capturing, processing, and indexing raw interaction data from various sources.",
+    "file": "knowledge/ryan-data-management-and-persistence.md",
+    "name": "Ryan's Data Management and Persistence Contributions",
+    "description": "Details Ryan's work on staged content persistence, Brain DB schema enhancements, and knowledge directory hashing for data integrity.",
     "type": "knowledge",
     "tags": [
       "data-management",
-      "raw-data",
-      "capture",
-      "processing",
-      "indexing",
-      "cli",
-      "claude",
-      "jsonl",
+      "persistence",
+      "database",
+      "schema",
+      "sqlite",
       "fts",
-      "reflect"
+      "hashing",
+      "data-integrity",
+      "migration",
+      "testing"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
+  },
+  {
+    "file": "knowledge/ryan-system-robustness-and-optimization.md",
+    "name": "Ryan's System Robustness and Optimization Contributions",
+    "description": "Details Ryan's work on enhancing system resilience through health checks, defensive programming, and distillation process optimizations.",
+    "type": "knowledge",
+    "tags": [
+      "robustness",
+      "optimization",
+      "health-checks",
+      "defensive-programming",
+      "distillation",
+      "performance",
+      "caching",
+      "testing"
+    ],
+    "consolidated": "2026-04-08"
   }
 ]

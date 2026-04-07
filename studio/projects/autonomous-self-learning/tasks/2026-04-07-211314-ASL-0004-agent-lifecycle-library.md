@@ -6,6 +6,7 @@ status: shipped
 priority: P1
 created: 2026-04-07
 shipped: 2026-04-07
+shipped-commit: bab968c
 author: mccall
 implementer: ryan
 reviewer: mccall

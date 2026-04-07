@@ -3,7 +3,7 @@ name: mccall Agent Capabilities
 description: Comprehensive overview of mccall's development, analysis, and self-optimization capabilities, including skill development, structured analysis, task management, and cross-agent tool integration, supported by concrete project examples.
 type: knowledge
 agent: mccall
-tags: [agent-capabilities, skill-development, workflow-management, structured-analysis, task-management, workflow-design, execution-planning, tech-review, data-extraction, self-improvement, dev-workflow, process-optimization, efficiency, meta-learning, tool-development, integration, cross-agent, prompt-builder, architecture, system-design, modularity, typing, ADRs, parallelism, resource-management, document-consolidation, create-skill, Shirozen, PRD, API, SQL, TypeScript, obsidian-md, raw-context-capture, autonomous-agent-research]
+tags: [agent-capabilities, skill-development, workflow-management, structured-analysis, task-management, workflow-design, execution-planning, tech-review, data-extraction, self-improvement, dev-workflow, process-optimization, efficiency, meta-learning, tool-development, integration, cross-agent, prompt-builder, architecture, system-design, modularity, typing, ADRs, parallelism, resource-management, document-consolidation, create-skill, Shirozen, PRD, API, SQL, TypeScript, obsidian-md, raw-context-capture, autonomous-agent-research, autonomous-self-learning]
 ---
 
 ## Knowledge
@@ -23,6 +23,7 @@ Beyond specific task execution, mccall demonstrates a meta-capability for self-o
 *   **Obsidian-MD Library (OT-0013)**: A task document detailing the development of an `obsidian-md` library. The design specifies a three-layer architecture (parser, serializer, operations) with dirty-flag roundtrip safety, comprising 5 files with zero external dependencies and reusing `frontmatter.ts` functionality.
 *   **Obsidian Tools Migration Plan (OT-0014)**: A detailed 7-phase migration plan for transitioning existing `obsidian tools` to the new `obsidian-md library`. This plan covers specific components such as `sections.ts` bridge, `shared.ts`, `tasks.ts`, `sections.ts` tool, `daily.ts`, `meeting.ts`, and `summaries.ts`, with a recommendation for sequential Wick dispatch.
 *   **Autonomous Agent Research (AAR) Phase 1**: Generated and completed 6 task documents (AAR-0001 through AAR-0006) for Phase 1, saved to `vault/studio/projects/autonomous-agent-research/tasks/`, ready for dispatch.
+*   **Autonomous Self-Learning (ASL) Project**: Demonstrated effective architectural review by identifying critical implementation gaps (e.g., zero test coverage on a guardrail). Designed complex sequential task documents (e.g., AAR-0008, AAR-0009, ASL-0002, ASL-0006, ASL-0007) for components like worker pools and self-learning daemons, incorporating detailed architectural decisions, error handling, and rigorous testing strategies.
 
 ## Why
 Understanding mccall's capacity for self-improvement, skill acquisition, and its specific structured analysis, task management, self-optimization, and cross-agent tool development capabilities is crucial for assigning complex tasks, evolving its role, and designing future development initiatives. The concrete examples demonstrate mccall's adaptability, potential for autonomous skill expansion, sophisticated project execution, and ability to enhance overall system efficiency through robust design principles and optimized workflow management.
@@ -53,3 +54,11 @@ Leverage mccall for developing new workflow phases or specialized tools, confide
 - `raw-log-20260403-172921-note.md`
 - `raw-log-20260405-110315-end.md`
 - `raw-log-20260407-061051-decision.md`
+- `20260408-031114-mccall-s-architectural-review-process-is.md`
+- `raw-log-20260407-152306-note.md`
+- `raw-log-20260407-155611-note.md`
+- `raw-log-20260407-183606-decision.md`
+- `raw-log-20260407-205159-note.md`
+- `raw-log-20260408-002004-note.md`
+- `raw-log-20260408-005729-note.md`
+- `raw-log-20260408-014832-note.md`

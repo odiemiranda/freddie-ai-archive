@@ -16,7 +16,7 @@
       "BGM-lyrics",
       "configuration"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/freddie-ai-performance-notation-system.md",
@@ -37,7 +37,7 @@
       "mechanical-generation",
       "Suno-notation"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/freddie-ai-platform-issues.md",
@@ -53,7 +53,7 @@
       "bug",
       "development-environment"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/freddie-ai-prompt-builder-engine.md",
@@ -75,7 +75,7 @@
       "code-review",
       "testing"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/mccall-agent-capabilities.md",
@@ -117,9 +117,10 @@
       "TypeScript",
       "obsidian-md",
       "raw-context-capture",
-      "autonomous-agent-research"
+      "autonomous-agent-research",
+      "autonomous-self-learning"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/mccall-knowledge-and-artifact-management.md",
@@ -138,9 +139,10 @@
       "artifact-supersession",
       "file-structure",
       "user-preference",
-      "project-local-storage"
+      "project-local-storage",
+      "ADRs"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/mccall-llm-interaction-notes.md",
@@ -154,9 +156,10 @@
       "Gemini",
       "Grok",
       "platform-limits",
-      "timeout"
+      "timeout",
+      "error-handling"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
   },
   {
     "file": "knowledge/mccall-user-collaboration-preferences.md",
@@ -168,6 +171,31 @@
       "collaboration",
       "dev-workflow"
     ],
-    "consolidated": "2026-04-07"
+    "consolidated": "2026-04-08"
+  },
+  {
+    "file": "knowledge/mccall-autonomous-self-learning-project.md",
+    "name": "mccall Autonomous Self-Learning (ASL) Project Work",
+    "description": "Details mccall's architectural design, task management, and implementation work for the Autonomous Self-Learning (ASL) project, including specific components and decisions.",
+    "type": "knowledge",
+    "tags": [
+      "autonomous-self-learning",
+      "ASL",
+      "AAR",
+      "project-management",
+      "architecture",
+      "system-design",
+      "task-management",
+      "worker-pool",
+      "daemon",
+      "distill-pipeline",
+      "LLM-judging",
+      "ADRs",
+      "Bun",
+      "testing",
+      "quality-assurance",
+      "migration"
+    ],
+    "consolidated": "2026-04-08"
   }
 ]
