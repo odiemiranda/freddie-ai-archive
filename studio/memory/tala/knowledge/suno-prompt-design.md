@@ -1,9 +1,9 @@
 ---
 name: suno-prompt-design
-description: Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity, genre precision, descriptor refinement, and effects management, including guidance for dynamic instrument roles and genre anchoring.
+description: Comprehensive guide for building Suno prompts, detailing Style block construction (including the canonical envelope for BGM), unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity, genre precision, descriptor refinement, and effects management, including guidance for dynamic instrument roles and genre anchoring.
 type: knowledge
 agent: tala
-tags: [suno, lyrics, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, structure, tags, callback, atmosphere, performance-notation, ad-libs, arrangement, frequency-stacking, style-block, char-budget, production, lean, exclude, prompt-optimization, instrumentation, subordination, brightness, layered-control, prompt-design, complexity, genre, signal-clarity, audio-quality, cultural-labels, sfx, platform-behavior, validation, archetype, instrument-hallucination, genre-artifacts, dealbreaker, descriptor-refinement, dynamic-roles, directive-verbs, effects, delay, shamisen, genre-anchoring]
+tags: [suno, lyrics, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, structure, tags, callback, atmosphere, performance-notation, ad-libs, arrangement, frequency-stacking, style-block, char-budget, production, lean, exclude, prompt-optimization, instrumentation, subordination, brightness, layered-control, prompt-design, complexity, genre, signal-clarity, audio-quality, cultural-labels, sfx, platform-behavior, validation, archetype, instrument-hallucination, genre-artifacts, dealbreaker, descriptor-refinement, dynamic-roles, directive-verbs, effects, delay, shamisen, genre-anchoring, bgm, canonical-envelope, quality-gate, instrumental, no-vocals, bpm, key, phase-3, critic-feedback]
 ---
 
 # Suno Prompt Design Guide
@@ -26,14 +26,60 @@ Leaner prompts result in cleaner audio. Every element added can dilute the core 
 #### How to apply
 Adhere to the character budget above. Prioritize essential global elements and remove anything that can be implied by genre or controlled more precisely in the Lyrics section. Style blocks should consistently use comma-separated descriptors, not pipe delimiters. Pipe delimiters are reserved for combining elements within typed brackets in the Lyrics section.
 
-### What to Include (Never Cut)
+### 1.1. BGM Style Block: Canonical Envelope
+
+BGM (Background Music) Style blocks have a **canonical envelope** that is not optional. Missing any part of it is a Phase 3 quality failure that the user WILL catch during review.
+
+#### Why
+This structured approach ensures all mandatory elements for instrumental/BGM tracks are consistently present, preventing critical quality failures. The `[Instrumental]` and `[No Vocals]` tags lock structural meta-tag behavior at the prompt level, providing robust control.
+
+#### How to apply
+For BGM/instrumental tracks, adhere strictly to the following envelope structure and elements:
+
+```
+[Instrumental] {genre}, {instruments}, {mood}, {Key}, {NN BPM}, {atmosphere}, {mix} [No Vocals]
+```
+
+Elements in order:
+1.  **`[Instrumental]` tag at the front** — not the bare word "instrumental" inline.
+2.  **Genre** — at the 2-genre cap max.
+3.  **Instruments** — at the 3-instrument cap max, with role/timbre hints.
+4.  **Mood descriptors** — if warranted; often elided when Key/BPM carry the feel.
+5.  **Key** — `{Letter} {Major/Minor}` format, e.g., `A Major`, `F Minor`. Paired with BPM.
+6.  **BPM** — format `NN BPM` (integer, space, capital BPM). Never `bpm`, never bracketed, never `bpm: 104`.
+7.  **Atmosphere** — scene/space descriptor, e.g., `sunlit cafe`, `moonlit temple`.
+8.  **`clean mix`** — soul mandatory.
+9.  **`[No Vocals]` tag at the end** — paired with the `[Instrumental]` opener. This provides belt-and-suspenders with Lyrics block tags, not a duplication.
+
+#### Phase 3 Quality Gate for BGM
+
+Before declaring Phase 3 done on ANY instrumental/BGM build, explicitly verify the envelope by walking these four slots against the Style block:
+
+1.  ✓ `[Instrumental]` tag at start?
+2.  ✓ `[No Vocals]` tag at end?
+3.  ✓ BPM token inline (`NN BPM`)?
+4.  ✓ Key token inline (`{Letter} Major/Minor`)?
+
+Missing any one = Phase 3 is not done. Do NOT rely on charcount or validate-prompt to catch these — charcount's "slot 10 mandatory" warnings do catch "separated instruments" but not the envelope tags or BPM/Key tokens, and validate-prompt only flags structural issues.
+
+#### What NOT to interpret as this envelope
+The envelope is specifically for BGM/instrumental tracks. For vocal tracks, the pattern differs:
+- `[Instrumental]` tag is WRONG for vocal tracks.
+- `[No Vocals]` is WRONG for vocal tracks.
+- BPM and Key still apply, but mood descriptors typically carry more weight than scene/atmosphere.
+
+#### Preventing this in future Phase 3 runs
+Add an explicit step at the end of Phase 3 generation (before returning to Freddie):
+> **BGM Envelope Check** — if `type === "bgm"` or `"instrumental"`, walk the four envelope slots against the final Style block. If any are missing, fix them before reporting Phase 3 done, even if charcount and validate-prompt pass.
+
+### What to Include (General)
 
 #### How to apply
 Ensure these essential elements are always present in your Style block:
--   Genre (single word preferred, see "Genre & Cultural Label Precision" below for nuance)
+-   Genre (up to 2, see "Genre & Cultural Label Precision" below for nuance)
 -   Key, BPM
 -   "clean mix, separated instruments" (mandatory — helps audio clarity)
--   `[Instrumental]` and `[No Vocals]` tags (if applicable)
+-   `[Instrumental]` and `[No Vocals]` tags (if applicable, and mandatory for BGM as per Canonical Envelope)
 
 ### What to Drop (for ALL Tracks)
 
@@ -47,7 +93,7 @@ Avoid including these in your Style block:
 -   **Negative constraints** ("no melody", "no fills") — confuse Suno. Use positive descriptors instead, e.g., "pad chords", "sparse" in Lyrics `[Instrument:]` tags.
 -   **Specific vocal styles** (e.g., 'deep chanting', 'whispered') — these belong in Lyrics using `[Vocal Style:]` tags.
 -   **Specific instrument roles or behaviors** (e.g., "shamisen melodic plucks", "harp background pad chords", "brushed drums sparse") — these are generally better placed in Lyrics using `[Instrument:]` tags for per-section control. *However, see "Advanced Multi-Layered Control" below for exceptions regarding global placement/subordination.*
--   **Ambient SFX and Atmospheric elements** (e.g., 'rain', 'thunder') — these are ignored in the Style block and must be placed in the Lyrics section.
+-   **Ambient SFX and direct atmospheric tags** (e.g., 'rain', 'thunder') — these are ignored in the Style block and must be placed in the Lyrics section. *Note: Scene/space atmosphere descriptors (e.g., 'sunlit cafe') are valid and required for BGM Style blocks as part of the canonical envelope.*
 
 ### Minimal Exclude Strategy
 
@@ -226,4 +272,4 @@ Explicitly defining primary and secondary archetypes with specific roles allows 
 -   When aiming for a 'skank' rhythm in reggae/hip-hop, use the descriptor 'offbeat strum' instead of 'skank' to guide Suno more effectively and avoid problematic interpretations, refining the existing 'skank hallucination' exclusion advice by providing a positive alternative.
 
 ---
-Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`, `20260331-193044-the-upper-end-of-the-flexible-character--3.md`, `20260405-122651-explicitly-defining-a-primary-secondary--2.md`, `20260406-061139-explicitly-avoiding-cultural-or-regional-1.md`, `20260406-061139-strategic-exclusion-of-instruments-can-b-3.md`, `20260406-061139-subdued-is-a-more-precise-and-effective--2.md`, `20260406-064001-explicitly-adding-specific-timbre-anchor-3.md`, `20260406-064001-using-more-precise-and-less-ambiguous-de-2.md`, `20260406-070153-suno-can-effectively-interpret-and-rende-3.md`, `20260406-070153-using-directive-verbs-within-instrument--2.md`, `20260406-173715-consistent-critic-feedback-validates-the-3.md`, `20260406-173715-style-blocks-should-consistently-use-com-2.md`, `20260406-173715-when-aiming-for-a-skank-rhythm-in-reggae-1.md`, `20260406-205642-be-cautious-when-combining-echo-delay-wi-2.md`, `20260406-205642-for-instruments-like-shamisen-directive--1.md`, `20260406-205642-when-choosing-between-similar-or-related-3.md`
+Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`, `20260331-193044-the-upper-end-of-the-flexible-character--3.md`, `20260405-122651-explicitly-defining-a-primary-secondary--2.md`, `20260406-061139-explicitly-avoiding-cultural-or-regional-1.md`, `20260406-061139-strategic-exclusion-of-instruments-can-b-3.md`, `20260406-061139-subdued-is-a-more-precise-and-effective--2.md`, `20260406-064001-explicitly-adding-specific-timbre-anchor-3.md`, `20260406-064001-using-more-precise-and-less-ambiguous-de-2.md`, `20260406-070153-suno-can-effectively-interpret-and-rende-3.md`, `20260406-070153-using-directive-verbs-within-instrument--2.md`, `20260406-173715-consistent-critic-feedback-validates-the-3.md`, `20260406-173715-style-blocks-should-consistently-use-com-2.md`, `20260406-173715-when-aiming-for-a-skank-rhythm-in-reggae-1.md`, `20260406-205642-be-cautious-when-combining-echo-delay-wi-2.md`, `20260406-205642-for-instruments-like-shamisen-directive--1.md`, `20260406-205642-when-choosing-between-similar-or-related-3.md`, `20260409-003327-bgm-style-envelope-checklist.md`

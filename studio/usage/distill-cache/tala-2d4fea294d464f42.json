@@ -1,0 +1,10 @@
+{
+  "version": "v1-2026-04-07",
+  "agent": "tala",
+  "key": "2d4fea294d464f42",
+  "createdAt": "2026-04-08T15:19:05.904Z",
+  "result": {
+    "noChanges": false,
+    "rawOutput": "=== PROPOSAL 1: Test proposal ===\nTYPE: add\nSECTION: How I Work\nCONFIDENCE: high\nEVIDENCE: Test evidence from integration test.\n\nCONTENT:\n- Test addition for integration testing.\n=== END PROPOSAL ==="
+  }
+}

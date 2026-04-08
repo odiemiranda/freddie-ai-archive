@@ -1,0 +1,38 @@
+[
+  {
+    "file": "knowledge/windows-daemon-stability-patterns.md",
+    "name": "Windows Daemon Stability Patterns",
+    "description": "Best practices and workarounds for building stable daemon processes on Windows, including process management and lease/heartbeat patterns.",
+    "type": "knowledge",
+    "tags": [
+      "Windows",
+      "Daemon",
+      "Stability",
+      "Bun",
+      "Chokidar",
+      "Lease",
+      "Heartbeat",
+      "Architecture",
+      "Process Management"
+    ],
+    "consolidated": "2026-04-08"
+  },
+  {
+    "file": "knowledge/local-llm-gbnf-output-reliability.md",
+    "name": "Local LLM GBNF Grammar for Reliable Output",
+    "description": "Leveraging GBNF grammar constraints in llama.cpp to ensure reliable and structured output from small local LLMs.",
+    "type": "knowledge",
+    "tags": [
+      "LLM",
+      "Local LLM",
+      "llama.cpp",
+      "GBNF",
+      "Grammar",
+      "Output Reliability",
+      "Prompt Engineering",
+      "AI Music",
+      "Structured Output"
+    ],
+    "consolidated": "2026-04-08"
+  }
+]

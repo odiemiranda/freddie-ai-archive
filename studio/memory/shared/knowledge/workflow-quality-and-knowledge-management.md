@@ -1,9 +1,9 @@
 ---
 name: Workflow, Quality Control, and Knowledge Management
-description: Guidelines for agent critique loops, metatag management, strategic generation approaches, including advanced prompt generation methodologies, LLM capabilities and selection (e.g., for creative notation), and best practices for managing knowledge, general development, tooling, and overall system architectural vision.
+description: Guidelines for agent critique loops, metatag management, strategic generation approaches, including advanced prompt generation methodologies, LLM capabilities and selection (e.g., for creative notation), and best practices for managing knowledge, general development, tooling, architectural vision, and external service reliability.
 type: knowledge
 agent: shared
-tags: [workflow, workflow_management, workflow-pattern, quality-gate, critique, multi-pass, metatags, production, gemini, minimax, parallel-processing, jam-skill, tala, rune, knowledge-management, consolidation, llm, token-limits, data-integrity, best-practices, llm-capabilities, llm-selection, notation, prompt-engineering, text-generation, music-lyrics, linguistics, phonetics, homograph-detection, structure, accuracy, tool_development, cli_first, user_preference, workflow_design, readability, maintainability, code_style, architecture, parser, serializer, testing, library_design, agent-design, tool-capability, interaction_protocols, adaptability, scope_management, tactical_pivot, feasibility_spike, vision, ecosystem, foundation, strategy, platform-limits, timeout, critic-reconciliation, genre-limits, validation, implementation, spec-drift, dependencies, debugging, assumptions, spec-compliance, communication, issue-resolution, quality-assurance]
+tags: [workflow, workflow_management, workflow-pattern, quality-gate, critique, multi-pass, metatags, production, gemini, minimax, parallel-processing, jam-skill, tala, rune, knowledge-management, consolidation, llm, token-limits, data-integrity, best-practices, llm-capabilities, llm-selection, notation, prompt-engineering, text-generation, music-lyrics, linguistics, phonetics, homograph-detection, structure, accuracy, tool_development, cli_first, user_preference, workflow_design, readability, maintainability, code_style, architecture, parser, serializer, testing, library_design, agent-design, tool-capability, interaction_protocols, adaptability, scope_management, tactical_pivot, feasibility_spike, vision, ecosystem, foundation, strategy, platform-limits, timeout, critic-reconciliation, genre-limits, validation, implementation, spec-drift, dependencies, debugging, assumptions, spec-compliance, communication, issue-resolution, quality-assurance, failure_mode, external_service, reliability, error_handling, recovery]
 ---
 
 # Workflow, Quality Control, and Knowledge Management
@@ -27,6 +27,12 @@ When using Large Language Models (LLMs) for structured, multi-file output, it is
 4.  **For MiniMax:** When using MiniMax for cognitive or reasoning tasks, employ careful prompt engineering, including explicit output constraints or chunking of reasoning steps, to prevent truncation and ensure complete processing.
 
 **Lesson:** Always verify the output count matches the plan when using LLMs for structured multi-file output. Token limits cause silent truncation.
+
+## External Service Reliability and Recovery
+External service reliability, specifically 5xx errors indicating server overload, can directly block internal agent dispatch and workflow progression. A robust workflow must account for such external failures, requiring internal agents to identify the blocking condition, issue 'NEEDS-FIX' directives, and implement a pause/resume strategy.
+
+**Why:** External service failures can disrupt development workflows and lead to unexpected blockages. Implementing explicit recovery protocols ensures workflow resilience and efficient issue resolution.
+**How to apply:** Design workflows to anticipate and handle external service failures (e.g., 5xx errors). Internal agents (e.g., McCall, Ryan) should be equipped to identify blocking conditions, issue 'NEEDS-FIX' directives, and execute predefined pause/resume sequences to manage tasks (e.g., ASL-0017) effectively.
 
 ## Gemini Critique Loops
 Tri-critic loops are implemented for Tala (Step 8c: Gemini → MiniMax → Grok) and Rune (Step 8c: Gemini → MiniMax → Grok) to identify issues like instrument overloads, frequency clashes, narrative clichés, and subtle audio quality issues stemming from genre archetypes. Critics are effective at pinpointing these genre-specific pitfalls (refer to `suno-prompt-engineering-and-references.md` for details on 'instrument bleed' and other genre archetype pitfalls, including MiniMax's ability to detect sonic redundancy). Multi-critic reconciliation is highly effective in enforcing established prompt engineering principles, such as limiting genres (e.g., 'Max 2 genres'), thereby preventing prompt dilution and improving output quality.
@@ -112,3 +118,4 @@ Specifications may contain outdated assumptions, omit necessary dependencies, ov
 - `20260407-095424-minimax-has-a-strict-256-token-limit-tha-2.md`
 - `20260408-031138-specifications-may-contain-outdated-assu-1.md`
 - `20260408-031138-when-encountering-discrepancies-between--2.md`
+- `20260408-145812-external-service-reliability-specificall-5.md`

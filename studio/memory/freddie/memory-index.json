@@ -156,7 +156,14 @@
       "workflow_rule",
       "workflow_success",
       "workflow_validation",
-      "worktrees"
+      "worktrees",
+      "modularity",
+      "reusability",
+      "library_design",
+      "failure_mode",
+      "external_service",
+      "reliability",
+      "error_handling"
     ],
     "consolidated": "2026-04-08"
   },
@@ -334,7 +341,13 @@
       "polling",
       "delay",
       "failure_mode",
-      "child_process"
+      "child_process",
+      "debugging",
+      "observability",
+      "agent_improvement",
+      "workflow_automation",
+      "human_in_the_loop",
+      "review_process"
     ],
     "consolidated": "2026-04-08"
   }

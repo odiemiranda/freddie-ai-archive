@@ -1,41 +1,8 @@
 [
   {
-    "file": "knowledge/suno-agent-workflow-and-control.md",
-    "name": "suno-agent-workflow-and-control",
-    "description": "Advanced workflow patterns, parameter tuning, validated agent autonomy in multi-critic reconciliation, phase-gated skill execution, and effective lyrics input for Suno prompt engineering.",
-    "type": "knowledge",
-    "tags": [
-      "suno",
-      "workflow",
-      "orchestrator-pattern",
-      "variation",
-      "control",
-      "weight",
-      "suno-interpretation",
-      "critic-reconciliation",
-      "llm-feedback",
-      "agent-autonomy",
-      "goal-priority",
-      "lyrics-input",
-      "user-intent",
-      "skill-design",
-      "llm-integration",
-      "gemini",
-      "context-flags",
-      "prompt-refinement",
-      "minimax",
-      "repetition",
-      "workflow-validation",
-      "quality",
-      "structure",
-      "grok"
-    ],
-    "consolidated": "2026-04-06"
-  },
-  {
     "file": "knowledge/suno-prompt-design.md",
     "name": "suno-prompt-design",
-    "description": "Comprehensive guide for building Suno prompts, detailing Style block construction, unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity, genre precision, descriptor refinement, and effects management, including guidance for dynamic instrument roles and genre anchoring.",
+    "description": "Comprehensive guide for building Suno prompts, detailing Style block construction (including the canonical envelope for BGM), unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity, genre precision, descriptor refinement, and effects management, including guidance for dynamic instrument roles and genre anchoring.",
     "type": "knowledge",
     "tags": [
       "suno",
@@ -84,9 +51,51 @@
       "effects",
       "delay",
       "shamisen",
-      "genre-anchoring"
+      "genre-anchoring",
+      "bgm",
+      "canonical-envelope",
+      "quality-gate",
+      "instrumental",
+      "no-vocals",
+      "bpm",
+      "key",
+      "phase-3",
+      "critic-feedback"
     ],
-    "consolidated": "2026-04-06"
+    "consolidated": "2026-04-09"
+  },
+  {
+    "file": "knowledge/suno-agent-workflow-and-control.md",
+    "name": "suno-agent-workflow-and-control",
+    "description": "Advanced workflow patterns, parameter tuning, validated agent autonomy in multi-critic reconciliation, phase-gated skill execution, and effective lyrics input for Suno prompt engineering.",
+    "type": "knowledge",
+    "tags": [
+      "suno",
+      "workflow",
+      "orchestrator-pattern",
+      "variation",
+      "control",
+      "weight",
+      "suno-interpretation",
+      "critic-reconciliation",
+      "llm-feedback",
+      "agent-autonomy",
+      "goal-priority",
+      "lyrics-input",
+      "user-intent",
+      "skill-design",
+      "llm-integration",
+      "gemini",
+      "context-flags",
+      "prompt-refinement",
+      "minimax",
+      "repetition",
+      "workflow-validation",
+      "quality",
+      "structure",
+      "grok"
+    ],
+    "consolidated": "2026-04-09"
   },
   {
     "file": "knowledge/suno-quality-and-iteration.md",
@@ -101,12 +110,12 @@
       "critic",
       "prompt-refinement"
     ],
-    "consolidated": "2026-04-06"
+    "consolidated": "2026-04-09"
   },
   {
-    "file": "knowledge/tala-system-updates.md",
-    "name": "tala-system-updates",
-    "description": "Consolidated updates on Tala's internal system, including enhanced knowledge management, operational standardization, internal tool reliability and validation, development workflow improvements, architectural validations, and tool development milestones, specifically addressing issues with the tracknames tool.",
+    "file": "knowledge/tala-system-internals.md",
+    "name": "tala-system-internals",
+    "description": "Consolidated knowledge on Tala's internal system, including enhanced knowledge management, operational standardization, internal tool reliability and validation, development workflow improvements, architectural validations, and tool development milestones, specifically addressing issues with the tracknames tool.",
     "type": "knowledge",
     "tags": [
       "tala",
@@ -141,6 +150,6 @@
       "tool-feedback",
       "failure"
     ],
-    "consolidated": "2026-04-06"
+    "consolidated": "2026-04-09"
   }
 ]

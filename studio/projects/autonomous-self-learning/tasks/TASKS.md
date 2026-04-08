@@ -32,12 +32,18 @@ Tasks are created after the design has been validated via NotebookLM research (H
 | ASL-0009 | `agent-state` CLI tool | `3fa4147` | [`2026-04-08-082222-ASL-0009-agent-state-cli.md`](2026-04-08-082222-ASL-0009-agent-state-cli.md) |
 | ASL-0012 | Review-staged CLI for human-in-the-loop closure | `d8bda07` | [`2026-04-08-084847-ASL-0012-review-staged-cli.md`](2026-04-08-084847-ASL-0012-review-staged-cli.md) |
 | ASL-0016 | Fix multi-line gate reason truncation in staged writer | `560b544` | [`2026-04-08-092231-ASL-0016-gate-reason-escape-fix.md`](2026-04-08-092231-ASL-0016-gate-reason-escape-fix.md) |
+| ASL-0017 | Backfill legacy 3-col staged files to 4-col format + parser cleanup | `8a719c6` / `aa6f7bb` / `794ffbf` | [`2026-04-08-092231-ASL-0017-legacy-staged-backfill.md`](2026-04-08-092231-ASL-0017-legacy-staged-backfill.md) |
+| ASL-0024 | Gate distill on knowledge-content delta + force-stage in degraded quorum | `cecd73b` | [`2026-04-08-214141-ASL-0024-knowledge-delta-gate-and-fail-closed-degraded.md`](2026-04-08-214141-ASL-0024-knowledge-delta-gate-and-fail-closed-degraded.md) |
+| ASL-0023 | Rejection feedback loop + audit trail (Bug 2 residual closed WONTFIX) | `8442263` / `ae449e8` | [`2026-04-08-211556-ASL-0023-rejection-feedback-and-degraded-autoapply.md`](2026-04-08-211556-ASL-0023-rejection-feedback-and-degraded-autoapply.md) |
+| ASL-0025 | Canonical compliance + critic authority reversal (5 tiers) | `428ab08` / `bdbd2f6` / `6ae6ea5` / `d37570f` | [`2026-04-09-012115-ASL-0025-canonical-compliance-and-critic-authority-reversal.md`](2026-04-09-012115-ASL-0025-canonical-compliance-and-critic-authority-reversal.md) |
 
 ## Immediate (next session)
-
-| ID | Title | Priority | Status | Depends On | Doc |
-|----|-------|----------|--------|------------|-----|
-| ASL-0017 | Backfill legacy 3-col staged files to 4-col format | P3 | planned | ASL-0012, ASL-0016 | [`2026-04-08-092231-ASL-0017-legacy-staged-backfill.md`](2026-04-08-092231-ASL-0017-legacy-staged-backfill.md) |
+| ASL-0021 | applySoulChange modify branch rewrite — shipped as `8d24a33` 2026-04-09 | P1 | **shipped** | — | [`2026-04-08-190000-ASL-0021-applysoulchange-refinement-semantics.md`](2026-04-08-190000-ASL-0021-applysoulchange-refinement-semantics.md) |
+| ASL-0020 | Investigate MiniMax judge stability — transport failures and degraded mode | P1 | planned | — | [`2026-04-08-184156-ASL-0020-minimax-judge-stability.md`](2026-04-08-184156-ASL-0020-minimax-judge-stability.md) |
+| ASL-0018 | Fix Penny distill: proposals cite knowledge files as evidence | P2 | planned | — | [`2026-04-08-182558-ASL-0018-penny-distill-evidence-bug.md`](2026-04-08-182558-ASL-0018-penny-distill-evidence-bug.md) |
+| ASL-0019 | Fix Sol distill: proposals regenerate traits already in the soul | P2 | planned | — | [`2026-04-08-184156-ASL-0019-sol-distill-redundancy-bug.md`](2026-04-08-184156-ASL-0019-sol-distill-redundancy-bug.md) |
+| ASL-0026 | Add tri-critic to /minimax-music + --lyrics-only mode for validate-envelope | P2 | planned | ASL-0025 | [`2026-04-09-025213-ASL-0026-minimax-tricritic-and-lyrics-only-envelope.md`](2026-04-09-025213-ASL-0026-minimax-tricritic-and-lyrics-only-envelope.md) |
+| ASL-0022 | Remove deprecated "wick" agent name — shipped as `a418521` 2026-04-09 | P3 | **shipped** | — | [`2026-04-08-210759-ASL-0022-wick-deprecation-cleanup.md`](2026-04-08-210759-ASL-0022-wick-deprecation-cleanup.md) |
 
 ## Planned
 

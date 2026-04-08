@@ -2,7 +2,9 @@
 id: ASL-0017
 title: Backfill legacy 3-col staged files to 4-col judge format
 project-code: ASL
-status: in-progress-needs-fix
+status: shipped
+shipped: 2026-04-08
+commits: [8a719c6, aa6f7bb, 794ffbf]
 priority: P3
 created: 2026-04-08
 author: mccall

@@ -170,7 +170,7 @@
   {
     "file": "knowledge/workflow-quality-and-knowledge-management.md",
     "name": "Workflow, Quality Control, and Knowledge Management",
-    "description": "Guidelines for agent critique loops, metatag management, strategic generation approaches, including advanced prompt generation methodologies, LLM capabilities and selection (e.g., for creative notation), and best practices for managing knowledge, general development, tooling, and overall system architectural vision.",
+    "description": "Guidelines for agent critique loops, metatag management, strategic generation approaches, including advanced prompt generation methodologies, LLM capabilities and selection (e.g., for creative notation), and best practices for managing knowledge, general development, tooling, architectural vision, and external service reliability.",
     "type": "knowledge",
     "tags": [
       "workflow",
@@ -240,7 +240,12 @@
       "spec-compliance",
       "communication",
       "issue-resolution",
-      "quality-assurance"
+      "quality-assurance",
+      "failure_mode",
+      "external_service",
+      "reliability",
+      "error_handling",
+      "recovery"
     ],
     "consolidated": "2026-04-08"
   }

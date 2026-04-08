@@ -1,0 +1,10 @@
+{
+  "version": "v2-2026-04-09",
+  "agent": "tala",
+  "key": "1ff33efd42bff64b",
+  "createdAt": "2026-04-08T19:15:37.153Z",
+  "result": {
+    "rawOutput": "SUMMARY:\nTest summary.\n\nPROPOSALS:\n\n=== PROPOSAL 1: Descriptive Variable Names ===\nTYPE: add\nSECTION: How I Work\nCONFIDENCE: medium\nEVIDENCE: test-knowledge.md\n\nCONTENT:\nAlways use descriptive variable names in every function.\n=== END PROPOSAL ===\n\nFULL_SOUL:\n(no full soul needed for test)\n",
+    "noChanges": false
+  }
+}

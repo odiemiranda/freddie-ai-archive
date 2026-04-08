@@ -1,5 +1,94 @@
 [
   {
+    "file": "knowledge/ryan-claude-integration-and-readiness.md",
+    "name": "Ryan's Claude Integration and Readiness System",
+    "description": "Details Ryan's work on implementing and refining the Claude readiness check and external plugin management, including performance optimizations and configuration handling.",
+    "type": "knowledge",
+    "tags": [
+      "claude",
+      "integration",
+      "readiness",
+      "plugin-management",
+      "performance",
+      "configuration",
+      "powershell",
+      "testing",
+      "asl-0011"
+    ],
+    "consolidated": "2026-04-09"
+  },
+  {
+    "file": "knowledge/ryan-cli-tools-for-management.md",
+    "name": "Ryan's CLI Tools for Agent and Staged Content Management",
+    "description": "Details Ryan's development of command-line interface tools for inspecting agent state, reviewing staged content, validating prompt envelopes, and reconciling critic feedback.",
+    "type": "knowledge",
+    "tags": [
+      "cli",
+      "agent-management",
+      "staged-content",
+      "review",
+      "tools",
+      "testing",
+      "data-integrity",
+      "asl-0009",
+      "asl-0012",
+      "asl-0025",
+      "validation",
+      "prompt-engineering",
+      "critics",
+      "reconciliation"
+    ],
+    "consolidated": "2026-04-09"
+  },
+  {
+    "file": "knowledge/ryan-core-system-architecture.md",
+    "name": "Ryan's Core System Architecture Contributions",
+    "description": "Details Ryan's work on foundational system components including worker pools, file-watcher services, daemon lifecycle management, and architectural decoupling.",
+    "type": "knowledge",
+    "tags": [
+      "system-architecture",
+      "worker-pool",
+      "file-watcher",
+      "daemon",
+      "lifecycle-management",
+      "production-handlers",
+      "testing",
+      "robustness",
+      "decoupling",
+      "liveness-probe"
+    ],
+    "consolidated": "2026-04-09"
+  },
+  {
+    "file": "knowledge/ryan-data-management-and-persistence.md",
+    "name": "Ryan's Data Management and Persistence Contributions",
+    "description": "Details Ryan's work on staged content persistence, Brain DB schema enhancements, knowledge directory hashing for data integrity, robust table formatting, and advanced soul change semantics with before-text tracking.",
+    "type": "knowledge",
+    "tags": [
+      "data-management",
+      "persistence",
+      "database",
+      "schema",
+      "sqlite",
+      "fts",
+      "hashing",
+      "data-integrity",
+      "migration",
+      "testing",
+      "staged-content",
+      "table-formatting",
+      "soul-changes",
+      "before-text",
+      "prompt-versioning",
+      "asl-0002",
+      "asl-0004",
+      "asl-0016",
+      "aar-0008",
+      "asl-0021"
+    ],
+    "consolidated": "2026-04-09"
+  },
+  {
     "file": "knowledge/ryan-development-best-practices.md",
     "name": "Ryan's Development Best Practices",
     "description": "Ryan's approach to identifying and resolving specification discrepancies, emphasizing proactive communication and defensive flagging.",
@@ -13,48 +102,12 @@
       "quality-assurance",
       "implementation"
     ],
-    "consolidated": "2026-04-08"
-  },
-  {
-    "file": "knowledge/ryan-core-system-architecture.md",
-    "name": "Ryan's Core System Architecture Contributions",
-    "description": "Details Ryan's work on foundational system components including worker pools, file-watcher services, and daemon lifecycle management.",
-    "type": "knowledge",
-    "tags": [
-      "system-architecture",
-      "worker-pool",
-      "file-watcher",
-      "daemon",
-      "lifecycle-management",
-      "production-handlers",
-      "testing",
-      "robustness"
-    ],
-    "consolidated": "2026-04-08"
-  },
-  {
-    "file": "knowledge/ryan-data-management-and-persistence.md",
-    "name": "Ryan's Data Management and Persistence Contributions",
-    "description": "Details Ryan's work on staged content persistence, Brain DB schema enhancements, and knowledge directory hashing for data integrity.",
-    "type": "knowledge",
-    "tags": [
-      "data-management",
-      "persistence",
-      "database",
-      "schema",
-      "sqlite",
-      "fts",
-      "hashing",
-      "data-integrity",
-      "migration",
-      "testing"
-    ],
-    "consolidated": "2026-04-08"
+    "consolidated": "2026-04-09"
   },
   {
     "file": "knowledge/ryan-system-robustness-and-optimization.md",
     "name": "Ryan's System Robustness and Optimization Contributions",
-    "description": "Details Ryan's work on enhancing system resilience through health checks, defensive programming, and distillation process optimizations.",
+    "description": "Details Ryan's work on enhancing system resilience through health checks, defensive programming, distillation process optimizations, and advanced control mechanisms like knowledge-delta gates, degraded quorums, and rejection feedback loops.",
     "type": "knowledge",
     "tags": [
       "robustness",
@@ -64,8 +117,41 @@
       "distillation",
       "performance",
       "caching",
-      "testing"
+      "testing",
+      "gates",
+      "quorum",
+      "degraded-mode",
+      "asl-0001",
+      "aar-0009",
+      "asl-0024",
+      "asl-0023",
+      "feedback-loop",
+      "auditing"
     ],
-    "consolidated": "2026-04-08"
+    "consolidated": "2026-04-09"
+  },
+  {
+    "file": "knowledge/ryan-musical-prompt-engineering.md",
+    "name": "Ryan's Musical Prompt Engineering and Critic Reconciliation",
+    "description": "Details Ryan's work on enhancing musical prompt generation, validation, and critic reconciliation, including new CLI tools, structured output formats, and workflow updates for various agents.",
+    "type": "knowledge",
+    "tags": [
+      "music-generation",
+      "prompt-engineering",
+      "validation",
+      "critics",
+      "reconciliation",
+      "workflow",
+      "cli",
+      "suno",
+      "tala",
+      "rune",
+      "lyrics",
+      "asl-0025",
+      "envelopes",
+      "structured-json",
+      "conflict-resolution"
+    ],
+    "consolidated": "2026-04-09"
   }
 ]
