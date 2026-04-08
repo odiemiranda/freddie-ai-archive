@@ -163,9 +163,11 @@
       "failure_mode",
       "external_service",
       "reliability",
-      "error_handling"
+      "error_handling",
+      "morning_briefing",
+      "output_control"
     ],
-    "consolidated": "2026-04-08"
+    "consolidated": "2026-04-09"
   },
   {
     "file": "knowledge/knowledge_communication_and_interaction_standards.md",
@@ -185,7 +187,7 @@
       "clarity",
       "music_card"
     ],
-    "consolidated": "2026-04-08"
+    "consolidated": "2026-04-09"
   },
   {
     "file": "knowledge/knowledge_linguistic_capabilities.md",
@@ -204,7 +206,7 @@
       "language_processing",
       "scope_expansion"
     ],
-    "consolidated": "2026-04-08"
+    "consolidated": "2026-04-09"
   },
   {
     "file": "knowledge/knowledge_memory_system_architecture.md",
@@ -254,14 +256,16 @@
       "data_granularity",
       "subagents",
       "episodic_memory",
-      "gap_analysis"
+      "gap_analysis",
+      "bug_detection",
+      "platform_behavior"
     ],
-    "consolidated": "2026-04-08"
+    "consolidated": "2026-04-09"
   },
   {
     "file": "knowledge/knowledge_music_generation_capabilities.md",
     "name": "Music Generation Capabilities",
-    "description": "Details Freddie's ability to accurately infer musical characteristics from minimal input, along with practical guidelines for track structure, section control, and iterative parameter exploration in music generation workflows.",
+    "description": "Details Freddie's ability to accurately infer musical characteristics from minimal input, along with practical guidelines for track structure, section control, iterative parameter exploration, and prompt engineering in music generation workflows.",
     "type": "knowledge",
     "tags": [
       "music_card",
@@ -283,9 +287,15 @@
       "iteration",
       "parameters",
       "reggae",
-      "shamisen"
+      "shamisen",
+      "suno",
+      "prompt_engineering",
+      "creative_generation",
+      "efficiency",
+      "new-technique",
+      "platform_behavior"
     ],
-    "consolidated": "2026-04-08"
+    "consolidated": "2026-04-09"
   },
   {
     "file": "knowledge/knowledge_tooling_and_platform_guidelines.md",
@@ -349,6 +359,6 @@
       "human_in_the_loop",
       "review_process"
     ],
-    "consolidated": "2026-04-08"
+    "consolidated": "2026-04-09"
   }
 ]

@@ -1,14 +1,14 @@
 ---
 name: suno-agent-workflow-and-control
-description: Advanced workflow patterns, parameter tuning, validated agent autonomy in multi-critic reconciliation, phase-gated skill execution, and effective lyrics input for Suno prompt engineering.
+description: Advanced workflow patterns, parameter tuning, validated agent autonomy in multi-critic reconciliation, phase-gated skill execution, effective lyrics input, and guidelines for managing quality expectations and the iterative reroll process for Suno prompt engineering.
 type: knowledge
 agent: tala
-tags: [suno, workflow, orchestrator-pattern, variation, control, weight, suno-interpretation, critic-reconciliation, llm-feedback, agent-autonomy, goal-priority, lyrics-input, user-intent, skill-design, llm-integration, gemini, context-flags, prompt-refinement, minimax, repetition, workflow-validation, quality, structure, grok]
+tags: [suno, workflow, orchestrator-pattern, variation, control, weight, suno-interpretation, critic-reconciliation, llm-feedback, agent-autonomy, goal-priority, lyrics-input, user-intent, skill-design, llm-integration, gemini, context-flags, prompt-refinement, minimax, repetition, workflow-validation, quality, structure, grok, reroll, iteration]
 ---
 
 # Suno Agent Workflow and Control
 
-This document outlines advanced workflow patterns, parameter tuning, and principles for agent autonomy and control in Suno prompt engineering.
+This document outlines advanced workflow patterns, parameter tuning, and principles for agent autonomy and control in Suno prompt engineering, including quality management and iterative refinement.
 
 ## 1. Orchestrator Pattern for Variation Generation
 
@@ -77,5 +77,16 @@ Confirming effective methods for lyric input streamlines the generation process 
 ### How to apply
 -   The 'Path A' workflow, where inline lyrics are provided directly and augmented by the agent, is a viable and effective method for lyric input.
 
+## 7. Quality Gates and Iteration Workflow
+
+### Why
+Suno's generative nature involves inherent variability. A good prompt narrows the possibility space, but user testing and iterative refinement are essential to achieve desired outcomes. The agent cannot hear the output, making user feedback critical.
+
+### How to apply
+-   **Reroll Expectations:** Expect to perform **3-5 rerolls** to find at least one keeper.
+-   **Quality Gate:** The prompt is working if the *worst* generation is still recognizably what was requested. If every generation is chaotic, the prompt is broken and requires significant revision.
+-   **Iteration Workflow:** Treat the first generation as a draft. When issues arise (e.g., "chaotic," "layering"), iterate on bracket syntax first, as it's the most impactful lever for refinement.
+-   **Track History:** Document iteration history in Style Block Notes or similar logs to learn from past attempts and inform future prompt adjustments.
+
 ---
-Consolidated from: `suno-workflow-and-agent-control.md`, `20260329-155500-a-structured-phase-gated-workflow-e-g-me-2.md`, `20260331-193044-minimax-is-effective-not-only-at-identif-2.md`, `20260331-193044-the-current-prompt-engineering-and-multi-1.md`, `20260405-122651-high-rates-of-critic-rejection-particula-1.md`, `20260406-064001-multi-critic-reconciliation-is-highly-ef-1.md`
+Consolidated from: `suno-workflow-and-agent-control.md`, `20260329-155500-a-structured-phase-gated-workflow-e-g-me-2.md`, `20260331-193044-minimax-is-effective-not-only-at-identif-2.md`, `20260331-193044-the-current-prompt-engineering-and-multi-1.md`, `20260405-122651-high-rates-of-critic-rejection-particula-1.md`, `20260406-064001-multi-critic-reconciliation-is-highly-ef-1.md`, `suno-quality-and-iteration.md`

@@ -21,7 +21,7 @@
       "arc42",
       "SPIKE"
     ],
-    "consolidated": "2026-04-08"
+    "consolidated": "2026-04-09"
   },
   {
     "file": "knowledge/platform-and-tool-behaviors.md",
@@ -59,7 +59,7 @@
       "polling",
       "delay"
     ],
-    "consolidated": "2026-04-08"
+    "consolidated": "2026-04-09"
   },
   {
     "file": "knowledge/studio-architecture-and-tools.md",
@@ -85,7 +85,7 @@
       "weirdness",
       "style-influence"
     ],
-    "consolidated": "2026-04-08"
+    "consolidated": "2026-04-09"
   },
   {
     "file": "knowledge/suno-prompt-engineering-and-references.md",
@@ -163,9 +163,20 @@
       "instrument-behavior",
       "descriptor-choice",
       "delay",
-      "ambient"
+      "ambient",
+      "directive-verbs",
+      "melodicism",
+      "negative-constraints",
+      "prompt-failure",
+      "prompt-complexity",
+      "variant-workflow",
+      "monotony",
+      "descriptor-count",
+      "creative_generation",
+      "efficiency",
+      "new-technique"
     ],
-    "consolidated": "2026-04-08"
+    "consolidated": "2026-04-09"
   },
   {
     "file": "knowledge/workflow-quality-and-knowledge-management.md",
@@ -247,6 +258,6 @@
       "error_handling",
       "recovery"
     ],
-    "consolidated": "2026-04-08"
+    "consolidated": "2026-04-09"
   }
 ]

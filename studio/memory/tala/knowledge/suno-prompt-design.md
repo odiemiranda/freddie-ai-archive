@@ -1,9 +1,9 @@
 ---
 name: suno-prompt-design
-description: Comprehensive guide for building Suno prompts, detailing Style block construction (including the canonical envelope for BGM), unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity, genre precision, descriptor refinement, and effects management, including guidance for dynamic instrument roles and genre anchoring.
+description: Comprehensive guide for building Suno prompts, detailing Style block construction (including the canonical envelope for BGM), unified typed bracket framework for Lyrics, character budgets, performance notation, advanced multi-layered control, archetype blends, and core prompt engineering principles for clarity, genre precision, descriptor refinement, and effects management, including guidance for dynamic instrument roles, genre anchoring, descriptive vs. prescriptive prompting, and word repetition.
 type: knowledge
 agent: tala
-tags: [suno, lyrics, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, structure, tags, callback, atmosphere, performance-notation, ad-libs, arrangement, frequency-stacking, style-block, char-budget, production, lean, exclude, prompt-optimization, instrumentation, subordination, brightness, layered-control, prompt-design, complexity, genre, signal-clarity, audio-quality, cultural-labels, sfx, platform-behavior, validation, archetype, instrument-hallucination, genre-artifacts, dealbreaker, descriptor-refinement, dynamic-roles, directive-verbs, effects, delay, shamisen, genre-anchoring, bgm, canonical-envelope, quality-gate, instrumental, no-vocals, bpm, key, phase-3, critic-feedback]
+tags: [suno, lyrics, typed-brackets, instrument, energy, mood, texture, vocal-style, unified, structure, tags, callback, atmosphere, performance-notation, ad-libs, arrangement, frequency-stacking, style-block, char-budget, production, lean, exclude, prompt-optimization, instrumentation, subordination, brightness, layered-control, prompt-design, complexity, genre, signal-clarity, audio-quality, cultural-labels, sfx, platform-behavior, validation, archetype, instrument-hallucination, genre-artifacts, dealbreaker, descriptor-refinement, dynamic-roles, directive-verbs, effects, delay, shamisen, genre-anchoring, bgm, canonical-envelope, quality-gate, instrumental, no-vocals, bpm, key, phase-3, critic-feedback, vetoes, descriptive-vs-prescriptive, source-prompt-mirroring, word-repetition, monotone-vs-melodic, surgical-fixes, melodicism, negative-constraints, prompt-failure, monotony, descriptor-count]
 ---
 
 # Suno Prompt Design Guide
@@ -84,13 +84,13 @@ Ensure these essential elements are always present in your Style block:
 ### What to Drop (for ALL Tracks)
 
 #### Why
-These elements frequently confuse Suno, lead to hallucinations, are redundant, or are better controlled via typed brackets in the Lyrics section.
+These elements frequently confuse Suno, lead to hallucinations, are redundant, or are better controlled via typed brackets in the Lyrics section. Stacked negative constraints specifically fight Suno's training and produce unstable, oscillating failures, often cycling through contradictory interpretations (e.g., clean→spoken→falsetto→falsetto for vocal delivery).
 
 #### How to apply
 Avoid including these in your Style block:
 -   **Chord progressions** — invite piano hallucination (tested: Gmaj7-Em7-Cmaj9-D7 caused piano at 75% mark).
 -   **`[Background Music]` tag** — arrangement already implies it.
--   **Negative constraints** ("no melody", "no fills") — confuse Suno. Use positive descriptors instead, e.g., "pad chords", "sparse" in Lyrics `[Instrument:]` tags.
+-   **Negative constraints** ("no melody", "no fills") — confuse Suno. Use positive descriptors instead, e.g., "pad chords", "sparse" in Lyrics `[Instrument:]` tags. Avoid stacking multiple negative directives in the main Style block, as this leads to inconsistent and undesirable output variations.
 -   **Specific vocal styles** (e.g., 'deep chanting', 'whispered') — these belong in Lyrics using `[Vocal Style:]` tags.
 -   **Specific instrument roles or behaviors** (e.g., "shamisen melodic plucks", "harp background pad chords", "brushed drums sparse") — these are generally better placed in Lyrics using `[Instrument:]` tags for per-section control. *However, see "Advanced Multi-Layered Control" below for exceptions regarding global placement/subordination.*
 -   **Ambient SFX and direct atmospheric tags** (e.g., 'rain', 'thunder') — these are ignored in the Style block and must be placed in the Lyrics section. *Note: Scene/space atmosphere descriptors (e.g., 'sunlit cafe') are valid and required for BGM Style blocks as part of the canonical envelope.*
@@ -98,14 +98,14 @@ Avoid including these in your Style block:
 ### Minimal Exclude Strategy
 
 #### Why
-When every section has `[Instrument:]` typed brackets in the Lyrics, Suno has positive per-section instructions and doesn't hallucinate unwanted instruments. This positive guidance replaces the need for extensive negative exclusions. Adding abstract terms confuses Suno, as it struggles to interpret "what NOT to feel" compared to "what instrument NOT to use."
+When every section has `[Instrument:]` typed brackets in the Lyrics, Suno has positive per-section instructions and doesn't hallucinate unwanted instruments. This positive guidance replaces the need for extensive negative exclusions. Adding abstract terms confuses Suno, as it struggles to interpret "what NOT to feel" compared to "what instrument NOT to use." Excludes should be moved to the Exclude Style block only; the main prompt should describe what is wanted.
 
 #### How to apply
 Only add dealbreakers (e.g., auto-tune for raw vocal, electronic for acoustic genres). Strategic exclusion of instruments can be effectively used to prevent specific, unwanted genre-associated sonic artifacts or 'hallucinations' that Suno might inject (e.g., adding guitar to Exclude to prevent 'skank hallucination' in reggae/hip-hop contexts), even if the instrument isn't generally problematic. Otherwise, leave the Exclude Style block empty. Do not add abstract terms like: `aggressive, uptempo, crescendo, dramatic build, drop, bright melody, distortion`.
 
 ## 2. Suno Lyrics: Unified Typed Bracket Framework
 
-Typed brackets per section provide precise control over instrumentation, energy, mood, texture, vocal style, and advanced structural/performance tags.
+Typed brackets per section provide precise control over instrumentation, energy, mood, texture, vocal style, and advanced structural/performance tags. Lyrics staging tags should follow the same rule as Style block elements: 3-5 elements per tag, title case, active verbs, atmospheric/role descriptors. Avoid negative directives.
 
 ### Core Rule
 Typed brackets per section for ALL tracks (instrumental and vocal). Pipe (`|`) inside any bracket = play together. Separate untyped bracket lines = layers (intentional additions).
@@ -118,7 +118,7 @@ Typed brackets per section for ALL tracks (instrumental and vocal). Pipe (`|`) i
 | `[Instrument:]` | Per-section instrumentation and dynamic roles | `[Instrument: Shamisen alone | single slow pluck]`, `[Instrument: Harp active fill/call-response]`, `[Instrument: Shamisen lazy jazz phrases | warm Rhodes underneath | brushed drums barely there]` | Positive per-section instructions for instruments. **Using directive verbs (e.g., 'active fill', 'plucks', 'phrases') effectively guides Suno's interpretation of instrument behavior and dynamic roles beyond static background elements.** Pipes combine elements. **Refinement:** For instruments like shamisen, directive verbs implying increasing intensity (e.g., 'building') can inadvertently generate undesirable timbres such as 'twang'. Opt for more controlled descriptors like 'steady' to achieve desired sonic characteristics and avoid unintended artifacts. |
 | `[Mood:]` | Section mood/atmosphere | `[Mood: Morning quiet]`, `[Mood: Triumphant]`, `[Mood: Anticipation]` | Guides emotional tone and ambiance. |
 | `[Texture:]` | Section sonic quality | `[Texture: Tape-Saturated]`, `[Texture: Lo-fi]` | Adds specific audio characteristics. |
-| `[Vocal Style:]` | Vocal delivery direction (vocal only) | `[Vocal Style: Power]`, `[Vocal Style: Belt]`, `[Vocal Style: Open, Confident]` | Directs how vocals are performed. **Refinement:** 'Projected vocals' is more precise and effective than 'Powerful vocals'. |
+| `[Vocal Style:]` | Vocal delivery direction (vocal only) | `[Vocal Style: Power]`, `[Vocal Style: Belt]`, `[Vocal Style: Open, Confident]` | Directs how vocals are performed. **Refinement:** 'Projected vocals' is more precise and effective than 'Powerful vocals'. Precise, positive directive verbs and phrasing in vocal delivery instructions (e.g., within `[Vocal Style:]` or implied by lyrical phrasing) are highly effective in guiding Suno towards desired melodicism and overcoming issues like monotony. |
 | `[modulate]` | Key change | `[modulate up a key]` | Works for 1 step up. MUST go *before* lyrics. Numeric values ignored. |
 | `[Buildup]` | Section intensity ramp | `[Buildup]`, `[Buildup, 4 bars]` | Creates intensity. Stackable (multiple = longer/more intense). Bar count hint works. |
 | `[loop-friendly]` | Section preparation | `[loop-friendly]` | Prepares section for natural repeat, not seamless audio loop. |
@@ -192,10 +192,31 @@ Every section gets: Structure tag (e.g., `[Intro]`, `[Verse]`) → Energy → Mo
 
 ## 3. Core Prompt Engineering Principles
 
+### 3.1. Descriptive vs. Prescriptive Prompting
+
+#### Why
+Descriptive prompts work *with* Suno's training, guiding it towards desired qualities natively implied by genre and positive descriptors. Prescriptive prompts, especially stacked negative directives, fight Suno's training, leading to unstable, oscillating failures (e.g., cycling through contradictory vocal deliveries like clean→spoken→falsetto→falsetto).
+
+#### How to apply
+-   **Prioritize descriptive language:** Focus on describing what you *want* to hear, rather than what you *don't* want.
+-   **Leverage genre:** Pick a genre/sub-genre that natively has the qualities you want. This implicitly handles many "vetoes" without needing explicit negative constraints.
+-   **Mirror successful source prompts:** When creating variants, precisely mirror the structure of successful source prompts, especially their use of positive, descriptive language and lack of negative directives.
+
+### 3.2. Word Repetition and Weighting
+
+#### Why
+Word repetition in a Suno Style block or within typed brackets doubles that word's interpretive weight, forcing Suno to lock into the strongest meaning and potentially override other tonal cues. This can lead to unintended sonic characteristics, such as monotone delivery when a word like `chant` is repeated.
+
+#### How to apply
+-   **Avoid repeating content words:** Do not repeat significant content words across elements within the Style block or closely related typed brackets.
+-   **Use synonyms and counter-cues:** If similar concepts are needed in multiple elements, balance them with synonyms or counter-cues. For example, instead of `chant phrases` and `chant harmonies`, use `melodic phrases` and `harmonies low and lyrical` to suggest a chant aesthetic without forcing a monotone.
+-   **Be aware of specific word pulls:** Words like `chant` specifically pull towards monotone in Suno. If used, it should be balanced with explicit melodic cues (e.g., `melodic phrases`, `lyrical`, `lament`).
+-   **Employ surgical word swaps:** When the overall prompt structure is working but a specific sonic detail is off, identify the exact word(s) producing the unwanted pull and make minimal, surgical word swaps rather than rebuilding the entire prompt.
+
 ### Complexity Limits & Signal Clarity
 
 #### Why
-Fewer ingredients lead to clearer signals and cleaner audio. Over-stuffing prompts results in muddled output and degraded audio quality. Suno interprets every descriptor as a variable to satisfy, diluting the core intent. Audio quality degrades with excessive prompt length. Abstract or ambiguous 'vibe' terms can lead to unpredictable outputs. Overlapping instrument registers cause frequency fighting.
+Fewer ingredients lead to clearer signals and cleaner audio. Over-stuffing prompts results in muddled output and degraded audio quality. Suno interprets every descriptor as a variable to satisfy, diluting the core intent. Audio quality degrades with excessive prompt length. Abstract or ambiguous 'vibe' terms can lead to unpredictable outputs. Overlapping instrument registers cause frequency fighting. A high count of descriptive elements, even if within character budget, can contribute to a lack of dynamic range or monotony.
 
 #### How to apply
 -   **Max 2 genres:** Use rhythm-clear genres.
@@ -216,10 +237,10 @@ Combining certain effects and descriptors can lead to undesirable sonic artifact
 ### Genre & Cultural Label Precision
 
 #### Why
-Suno interprets cultural labels as instructions to "add everything from this tradition," leading to instrument flooding and overriding specific instrument intent. Cultural labels trigger unrequested genre-associated instruments (e.g., violin, fiddle for "Celtic") even with explicit exclusions. Explicitly avoiding cultural or regional labels in the Style block is crucial to prevent the injection of unrequested, culturally-associated instruments (e.g., koto for 'Japanese'). This provides concrete validation of the principle, demonstrating the specific risks associated with such labels. Specific genre archetypes can also introduce subtle audio quality issues. Using cultural or folk genre tags in the Style block can disproportionately elevate associated instruments to a lead role, even when other instruments are specified as primary, overriding the intended instrument hierarchy.
+Suno interprets cultural labels as instructions to "add everything from this tradition," leading to instrument flooding and overriding specific instrument intent. Cultural labels trigger unrequested genre-associated instruments (e.g., violin, fiddle for "Celtic") even with explicit exclusions. Explicitly avoiding cultural or regional labels in the Style block is crucial to prevent the injection of unrequested, culturally-associated instruments (e.g., koto for 'Japanese'). This provides concrete validation of the principle, demonstrating the specific risks associated with such labels. Specific genre archetypes can also introduce subtle audio quality issues. Using cultural or folk genre tags in the Style block can disproportionately elevate associated instruments to a lead role, even when other instruments are specified as primary, overriding the intended instrument hierarchy. While cultural genre labels are generally discouraged for new prompts, mirroring them from a *proven source prompt* in a variant workflow might not lead to outright failure, but can still introduce subtle quality issues like monotony.
 
 #### How to apply
--   **Never use a culture, tradition, or region as a genre label** in Suno Style blocks (e.g., "Japanese folk fusion", "Folk").
+-   **Never use a culture, tradition, or region as a genre label** in Suno Style blocks (e.g., "Japanese folk fusion", "Folk") for *new* prompts.
 -   Use **neutral instrument labels** (e.g., "harp" instead of "Celtic harp"). Describe the sound with adjectives instead.
 -   The specific instrument in the prompt already signals the cultural flavor.
 -   **Genre Naming:** While single-word genres are generally preferred for clarity (e.g., "Jazz" not "Jazz fusion"), certain two-word, commonly understood sub-genres like 'lo-fi jazz' can be effectively used, indicating Suno's ability to interpret them as coherent stylistic entities. However, specific genre archetypes (e.g., 'Jazz Lounge') can introduce subtle audio quality issues like 'instrument bleed' due to Suno's interpretation. Critics are effective at pinpointing these genre-specific pitfalls, necessitating prompt adjustments such as exclusion or more precise instrument control.
@@ -272,4 +293,4 @@ Explicitly defining primary and secondary archetypes with specific roles allows 
 -   When aiming for a 'skank' rhythm in reggae/hip-hop, use the descriptor 'offbeat strum' instead of 'skank' to guide Suno more effectively and avoid problematic interpretations, refining the existing 'skank hallucination' exclusion advice by providing a positive alternative.
 
 ---
-Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`, `20260331-193044-the-upper-end-of-the-flexible-character--3.md`, `20260405-122651-explicitly-defining-a-primary-secondary--2.md`, `20260406-061139-explicitly-avoiding-cultural-or-regional-1.md`, `20260406-061139-strategic-exclusion-of-instruments-can-b-3.md`, `20260406-061139-subdued-is-a-more-precise-and-effective--2.md`, `20260406-064001-explicitly-adding-specific-timbre-anchor-3.md`, `20260406-064001-using-more-precise-and-less-ambiguous-de-2.md`, `20260406-070153-suno-can-effectively-interpret-and-rende-3.md`, `20260406-070153-using-directive-verbs-within-instrument--2.md`, `20260406-173715-consistent-critic-feedback-validates-the-3.md`, `20260406-173715-style-blocks-should-consistently-use-com-2.md`, `20260406-173715-when-aiming-for-a-skank-rhythm-in-reggae-1.md`, `20260406-205642-be-cautious-when-combining-echo-delay-wi-2.md`, `20260406-205642-for-instruments-like-shamisen-directive--1.md`, `20260406-205642-when-choosing-between-similar-or-related-3.md`, `20260409-003327-bgm-style-envelope-checklist.md`
+Consolidated from: `suno-prompt-construction-guide.md`, `suno-prompt-engineering-principles.md`, `20260329-155500-for-ambient-sfx-and-atmospheric-elements-1.md`, `20260331-041608-suno-appears-to-interpret-fade-in-and-po.md`, `20260331-193044-the-upper-end-of-the-flexible-character--3.md`, `20260405-122651-explicitly-defining-a-primary-secondary--2.md`, `20260406-061139-explicitly-avoiding-cultural-or-regional-1.md`, `20260406-061139-strategic-exclusion-of-instruments-can-b-3.md`, `20260406-061139-subdued-is-a-more-precise-and-effective--2.md`, `20260406-064001-explicitly-adding-specific-timbre-anchor-3.md`, `20260406-064001-using-more-precise-and-less-ambiguous-de-2.md`, `20260406-070153-suno-can-effectively-interpret-and-rende-3.md`, `20260406-070153-using-directive-verbs-within-instrument--2.md`, `20260406-173715-consistent-critic-feedback-validates-the-3.md`, `20260406-173715-style-blocks-should-consistently-use-com-2.md`, `20260406-173715-when-aiming-for-a-skank-rhythm-in-reggae-1.md`, `20260406-205642-be-cautious-when-combining-echo-delay-wi-2.md`, `20260406-205642-for-instruments-like-shamisen-directive--1.md`, `20260406-205642-when-choosing-between-similar-or-related-3.md`, `20260409-003327-bgm-style-envelope-checklist.md`, `20260409-051540-descriptive-prompts-beat-prescriptive-vetoes.md`, `20260409-051540-word-repetition-doubles-suno-weight.md`, `20260409-071819-precise-positive-directive-verbs-and-phr-3.md`, `20260409-071819-stacked-negative-constraints-confuse-sun-1.md`, `20260409-071819-while-cultural-genre-labels-are-generall-2.md`
