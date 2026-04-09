@@ -4,15 +4,19 @@ type: task
 project: autonomous-self-learning
 project-code: ASL
 task-id: ASL-0027
-status: ready
+status: cancelled
+cancelled: 2026-04-09
+cancellation-reason: "ASL subsystem archived 2026-04-09. See ARCHIVED.md. Classifier was not implemented."
 created: 2026-04-09
 author: mccall
 assignee: ryan
 effort: 2 days
 depends-on: [ASL-0023, ASL-0024]
 supersedes-brief: BRIEF-knowledge-classifier.md
-tags: [asl, distill, classification, fail-closed, eval-fixture]
+tags: [asl, distill, classification, fail-closed, eval-fixture, cancelled]
 ---
+
+> **CANCELLED 2026-04-09.** The entire ASL subsystem was archived in the same session this task was scoped. The classifier was never implemented. The cost-benefit analysis that killed ASL applies directly: the classifier would have been ~60% noise reduction on a pipeline we're no longer running. See `../ARCHIVED.md` for the full rationale and `src/archive/asl/README.md` for the code location. This task doc is preserved as engineering history — it represents the last serious attempt to rescue ASL before the decision to shelve it.
 
 # ASL-0027 — Distill Content-Class Classifier
 
