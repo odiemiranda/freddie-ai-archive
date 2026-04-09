@@ -2,7 +2,7 @@
   {
     "file": "knowledge/knowledge_agent_architecture_and_workflow.md",
     "name": "Agent Architecture and Workflow",
-    "description": "Guidelines for designing agent workflows, managing context in iterative skills, establishing internal agent hierarchies, standardizing agent initialization, optimizing documentation for context, employing effective development methodologies, managing project-specific configurations, detailing core cognitive capabilities, outlining strategic vision, and implementing self-learning autonomy pipelines.",
+    "description": "Guidelines for designing agent workflows, managing context in iterative skills, establishing internal agent hierarchies, standardizing agent initialization, optimizing documentation for context, employing effective development methodologies, managing project-specific configurations, detailing core cognitive capabilities, outlining strategic vision, implementing self-learning autonomy pipelines, adapting to dynamic user priorities, and ensuring data integrity in multi-service pipelines.",
     "type": "knowledge",
     "tags": [
       "AAR",
@@ -165,9 +165,12 @@
       "reliability",
       "error_handling",
       "morning_briefing",
-      "output_control"
+      "output_control",
+      "user_preference",
+      "style_generation",
+      "gemini"
     ],
-    "consolidated": "2026-04-09"
+    "consolidated": "2026-04-10"
   },
   {
     "file": "knowledge/knowledge_communication_and_interaction_standards.md",
@@ -187,7 +190,7 @@
       "clarity",
       "music_card"
     ],
-    "consolidated": "2026-04-09"
+    "consolidated": "2026-04-10"
   },
   {
     "file": "knowledge/knowledge_linguistic_capabilities.md",
@@ -206,7 +209,7 @@
       "language_processing",
       "scope_expansion"
     ],
-    "consolidated": "2026-04-09"
+    "consolidated": "2026-04-10"
   },
   {
     "file": "knowledge/knowledge_memory_system_architecture.md",
@@ -260,7 +263,7 @@
       "bug_detection",
       "platform_behavior"
     ],
-    "consolidated": "2026-04-09"
+    "consolidated": "2026-04-10"
   },
   {
     "file": "knowledge/knowledge_music_generation_capabilities.md",
@@ -295,12 +298,12 @@
       "new-technique",
       "platform_behavior"
     ],
-    "consolidated": "2026-04-09"
+    "consolidated": "2026-04-10"
   },
   {
     "file": "knowledge/knowledge_tooling_and_platform_guidelines.md",
     "name": "Tooling and Platform Guidelines",
-    "description": "Best practices for tool execution, development, prioritizing CLI-first calls, and specific technical considerations for developing and managing tools on Windows, including process management and PowerShell integration. This also covers platform-specific behaviors and known tool limitations, ensuring robustness and security.",
+    "description": "Best practices for tool execution, development, prioritizing CLI-first calls, and specific technical considerations for developing and managing tools on Windows, including process management and PowerShell integration. This also covers platform-specific behaviors, non-deterministic platform outputs, and known tool limitations, ensuring robustness and security.",
     "type": "knowledge",
     "tags": [
       "tool_execution",
@@ -357,8 +360,10 @@
       "agent_improvement",
       "workflow_automation",
       "human_in_the_loop",
-      "review_process"
+      "review_process",
+      "non_determinism",
+      "drift_study"
     ],
-    "consolidated": "2026-04-09"
+    "consolidated": "2026-04-10"
   }
 ]
